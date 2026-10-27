@@ -15,5 +15,5 @@ window.SILO_CONFIG = {
   // Chave de acesso do Web3Forms (https://web3forms.com). O formulário de
   // suporte envia para o e-mail cadastrado lá, sem mostrar o e-mail no site.
   // Vazio = formulário desativado com aviso "em breve".
-  FORM_ACCESS_KEY: ""
+  FORM_ACCESS_KEY: "fac82c97-df12-438f-8bdb-498e6c03acbd"
 };
