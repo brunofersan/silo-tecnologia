@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=1.0.5-2">
+  <link rel="stylesheet" href="styles.css?v=1.0.5-3">
 </head>
 <body>
   <header class="topbar">
@@ -27,6 +27,7 @@
         <a href="#recursos" data-i18n="nav.features">Recursos</a>
         <a href="#requisitos" data-i18n="nav.requirements">Requisitos</a>
         <a href="#instalacao" data-i18n="nav.install">Instalação</a>
+        <a href="#versoes" data-i18n="nav.versions">Versões</a>
         <a href="#faq" data-i18n="nav.faq">Perguntas</a>
         <a href="#contato" data-i18n="nav.contact">Contato</a>
       </nav>
@@ -205,6 +206,29 @@
       </div>
     </section>
 
+    <section id="versoes" class="section wrap">
+      <header class="section-head">
+        <p class="kicker" data-i18n="vs.k">Versões</p>
+        <h2 data-i18n="vs.t">Escolha a versão</h2>
+        <p class="muted" data-i18n="vs.d">Recomendamos sempre a versão mais recente. As anteriores ficam disponíveis para quem precisar delas.</p>
+      </header>
+      <div class="table-scroll">
+        <table class="versions">
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="vs.h1">Versão</th>
+              <th scope="col" data-i18n="vs.h2">Data</th>
+              <th scope="col" data-i18n="vs.h3">Instalador</th>
+              <th scope="col" data-i18n="vs.h4">Portátil</th>
+              <th scope="col" data-i18n="vs.h5">Notas</th>
+            </tr>
+          </thead>
+          <tbody id="versionsBody"></tbody>
+        </table>
+      </div>
+      <p class="versions-more"><a class="btn btn-ghost" href="releases.html" data-i18n="vs.all">Ver todas as notas da versão</a></p>
+    </section>
+
     <section id="faq" class="section wrap narrow">
       <header class="section-head">
         <p class="kicker" data-i18n="faq.k">Perguntas frequentes</p>
@@ -262,12 +286,13 @@
     <div class="wrap footer-inner">
       <img src="assets/marca.png" alt="" width="28" height="28">
       <span>© <span class="js-year">2026</span> Silo Tecnologia. <span data-i18n="ft.rights">Todos os direitos reservados.</span></span>
-      <a class="footer-link" href="termos.html" data-i18n="ft.terms">Termos de uso</a>
+      <a class="footer-link" href="releases.html" data-i18n="ft.releases">Notas da versão</a>
+      <a class="footer-link2" href="termos.html" data-i18n="ft.terms">Termos de uso</a>
     </div>
   </footer>
 
-  <script src="config.js?v=1.0.5-2"></script>
-  <script src="i18n.js?v=1.0.5-2"></script>
-  <script src="main.js?v=1.0.5-2"></script>
+  <script src="config.js?v=1.0.5-3"></script>
+  <script src="i18n.js?v=1.0.5-3"></script>
+  <script src="main.js?v=1.0.5-3"></script>
 </body>
 </html>

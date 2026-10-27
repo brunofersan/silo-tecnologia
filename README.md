@@ -4,15 +4,11 @@ Site estático do Silo IDE (HTML, CSS e JS puros), publicado pelo GitHub Pages.
 
 ## Para cada nova versão
 
-Edite **apenas** `config.js` (e, se o navegador mostrar a versão antiga, aumente o `?v=` dos scripts no `index.html`):
+1. Em `config.js`, copie o primeiro bloco de `VERSIONS`, cole no topo e preencha versão, data, tamanhos e os links do Google Drive ("Qualquer pessoa com o link"). A primeira da lista é a versão atual.
+2. Acrescente as novidades no topo de `release-notes.md` e rode `pip install markdown && python tools/build-releases.py` para gerar `releases.html`.
+3. Aumente o `?v=` dos arquivos em `index.html` e em `tools/releases.template.html`, para o navegador não usar cópia antiga.
 
-- `DOWNLOAD_URL`: link público do instalador (Google Drive com "Qualquer pessoa com o link" ou anexo de um GitHub Release). Vazio = botão desativado com aviso "em breve".
-- `PORTABLE_URL`: link da versão portátil (vazio = botão escondido).
-- `VERSION`, `INSTALLER_SIZE`, `RELEASE_DATE`.
-- `FORM_ACCESS_KEY`: chave do Web3Forms (https://web3forms.com) para o formulário de suporte. As mensagens chegam no e-mail cadastrado lá, que não aparece no site. Vazio = formulário desativado.
-
-Dica para Google Drive: troque `https://drive.google.com/file/d/ID/view?usp=sharing` por
-`https://drive.google.com/uc?export=download&id=ID`. Para arquivos grandes o Drive mostra antes uma página de confirmação de vírus, o que é normal.
+`FORM_ACCESS_KEY` é a chave do Web3Forms do formulário de suporte (as mensagens chegam no e-mail cadastrado lá, que não aparece no site).
 
 ## Publicação
 

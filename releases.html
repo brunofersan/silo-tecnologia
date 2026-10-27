@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notas da versão | Silo IDE</title>
+  <meta name="description" content="O que mudou em cada versão do Silo IDE.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1.0.5-3">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html" aria-label="Silo Tecnologia">
+        <img src="assets/marca.png" alt="" width="36" height="36">
+        <span><strong>Silo</strong> Tecnologia</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html#recursos" data-i18n="nav.features">Recursos</a>
+        <a href="index.html#versoes" data-i18n="nav.versions">Versões</a>
+        <a href="index.html#faq" data-i18n="nav.faq">Perguntas</a>
+        <a href="index.html#contato" data-i18n="nav.contact">Contato</a>
+      </nav>
+      <div class="topbar-actions">
+        <div class="lang" role="group" aria-label="Idioma">
+          <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <header class="rn-head">
+      <div class="wrap narrow">
+        <p class="kicker" data-i18n="rn.k">Notas da versão</p>
+        <h1 data-i18n="rn.t">O que mudou em cada versão</h1>
+        <p class="muted rn-lang" data-i18n="rn.lang"></p>
+        <p><a class="btn btn-primary js-download" href="index.html#download">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="cta.download">Baixar para Windows</span>
+        </a></p>
+      </div>
+    </header>
+    <article class="wrap narrow release-notes">
+<p><strong>Versão disponível para download:</strong> 1.0.5-RC (Windows 10 e 11, 64 bits)</p>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th>Tamanho</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SiloIDE-1.0.5-RC-setup.exe</code></td>
+<td>226 MB</td>
+<td>Instalador (não precisa de administrador)</td>
+</tr>
+<tr>
+<td><code>SiloIDE-1.0.5-RC-portable.zip</code></td>
+<td>238 MB</td>
+<td>Versão portátil: descompacte e rode <code>SiloIDE.bat</code></td>
+</tr>
+</tbody>
+</table>
+<p>Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>.</p>
+<hr />
+<h2 id="v1-0-5-rc">1.0.5-RC</h2>
+<p><strong>Instalador mais leve e ícone novo em todo lugar.</strong></p>
+<ul>
+<li><strong>Instalador 30% menor (226 MB):</strong> componentes auxiliares que nem todos usam saíram do pacote, e o download ficou mais rápido.</li>
+<li><strong>Ícone novo na barra de tarefas e no menu Iniciar:</strong> os atalhos fixados passam a mostrar a logo atual, sem a imagem antiga guardada pelo Windows.</li>
+</ul>
+<h2 id="v1-0-4-rc">1.0.4-RC</h2>
+<p><strong>Logo nova e cinco melhorias pedidas pelos usuários.</strong></p>
+<ul>
+<li><strong>Logo nova:</strong> contorno de silo com o símbolo de prompt <code>&gt;</code> num círculo em degradê verde-azulado, também na tela de abertura e no ícone.</li>
+<li><strong>Ajuda &gt; Baixar WildFly:</strong> baixa o WildFly 35.0.1, confere a integridade do arquivo e deixa tudo pronto para os projetos WAR.</li>
+<li><strong>Classe não encontrada no Tomcat da IDE:</strong> quando um módulo dá <code>ClassNotFoundException</code>, a IDE lê a pilha de erro, descobre o projeto e coloca a dependência que falta no <code>pom.xml</code> dele.</li>
+<li><strong>Atalho das validações no rodapé:</strong> um clique liga ou desliga as boas práticas e o Validador de banco de dados.</li>
+<li><strong>Tempo de cada módulo no build:</strong> depois de um build com vários módulos, o Log mostra os mais lentos primeiro, com o tempo e a porcentagem de cada um.</li>
+<li><strong>Exportar e importar configurações:</strong> em <strong>Arquivo</strong>, leve todas as suas configurações para outra máquina num arquivo <code>.siloide-config</code>, sem senhas nem tokens.</li>
+</ul>
+<h2 id="v1-0-3-rc">1.0.3-RC</h2>
+<p><strong>WildFly, validações configuráveis e correção automática de dependências.</strong></p>
+<ul>
+<li><strong>Suba todos os seus projetos juntos em um único servidor:</strong> o novo lema do Silo IDE.</li>
+<li><strong>WildFly por projeto:</strong> projetos WAR escolhem em <strong>Configurar aplicação &gt; Como subir</strong>: <strong>Processo próprio</strong>, <strong>Tomcat da IDE</strong> ou <strong>WildFly</strong>. A escolha fica guardada por projeto, e a IDE gera o WAR e faz o deploy numa pasta separada para cada projeto, na porta 8180.</li>
+<li><strong>Novo modelo de projeto: Java web (WAR para WildFly)</strong>, com Jakarta EE 10 e um servlet de exemplo.</li>
+<li><strong>Arquivo &gt; Configurações &gt; Validações:</strong> liga e desliga as boas práticas de desenvolvimento e o <strong>Validador de banco de dados</strong>, com o endereço do validador.</li>
+<li><strong>Classe não encontrada:</strong> quando o build falha com <code>package ... does not exist</code>, ou uma aplicação dá <code>ClassNotFoundException</code> ou <code>NoClassDefFoundError</code>, a IDE procura a classe no repositório Maven local e nos projetos clonados, adiciona a dependência no <code>pom.xml</code> e compila de novo. No editor, <strong>Ctrl+1</strong> sobre um <code>import</code> com erro faz o mesmo.</li>
+<li><strong>Log:</strong> a barra de rolagem acompanha as últimas linhas. Se você sobe para ler, o Log fica parado até você voltar ao fim.</li>
+</ul>
+<h2 id="v1-0-2-rc">1.0.2-RC</h2>
+<p><strong>Relatórios por e-mail e Log mais fácil de usar.</strong></p>
+<ul>
+<li><strong>Relatórios de erro por e-mail já configurados no instalador:</strong> um clique em <strong>Ajuda &gt; Reportar erro ou sugestão</strong> envia o relatório com o diagnóstico.</li>
+<li><strong>Sem aviso desnecessário:</strong> sem e-mail configurado, o aviso de registro do computador não aparece mais.</li>
+<li><strong>Selecionar texto no Log:</strong> enquanto houver texto selecionado, as linhas novas esperam e a seleção não se perde.</li>
+</ul>
+<h2 id="v1-0-1-rc">1.0.1-RC</h2>
+<p><strong>Atualização automática.</strong></p>
+<ul>
+<li><strong>O Silo IDE se atualiza sozinho:</strong> ao abrir, ele confere se há versão nova e baixa só o que mudou. Os pacotes são assinados digitalmente pela Silo Tecnologia, e o programa recusa qualquer pacote sem essa assinatura.</li>
+</ul>
+<h2 id="v1-0-0-rc">1.0.0-RC</h2>
+<p><strong>Primeira versão do Silo IDE: editor, Git, banco e servidores em um lugar.</strong></p>
+<p><strong>Projetos e servidores</strong>
+- Lista de projetos por área, escolha do que subir e perfis de trabalho.
+- Tomcat embutido com os módulos escolhidos, publicação sem cópia, porta de depuração e troca de classes a quente.
+- Serviços Angular, Spring Boot, Gradle e Java (Maven) em paralelo ao Tomcat, cada um com o JDK que pede.
+- Logs com filtros por origem, só problemas e agrupamento de erros repetidos.</p>
+<p><strong>Editor</strong>
+- Java, TypeScript, HTML, SQL e XML, com compilação ao salvar, completar código, navegar, refatorar e dobras.
+- Correções rápidas (<strong>Ctrl+1</strong>), organizar imports, formatar e dicas de parâmetros.
+- Templates Angular com sugestões de componentes, atributos, pipes e avisos de membros inexistentes.
+- Validação de XML e XVC ao salvar e boas práticas de desenvolvimento no código novo.
+- Designer visual de telas e Task Outline, que alteram todos os arquivos da tela, com textos em todos os idiomas.</p>
+<p><strong>Banco de dados</strong>
+- Console SQL com binds, plano de execução, comparação entre bancos, histórico e exportação para Excel.
+- Blocos PL/SQL com SQLCODE, SQLERRM, a linha do erro e DBMS_OUTPUT.</p>
+<p><strong>Git</strong>
+- Alterações, diff, stage e commit, branches, linha do tempo e conferência antes do push.</p>
+<p><strong>Build</strong>
+- Maven com ordem entre projetos e resolução automática de dependências entre eles.
+- Build só do que mudou, histórico de builds com aviso de lentidão e erro de compilação aberto na linha.</p>
+<p><strong>Java</strong>
+- A IDE roda no Java 25, e cada projeto usa o Java 8 a 25 que declara.
+- Instalação de JDKs (Temurin 8, 11, 17, 21 e 25) pelo próprio programa, com conferência de integridade.</p>
+<p><strong>Novos projetos</strong>
+- <strong>Arquivo &gt; Novo projeto</strong> cria projetos Java, Spring Boot, Python, Node, Vue, React e Angular e baixa as bibliotecas.</p>
+<p><strong>Suporte</strong>
+- Saúde do ambiente, pacote de diagnóstico, detecção de travamentos e relatório de erros.
+- Ajuda completa em português, espanhol e inglês, e um tour para quem está chegando.
+- Temas Claro, Escuro e Alto contraste.</p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <img src="assets/marca.png" alt="" width="28" height="28">
+      <span>© <span class="js-year">2026</span> Silo Tecnologia. <span data-i18n="ft.rights">Todos os direitos reservados.</span></span>
+      <a class="footer-link" href="index.html" data-i18n="rn.back">Voltar ao site</a>
+      <a class="footer-link2" href="termos.html" data-i18n="ft.terms">Termos de uso</a>
+    </div>
+  </footer>
+
+  <script src="config.js?v=1.0.5-3"></script>
+  <script src="i18n.js?v=1.0.5-3"></script>
+  <script src="main.js?v=1.0.5-3"></script>
+</body>
+</html>

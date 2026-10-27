@@ -1,17 +1,23 @@
 // =====================================================================
 //  CONFIGURAÇÃO DO SITE — único lugar a editar para cada nova versão.
 //
-//  BRUNO: cole aqui o link do instalador (Google Drive com
-//  "Qualquer pessoa com o link" ou um anexo de GitHub Release).
-//  Enquanto DOWNLOAD_URL estiver vazio, o botão mostra "em breve".
+//  VERSIONS: a primeira da lista é a versão atual (botões principais).
+//  Todas aparecem na tabela "Versões". Para uma versão nova, copie o bloco,
+//  cole no topo da lista e troque os dados e os links do Google Drive
+//  ("Qualquer pessoa com o link"). Link vazio = "em breve".
+//  As notas ficam em release-notes.md (rode tools/build-releases.py).
 // =====================================================================
 window.SILO_CONFIG = {
-  DOWNLOAD_URL: "https://drive.google.com/file/d/1tyBJPprJOJ64N-0jrOOA9QyTY1RD1Il_/view?usp=sharing",
-  // Versão portátil (sem instalação). Vazio = botão some.
-  PORTABLE_URL: "https://drive.google.com/file/d/1WyRELNoar-D-NmkeKqglmx1kP3D92JRE/view?usp=sharing",
-  VERSION: "1.0.5-RC",
-  INSTALLER_SIZE: "226 MB",
-  RELEASE_DATE: "2026-10-27",
+  VERSIONS: [
+    {
+      version: "1.0.5-RC",
+      date: "2026-10-27",
+      installerSize: "226 MB",
+      portableSize: "238 MB",
+      installerUrl: "https://drive.google.com/file/d/1tyBJPprJOJ64N-0jrOOA9QyTY1RD1Il_/view?usp=sharing",
+      portableUrl: "https://drive.google.com/file/d/1WyRELNoar-D-NmkeKqglmx1kP3D92JRE/view?usp=sharing"
+    }
+  ],
   // Chave de acesso do Web3Forms (https://web3forms.com). O formulário de
   // suporte envia para o e-mail cadastrado lá, sem mostrar o e-mail no site.
   // Vazio = formulário desativado com aviso "em breve".

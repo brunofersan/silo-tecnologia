@@ -217,7 +217,18 @@ details p { padding: 0 20px 16px; margin: 0; color: var(--muted); }
 .footer { border-top: 1px solid var(--line); padding: 26px 0; color: var(--muted); font-size: .9rem; }
 .footer-inner { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .footer-link { margin-left: auto; color: var(--muted); }
-.footer-link:hover { color: var(--ink); }
+.footer-link:hover, .footer-link2:hover { color: var(--ink); }
+.footer-link2 { color: var(--muted); }
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+.versions { width: 100%; border-collapse: collapse; min-width: 640px; }
+.versions th, .versions td { text-align: left; padding: 13px 18px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.versions thead th { color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; background: var(--bg-alt); }
+.versions tbody tr:last-child th, .versions tbody tr:last-child td { border-bottom: 0; }
+.versions a { color: var(--blue); font-weight: 600; text-decoration: none; }
+.versions a:hover { text-decoration: underline; }
+.tag { display: inline-block; margin-left: 8px; padding: 1px 8px; border-radius: 999px; background: var(--grad); color: #fff; font-size: .72rem; font-weight: 700; vertical-align: middle; }
+.versions-more { margin-top: 18px; }
+@media (prefers-color-scheme: dark) { .versions a { color: #7dd3fc; } }
 .download .terms-note { margin-top: 6px; font-size: .88rem; }
 .download .terms-note a { color: #7dd3fc; }
 
@@ -251,3 +262,19 @@ details p { padding: 0 20px 16px; margin: 0; color: var(--muted); }
   .section { padding: 60px 0; }
   .stats strong { min-width: 96px; font-size: 1.2rem; }
 }
+
+/* Notas da versão */
+.rn-head { background: var(--bg-alt); border-bottom: 1px solid var(--line); padding: 48px 0 28px; }
+.rn-head h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
+.rn-lang:empty { display: none; }
+.release-notes { padding: 24px 0 72px; }
+.release-notes h2 { font-size: 1.5rem; margin: 40px 0 6px; padding-top: 24px; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
+.release-notes h2 + p strong { color: var(--teal); }
+.release-notes ul { padding-left: 1.2em; margin: 0 0 1em; }
+.release-notes li { margin: .35em 0; }
+.release-notes code { font: .88em "JetBrains Mono", Consolas, monospace; background: var(--bg-alt); border: 1px solid var(--line); border-radius: 6px; padding: 1px 5px; }
+.release-notes table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; display: block; overflow-x: auto; }
+.release-notes th, .release-notes td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+.release-notes th { color: var(--muted); font-size: .85rem; }
+.release-notes hr { border: 0; }
+@media (prefers-color-scheme: dark) { .release-notes h2 + p strong { color: #3fd0c9; } }
