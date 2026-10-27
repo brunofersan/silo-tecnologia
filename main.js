@@ -35,15 +35,59 @@
     });
   }
 
-  var support = (cfg.SUPPORT_CONTACT || "").trim();
-  if (support) {
-    var link = document.querySelector(".js-support");
-    link.href = support.indexOf("@") > 0 && support.indexOf(":") < 0 ? "mailto:" + support : support;
-    link.hidden = false;
-    document.querySelector(".js-support-soon").hidden = true;
+
+  var currentLang = "pt";
+  var formMsgs = {
+    pt: { sending: "Enviando...", ok: "Mensagem enviada. Responderemos no e-mail informado.", fail: "Não foi possível enviar agora. Tente novamente em alguns minutos.", invalid: "Preencha nome, e-mail válido e mensagem." },
+    es: { sending: "Enviando...", ok: "Mensaje enviado. Responderemos al correo indicado.", fail: "No fue posible enviar ahora. Inténtalo de nuevo en unos minutos.", invalid: "Completa nombre, correo válido y mensaje." },
+    en: { sending: "Sending...", ok: "Message sent. We will reply to the e-mail you provided.", fail: "Could not send right now. Please try again in a few minutes.", invalid: "Please fill in name, a valid e-mail and message." }
+  };
+  var form = document.getElementById("supportForm");
+  var formKey = (cfg.FORM_ACCESS_KEY || "").trim();
+  var statusEl = form.querySelector(".form-status");
+  if (!formKey) {
+    form.querySelectorAll("input, select, textarea, button").forEach(function (el) { el.disabled = true; });
+    form.querySelector(".js-support-soon").hidden = false;
   }
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    if (!formKey) return;
+    var m = formMsgs[currentLang] || formMsgs.pt;
+    if (!form.checkValidity()) {
+      statusEl.textContent = m.invalid;
+      statusEl.className = "form-status err";
+      return;
+    }
+    var data = {};
+    new FormData(form).forEach(function (v, k) { data[k] = v; });
+    if (data.botcheck) return;
+    delete data.botcheck;
+    data.access_key = formKey;
+    data.subject = "Suporte Silo IDE: " + data.assunto + " - " + data.nome;
+    data.from_name = "Site Silo Tecnologia";
+    data.replyto = data.email;
+    data.idioma = currentLang;
+    var btn = form.querySelector("button[type=submit]");
+    btn.disabled = true;
+    statusEl.textContent = m.sending;
+    statusEl.className = "form-status";
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(data)
+    }).then(function (r) { return r.json(); }).then(function (res) {
+      if (!res.success) throw new Error(res.message);
+      statusEl.textContent = m.ok;
+      statusEl.className = "form-status ok";
+      form.reset();
+    }).catch(function () {
+      statusEl.textContent = m.fail;
+      statusEl.className = "form-status err";
+    }).then(function () { btn.disabled = false; });
+  });
 
   function apply(lang) {
+    currentLang = lang;
     var d = dict[lang];
     nodes.forEach(function (n, i) {
       var key = n.getAttribute("data-i18n");

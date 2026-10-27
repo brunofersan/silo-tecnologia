@@ -104,9 +104,9 @@ window.SILO_I18N = {
     "a8": "Desde Windows, en Configuración › Aplicaciones, como cualquier otro programa.",
     "ct.k": "Contacto",
     "ct.t": "Habla con soporte",
-    "ct.d": "¿Dudas, sugerencias, problemas o interés en licencias para tu equipo o empresa? Habla con el soporte de Silo Tecnologia.",
-    "ct.btn": "Hablar con soporte",
-    "ct.soon": "Canal de soporte próximamente. Mientras tanto, la ayuda completa está dentro del IDE, en el menú Ayuda.",
+    "ct.d": "¿Dudas, sugerencias, problemas o interés en licencias para tu equipo o empresa? Escríbenos por el formulario y responderemos a tu correo.",
+    "fm.name": "Nombre", "fm.email": "Tu correo", "fm.topic": "Asunto", "fm.t1": "Duda", "fm.t2": "Problema en el IDE", "fm.t3": "Instalación", "fm.t4": "Licencias para equipo o empresa", "fm.t5": "Sugerencia", "fm.version": "Versión de Silo IDE (opcional)", "fm.msg": "Mensaje", "fm.send": "Enviar mensaje",
+    "ct.soon": "Formulario de soporte próximamente. Mientras tanto, la ayuda completa está dentro del IDE, en el menú Ayuda.",
     "ft.rights": "Todos los derechos reservados."
   },
   en: {
@@ -214,9 +214,9 @@ window.SILO_I18N = {
     "a8": "From Windows Settings › Apps, like any other program.",
     "ct.k": "Contact",
     "ct.t": "Talk to support",
-    "ct.d": "Questions, suggestions, problems or interested in licenses for your team or company? Talk to Silo Tecnologia support.",
-    "ct.btn": "Contact support",
-    "ct.soon": "Support channel coming soon. Meanwhile, full help is inside the IDE, in the Help menu.",
+    "ct.d": "Questions, suggestions, problems or interested in licenses for your team or company? Write to us using the form and we will reply by e-mail.",
+    "fm.name": "Name", "fm.email": "Your e-mail", "fm.topic": "Subject", "fm.t1": "Question", "fm.t2": "Problem in the IDE", "fm.t3": "Installation", "fm.t4": "Licenses for team or company", "fm.t5": "Suggestion", "fm.version": "Silo IDE version (optional)", "fm.msg": "Message", "fm.send": "Send message",
+    "ct.soon": "Support form coming soon. Meanwhile, full help is inside the IDE, in the Help menu.",
     "ft.rights": "All rights reserved."
   }
 };

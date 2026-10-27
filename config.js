@@ -12,7 +12,8 @@ window.SILO_CONFIG = {
   VERSION: "1.0.4-RC",
   INSTALLER_SIZE: "343 MB",
   RELEASE_DATE: "2026-10-27",
-  // E-mail ou página do suporte (ex.: "suporte@silotecnologia.com.br").
-  // Vazio = o site mostra "canal de suporte em breve". Não use e-mail pessoal.
-  SUPPORT_CONTACT: ""
+  // Chave de acesso do Web3Forms (https://web3forms.com). O formulário de
+  // suporte envia para o e-mail cadastrado lá, sem mostrar o e-mail no site.
+  // Vazio = formulário desativado com aviso "em breve".
+  FORM_ACCESS_KEY: ""
 };

@@ -194,9 +194,25 @@ summary::after { content: "+"; color: var(--teal); font-size: 1.3rem; line-heigh
 details[open] summary::after { content: "–"; }
 details p { padding: 0 20px 16px; margin: 0; color: var(--muted); }
 
-.contact { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+.contact { display: grid; grid-template-columns: 1fr 1.3fr; gap: 40px; align-items: center; }
 .contact-box { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
 .contact-box p { margin: 0; }
+.support-form { display: grid; gap: 14px; }
+.support-form label { display: grid; gap: 6px; font-size: .88rem; font-weight: 600; }
+.support-form input, .support-form select, .support-form textarea {
+  font: 400 .95rem Inter, system-ui, sans-serif; color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; width: 100%;
+}
+.support-form textarea { resize: vertical; min-height: 120px; }
+.support-form input:focus, .support-form select:focus, .support-form textarea:focus { outline: 2px solid var(--blue); outline-offset: 1px; border-color: transparent; }
+.support-form button { justify-self: start; border: 0; cursor: pointer; font: 600 1rem Inter, sans-serif; }
+.support-form :disabled { opacity: .55; cursor: not-allowed; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.hp { position: absolute; left: -9999px; }
+.form-status { font-size: .9rem; min-height: 1.2em; }
+.form-status.ok { color: #059669; }
+.form-status.err { color: #dc2626; }
+.small { font-size: .88rem; }
 
 .footer { border-top: 1px solid var(--line); padding: 26px 0; color: var(--muted); font-size: .9rem; }
 .footer-inner { display: flex; align-items: center; gap: 12px; }
@@ -225,7 +241,7 @@ details p { padding: 0 20px 16px; margin: 0; color: var(--muted); }
   .status em { display: none; }
   .float-card.mem { left: 8px; bottom: -26px; }
   .float-card.api { right: 8px; top: -26px; }
-  .pillars, .grid, .steps { grid-template-columns: 1fr; }
+  .pillars, .grid, .steps, .row2 { grid-template-columns: 1fr; }
   .download-inner { flex-direction: column; text-align: center; }
   .download-inner img { width: 64px; height: 64px; }
   .section { padding: 60px 0; }
