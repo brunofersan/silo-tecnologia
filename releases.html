@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=1.0.5-4">
+  <link rel="stylesheet" href="styles.css?v=1.0.6-1">
 </head>
 <body>
   <header class="topbar">
@@ -52,7 +52,7 @@
       </div>
     </header>
     <article class="wrap narrow release-notes">
-<p><strong>Versão disponível para download:</strong> 1.0.5-RC (Windows 10 e 11, 64 bits)</p>
+<p><strong>Versão disponível para download:</strong> 1.0.6-RC (Windows 10 e 11, 64 bits)</p>
 <table>
 <thead>
 <tr>
@@ -63,19 +63,45 @@
 </thead>
 <tbody>
 <tr>
-<td><code>SiloIDE-1.0.5-RC-setup.exe</code></td>
+<td><code>SiloIDE-1.0.6-RC-setup.exe</code></td>
 <td>226 MB</td>
 <td>Instalador (não precisa de administrador)</td>
 </tr>
 <tr>
-<td><code>SiloIDE-1.0.5-RC-portable.zip</code></td>
-<td>238 MB</td>
+<td><code>SiloIDE-1.0.6-RC-portable.zip</code></td>
+<td>239 MB</td>
 <td>Versão portátil: descompacte e rode <code>SiloIDE.bat</code></td>
 </tr>
 </tbody>
 </table>
 <p>Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>.</p>
 <hr />
+<h2 id="v1-0-6-rc">1.0.6-RC</h2>
+<p><strong>Assistente de IA, Docker, revisão de pull request, Linux e macOS e mais 20 novidades.</strong></p>
+<ul>
+<li><strong>Assistente de IA no editor:</strong> explica erros, sugere correções, gera testes e responde perguntas sobre o código aberto, com a sua própria chave da Anthropic.</li>
+<li><strong>Comparar esquemas de banco:</strong> compara tabelas, colunas, índices e PL/SQL de duas conexões e gera o script de diferença.</li>
+<li><strong>Docker Compose:</strong> sobe, para, reinicia e derruba os serviços do projeto, com os logs, num clique.</li>
+<li><strong>Pull requests do GitHub dentro da IDE:</strong> arquivos com diff, CI e conversa; comente, aprove ou peça mudanças sem sair do editor.</li>
+<li><strong>Gravação da depuração:</strong> cada parada guarda pilha e variáveis num arquivo que o colega abre e percorre.</li>
+<li><strong>Profiler leve:</strong> CPU por método e memória por classe da aplicação no ar, sem reiniciar.</li>
+<li><strong>Pareamento:</strong> o colega acompanha seu editor pelo navegador, em tempo real.</li>
+<li><strong>Extensões:</strong> temas e snippets de um catálogo ou de um arquivo <code>.zip</code>.</li>
+<li><strong>Linux e macOS:</strong> pacote com Java embarcado.</li>
+<li><strong>Snippets e modelos da equipe:</strong> um arquivo no projeto, versionado no Git, soma os snippets da equipe aos seus, com variáveis perguntadas na hora. Botão direito numa pasta &gt; <strong>Novo a partir de modelo</strong> cria controller, service, DAO ou tela com o pacote certo.</li>
+<li><strong>Perfis de execução no WildFly:</strong> a IDE cria o datasource Oracle e os módulos no <code>standalone.xml</code> do projeto e permite escolher outro arquivo de configuração.</li>
+<li><strong>Gerar teste JUnit:</strong> cria a classe de teste com um teste por método público e mocks dos campos injetados (JUnit 5 ou 4 e Mockito).</li>
+<li><strong>Cobertura de testes no editor:</strong> as linhas aparecem em verde (coberta), amarelo (parcial) e vermelho (sem teste), com o percentual do arquivo na barra de status.</li>
+<li><strong>Formatador e lint de SQL da equipe:</strong> estilo do Formatar SQL, tamanho máximo de linha e regras próprias, avisadas ao salvar.</li>
+<li><strong>Painel de logs:</strong> busca por nível, classe e horário nos logs antigos e alertas quando uma linha nova combina com um padrão.</li>
+<li><strong>Saúde das dependências:</strong> versões mais novas no Maven Central e vulnerabilidades conhecidas, com a gravidade e a versão que corrige.</li>
+<li><strong>Tarefas do Jira, Azure Boards ou GitHub Issues:</strong> lista seus cards, cria a branch pelo card e o commit já começa com a chave.</li>
+<li><strong>Canal de atualização:</strong> Estável ou Beta, e <strong>Voltar para a versão anterior</strong> com um clique.</li>
+<li><strong>Perfil de equipe por link:</strong> cada pessoa cola o link uma vez e as configurações da equipe chegam sozinhas.</li>
+<li><strong>Estatísticas de uso anônimas e opcionais</strong>, com <strong>Ver o que é enviado</strong>.</li>
+<li><strong>Ajuda &gt; O que mudou:</strong> as notas de todas as versões, no idioma da IDE, com seletor de versão.</li>
+<li><strong>Correções:</strong> detecção do JDK 8 sem erro quando não há JDK 8 instalado; blocos PL/SQL que começam com comentário voltam a rodar como PL/SQL; uma falha passageira ao ler uma senha guardada não a deixa mais vazia.</li>
+</ul>
 <h2 id="v1-0-5-rc">1.0.5-RC</h2>
 <p><strong>Instalador mais leve e ícone novo em todo lugar.</strong></p>
 <ul>
@@ -156,8 +182,8 @@
     </div>
   </footer>
 
-  <script src="config.js?v=1.0.5-4"></script>
-  <script src="i18n.js?v=1.0.5-4"></script>
-  <script src="main.js?v=1.0.5-4"></script>
+  <script src="config.js?v=1.0.6-1"></script>
+  <script src="i18n.js?v=1.0.6-1"></script>
+  <script src="main.js?v=1.0.6-1"></script>
 </body>
 </html>

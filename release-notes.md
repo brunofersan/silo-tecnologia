@@ -1,11 +1,11 @@
 # Silo IDE: notas de versão
 
-**Versão disponível para download:** 1.0.5-RC (Windows 10 e 11, 64 bits)
+**Versão disponível para download:** 1.0.6-RC (Windows 10 e 11, 64 bits)
 
 | Arquivo | Tamanho | Uso |
 |---|---|---|
-| `SiloIDE-1.0.5-RC-setup.exe` | 226 MB | Instalador (não precisa de administrador) |
-| `SiloIDE-1.0.5-RC-portable.zip` | 238 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
+| `SiloIDE-1.0.6-RC-setup.exe` | 226 MB | Instalador (não precisa de administrador) |
+| `SiloIDE-1.0.6-RC-portable.zip` | 239 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
 Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**.
 
