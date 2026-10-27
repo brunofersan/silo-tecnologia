@@ -107,7 +107,9 @@ window.SILO_I18N = {
     "ct.d": "¿Dudas, sugerencias, problemas o interés en usar Silo IDE en tu equipo o empresa? Escríbenos por el formulario y responderemos a tu correo.",
     "fm.name": "Nombre", "fm.email": "Tu correo", "fm.topic": "Asunto", "fm.t1": "Duda", "fm.t2": "Problema en el IDE", "fm.t3": "Instalación", "fm.t4": "Uso en equipo o empresa", "fm.t5": "Sugerencia", "fm.version": "Versión de Silo IDE (opcional)", "fm.msg": "Mensaje", "fm.send": "Enviar mensaje",
     "ct.soon": "Formulario de soporte próximamente. Mientras tanto, la ayuda completa está dentro del IDE, en el menú Ayuda.",
-    "ft.rights": "Todos los derechos reservados."
+    "ft.rights": "Todos los derechos reservados.",
+    "ft.terms": "Términos de uso",
+    "dl.terms": "Al descargar, aceptas los"
   },
   en: {
     "nav.features": "Features",
@@ -217,6 +219,8 @@ window.SILO_I18N = {
     "ct.d": "Questions, suggestions, problems or interested in using Silo IDE in your team or company? Write to us using the form and we will reply by e-mail.",
     "fm.name": "Name", "fm.email": "Your e-mail", "fm.topic": "Subject", "fm.t1": "Question", "fm.t2": "Problem in the IDE", "fm.t3": "Installation", "fm.t4": "Use in a team or company", "fm.t5": "Suggestion", "fm.version": "Silo IDE version (optional)", "fm.msg": "Message", "fm.send": "Send message",
     "ct.soon": "Support form coming soon. Meanwhile, full help is inside the IDE, in the Help menu.",
-    "ft.rights": "All rights reserved."
+    "ft.rights": "All rights reserved.",
+    "ft.terms": "Terms of use",
+    "dl.terms": "By downloading, you agree to the"
   }
 };
