@@ -79,6 +79,7 @@ p { margin: 0 0 1em; }
 .btn-primary { background: var(--grad); color: #fff; box-shadow: 0 8px 22px rgba(37, 99, 235, .3); }
 .btn-ghost { border-color: var(--line); color: var(--ink); }
 .btn-light { background: #fff; color: #0f3d73; }
+.btn-outline-light { border-color: rgba(255, 255, 255, .35); color: #fff; }
 .btn.is-disabled { opacity: .55; cursor: not-allowed; transform: none; box-shadow: none; }
 
 /* Hero */
@@ -181,6 +182,7 @@ p { margin: 0 0 1em; }
 .download { background: #0f172a; color: #fff; padding: 48px 0; }
 .download-inner { display: flex; align-items: center; gap: 28px; }
 .download-inner > div { flex: 1; }
+.download-inner .btn { flex-shrink: 0; }
 .download h2 { margin-bottom: 4px; }
 .download p { margin: 0; color: #a9b8cf; }
 .download .note { margin-top: 6px; color: #fcd34d; }

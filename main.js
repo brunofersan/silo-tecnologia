@@ -26,6 +26,15 @@
   });
   if (!url) document.querySelectorAll(".js-dl-note").forEach(function (n) { n.hidden = false; });
 
+  var portable = (cfg.PORTABLE_URL || "").trim();
+  if (portable) {
+    document.querySelectorAll(".js-portable").forEach(function (a) {
+      a.href = portable;
+      a.rel = "noopener";
+      a.hidden = false;
+    });
+  }
+
   var support = (cfg.SUPPORT_CONTACT || "").trim();
   if (support) {
     var link = document.querySelector(".js-support");

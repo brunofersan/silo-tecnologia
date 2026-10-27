@@ -7,6 +7,7 @@ Site estático do Silo IDE (HTML, CSS e JS puros), publicado pelo GitHub Pages.
 Edite **apenas** `config.js`:
 
 - `DOWNLOAD_URL`: link público do instalador (Google Drive com "Qualquer pessoa com o link" ou anexo de um GitHub Release). Vazio = botão desativado com aviso "em breve".
+- `PORTABLE_URL`: link da versão portátil (vazio = botão escondido).
 - `VERSION`, `INSTALLER_SIZE`, `RELEASE_DATE`.
 - `SUPPORT_CONTACT`: e-mail ou página do suporte (nunca um e-mail pessoal).
 

@@ -55,7 +55,7 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               <span data-i18n="cta.download">Baixar para Windows</span>
             </a>
-            <a class="btn btn-ghost" href="#recursos" data-i18n="cta.features">Ver recursos</a>
+            <a class="btn btn-ghost js-portable" href="#download" hidden data-i18n="cta.portable">Versão portátil</a>
           </div>
           <p class="meta"><span data-i18n="meta.version">Versão</span> <span class="js-version">1.0.4-RC</span> · <span data-i18n="meta.os">Windows 10/11 de 64 bits</span> · <span class="js-size">343 MB</span></p>
         </div>
@@ -200,6 +200,7 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span data-i18n="cta.download">Baixar para Windows</span>
         </a>
+        <a class="btn btn-outline-light js-portable" href="#download" hidden data-i18n="cta.portable">Versão portátil</a>
       </div>
     </section>
 
@@ -210,6 +211,7 @@
       </header>
       <details><summary data-i18n="q1">O que significa “RC” na versão?</summary><p data-i18n="a1">Release Candidate: uma versão candidata, completa e estável para uso, que ainda recebe ajustes finos antes da versão final.</p></details>
       <details><summary data-i18n="q2">Preciso instalar o Java antes?</summary><p data-i18n="a2">Não. O ambiente Java da IDE já vem no instalador. Para compilar seus projetos, você aponta nas configurações o JDK que cada projeto usa.</p></details>
+      <details><summary data-i18n="q9">Qual a diferença entre o instalador e a versão portátil?</summary><p data-i18n="a9">O instalador coloca o Silo IDE no menu Iniciar e é o caminho recomendado. A versão portátil vem em uma pasta pronta para usar: basta extrair e abrir, sem instalar, ideal para máquinas sem permissão de administrador.</p></details>
       <details><summary data-i18n="q3">Funciona em macOS ou Linux?</summary><p data-i18n="a3">Por enquanto o instalador é apenas para Windows de 64 bits.</p></details>
       <details><summary data-i18n="q4">Quais bancos de dados posso acessar?</summary><p data-i18n="a4">Bancos com driver JDBC, como Oracle, PostgreSQL, SQL Server e MySQL. Você cadastra as conexões uma vez e alterna entre elas pela aba Banco.</p></details>
       <details><summary data-i18n="q5">Por que o Windows mostra um aviso ao instalar?</summary><p data-i18n="a5">O SmartScreen avisa sobre programas recém-lançados que ainda têm poucos downloads. Baixe sempre por este site, clique em “Mais informações” e em “Executar assim mesmo”.</p></details>
