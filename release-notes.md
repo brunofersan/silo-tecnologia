@@ -11,6 +11,33 @@ Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o p
 
 ---
 
+## 1.0.6-RC
+
+**Assistente de IA, Docker, revisão de pull request, Linux e macOS e mais 20 novidades.**
+
+- **Assistente de IA no editor:** explica erros, sugere correções, gera testes e responde perguntas sobre o código aberto, com a sua própria chave da Anthropic.
+- **Comparar esquemas de banco:** compara tabelas, colunas, índices e PL/SQL de duas conexões e gera o script de diferença.
+- **Docker Compose:** sobe, para, reinicia e derruba os serviços do projeto, com os logs, num clique.
+- **Pull requests do GitHub dentro da IDE:** arquivos com diff, CI e conversa; comente, aprove ou peça mudanças sem sair do editor.
+- **Gravação da depuração:** cada parada guarda pilha e variáveis num arquivo que o colega abre e percorre.
+- **Profiler leve:** CPU por método e memória por classe da aplicação no ar, sem reiniciar.
+- **Pareamento:** o colega acompanha seu editor pelo navegador, em tempo real.
+- **Extensões:** temas e snippets de um catálogo ou de um arquivo `.zip`.
+- **Linux e macOS:** pacote com Java embarcado.
+- **Snippets e modelos da equipe:** um arquivo no projeto, versionado no Git, soma os snippets da equipe aos seus, com variáveis perguntadas na hora. Botão direito numa pasta > **Novo a partir de modelo** cria controller, service, DAO ou tela com o pacote certo.
+- **Perfis de execução no WildFly:** a IDE cria o datasource Oracle e os módulos no `standalone.xml` do projeto e permite escolher outro arquivo de configuração.
+- **Gerar teste JUnit:** cria a classe de teste com um teste por método público e mocks dos campos injetados (JUnit 5 ou 4 e Mockito).
+- **Cobertura de testes no editor:** as linhas aparecem em verde (coberta), amarelo (parcial) e vermelho (sem teste), com o percentual do arquivo na barra de status.
+- **Formatador e lint de SQL da equipe:** estilo do Formatar SQL, tamanho máximo de linha e regras próprias, avisadas ao salvar.
+- **Painel de logs:** busca por nível, classe e horário nos logs antigos e alertas quando uma linha nova combina com um padrão.
+- **Saúde das dependências:** versões mais novas no Maven Central e vulnerabilidades conhecidas, com a gravidade e a versão que corrige.
+- **Tarefas do Jira, Azure Boards ou GitHub Issues:** lista seus cards, cria a branch pelo card e o commit já começa com a chave.
+- **Canal de atualização:** Estável ou Beta, e **Voltar para a versão anterior** com um clique.
+- **Perfil de equipe por link:** cada pessoa cola o link uma vez e as configurações da equipe chegam sozinhas.
+- **Estatísticas de uso anônimas e opcionais**, com **Ver o que é enviado**.
+- **Ajuda > O que mudou:** as notas de todas as versões, no idioma da IDE, com seletor de versão.
+- **Correções:** detecção do JDK 8 sem erro quando não há JDK 8 instalado; blocos PL/SQL que começam com comentário voltam a rodar como PL/SQL; uma falha passageira ao ler uma senha guardada não a deixa mais vazia.
+
 ## 1.0.5-RC
 
 **Instalador mais leve e ícone novo em todo lugar.**
