@@ -278,3 +278,6 @@ details p { padding: 0 20px 16px; margin: 0; color: var(--muted); }
 .release-notes th { color: var(--muted); font-size: .85rem; }
 .release-notes hr { border: 0; }
 @media (prefers-color-scheme: dark) { .release-notes h2 + p strong { color: #3fd0c9; } }
+.meta-link { color: var(--blue); font-weight: 600; text-decoration: none; }
+.meta-link:hover { text-decoration: underline; }
+@media (prefers-color-scheme: dark) { .meta-link { color: #7dd3fc; } }
