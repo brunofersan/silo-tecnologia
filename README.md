@@ -4,7 +4,7 @@ Site estático do Silo IDE (HTML, CSS e JS puros), publicado pelo GitHub Pages.
 
 ## Para cada nova versão
 
-Edite **apenas** `config.js`:
+Edite **apenas** `config.js` (e, se o navegador mostrar a versão antiga, aumente o `?v=` dos scripts no `index.html`):
 
 - `DOWNLOAD_URL`: link público do instalador (Google Drive com "Qualquer pessoa com o link" ou anexo de um GitHub Release). Vazio = botão desativado com aviso "em breve".
 - `PORTABLE_URL`: link da versão portátil (vazio = botão escondido).
