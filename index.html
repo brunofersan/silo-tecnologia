@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Silo IDE | Silo Tecnologia</title>
+  <meta name="description" content="Silo IDE: uma única IDE leve e de alta performance para desenvolver em várias linguagens, acessar bancos de dados, testar APIs e rodar aplicações em servidores embarcados.">
+  <meta property="og:title" content="Silo IDE | Silo Tecnologia">
+  <meta property="og:description" content="Várias linguagens, cliente de banco de dados, testes de API e aplicações embarcadas, tudo numa única IDE leve e rápida.">
+  <meta property="og:image" content="assets/assinatura.png">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#inicio" aria-label="Silo Tecnologia">
+        <img src="assets/marca.png" alt="" width="36" height="36">
+        <span><strong>Silo</strong> Tecnologia</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#recursos" data-i18n="nav.features">Recursos</a>
+        <a href="#requisitos" data-i18n="nav.requirements">Requisitos</a>
+        <a href="#instalacao" data-i18n="nav.install">Instalação</a>
+        <a href="#faq" data-i18n="nav.faq">Perguntas</a>
+        <a href="#contato" data-i18n="nav.contact">Contato</a>
+      </nav>
+      <div class="topbar-actions">
+        <div class="lang" role="group" aria-label="Idioma">
+          <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span> <span data-i18n="hero.badge">Nova versão</span> <span class="js-version">1.0.4-RC</span></p>
+          <h1 data-i18n="hero.title">Tudo o que você usa para desenvolver, numa única IDE leve e rápida.</h1>
+          <p class="lead" data-i18n="hero.lead">O Silo IDE reúne editor para várias linguagens, cliente de banco de dados, testes de API e servidores de aplicação embarcados. Menos janelas abertas, menos memória consumida e mais tempo escrevendo código.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary js-download" href="#download">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="cta.download">Baixar para Windows</span>
+            </a>
+            <a class="btn btn-ghost" href="#recursos" data-i18n="cta.features">Ver recursos</a>
+          </div>
+          <p class="meta"><span data-i18n="meta.version">Versão</span> <span class="js-version">1.0.4-RC</span> · <span data-i18n="meta.os">Windows 10/11 de 64 bits</span> · <span class="js-size">343 MB</span></p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i><span>Silo IDE</span></div>
+            <div class="window-body">
+              <aside class="side">
+                <b>PROJETOS</b>
+                <p class="on">▾ loja-api</p>
+                <p>&nbsp;&nbsp;▸ src/main/java</p>
+                <p>&nbsp;&nbsp;▸ src/main/resources</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;pom.xml</p>
+                <p>▸ painel-web</p>
+                <b>BANCO</b>
+                <p>▸ produção (leitura)</p>
+                <p>▸ homologação</p>
+              </aside>
+              <div class="code">
+                <div class="tabs"><span class="on">PedidoService.java</span><span>pedidos.sql</span><span>POST /pedidos</span></div>
+<pre><span class="k">@Service</span>
+<span class="k">public class</span> <span class="t">PedidoService</span> {
+
+  <span class="k">private final</span> <span class="t">PedidoRepository</span> repo;
+
+  <span class="k">public</span> <span class="t">Pedido</span> <span class="f">criar</span>(<span class="t">NovoPedido</span> dto) {
+    <span class="t">Pedido</span> p = <span class="t">Pedido</span>.<span class="f">de</span>(dto);
+    <span class="k">return</span> repo.<span class="f">save</span>(p);
+  }
+}</pre>
+                <div class="status"><span class="ok">●</span> Tomcat 9 · <span>8080</span> <em>Compilado ao salvar · 0 problemas</em></div>
+              </div>
+            </div>
+          </div>
+          <div class="float-card mem"><small data-i18n="hero.mem">Memória</small><strong data-i18n="hero.memv">Baixo consumo</strong><div class="bar"><span></span></div></div>
+          <div class="float-card api"><small>POST /pedidos</small><strong class="ok">201 Created</strong><em>38 ms</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pillars wrap" aria-label="Pilares">
+      <article class="pillar">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+        <h3 data-i18n="p1.t">Várias linguagens</h3>
+        <p data-i18n="p1.d">Java, TypeScript, JavaScript, HTML, CSS/SCSS, SQL, XML, JSON e YAML com realce, autocompletar e navegação pelo código.</p>
+      </article>
+      <article class="pillar">
+        <div class="ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8v-13M4.5 12c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8"/></svg></div>
+        <h3 data-i18n="p2.t">Cliente de banco de dados</h3>
+        <p data-i18n="p2.d">Conecte, navegue por tabelas, rode consultas e valide seus scripts sem abrir outra ferramenta.</p>
+      </article>
+      <article class="pillar">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 12h6l2-5 3 10 2-5h3"/></svg></div>
+        <h3 data-i18n="p3.t">Testes de API</h3>
+        <p data-i18n="p3.d">Monte e envie requisições REST e veja status, tempo e corpo da resposta lado a lado com o código.</p>
+      </article>
+      <article class="pillar">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg></div>
+        <h3 data-i18n="p4.t">Aplicações embarcadas</h3>
+        <p data-i18n="p4.d">Suba suas aplicações em Tomcat e WildFly embarcados, com deploy, logs e depuração na mesma janela.</p>
+      </article>
+    </section>
+
+    <section class="perf">
+      <div class="wrap perf-grid">
+        <div>
+          <h2 data-i18n="perf.t">Leve de verdade. Rápido de verdade.</h2>
+          <p data-i18n="perf.d">Em vez de manter uma IDE, um cliente de banco, uma ferramenta de API e um terminal abertos ao mesmo tempo, você usa um único processo otimizado. O resultado é menos memória, menos troca de janelas e uma máquina que continua responsiva durante o build.</p>
+        </div>
+        <ul class="stats">
+          <li><strong>1</strong><span data-i18n="perf.s1">janela no lugar de quatro ferramentas</span></li>
+          <li><strong>3</strong><span data-i18n="perf.s2">idiomas: português, espanhol e inglês</span></li>
+          <li><strong data-i18n="perf.s3v">Ao salvar</strong><span data-i18n="perf.s3">compilação Java incremental, sem esperar o build</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="recursos" class="section wrap">
+      <header class="section-head">
+        <p class="kicker" data-i18n="feat.k">Recursos</p>
+        <h2 data-i18n="feat.t">Feito para o dia a dia de quem desenvolve</h2>
+      </header>
+      <div class="grid">
+        <div class="card"><h3 data-i18n="f1.t">Editor Java com compilação ao salvar</h3><p data-i18n="f1.d">Erros aparecem enquanto você trabalha. Autocompletar, ir para definição, hierarquia de chamadas e refatoração.</p></div>
+        <div class="card"><h3 data-i18n="f2.t">Depuração integrada</h3><p data-i18n="f2.d">Pontos de parada, inspeção de variáveis e execução passo a passo direto no servidor que está rodando.</p></div>
+        <div class="card"><h3 data-i18n="f3.t">Git integrado</h3><p data-i18n="f3.d">Stage, commit, branches, histórico e comparação de revisões lado a lado, sem sair do editor.</p></div>
+        <div class="card"><h3 data-i18n="f4.t">Maven e Gradle</h3><p data-i18n="f4.d">Importe projetos, rode tarefas e acompanhe o build no console com um clique.</p></div>
+        <div class="card"><h3 data-i18n="f5.t">Tomcat e WildFly</h3><p data-i18n="f5.d">Configure servidores, publique módulos e reinicie apenas o que mudou.</p></div>
+        <div class="card"><h3 data-i18n="f6.t">Angular e Spring Boot</h3><p data-i18n="f6.d">Suba front-end e serviços juntos, com logs separados por aplicação.</p></div>
+        <div class="card"><h3 data-i18n="f7.t">Validador de banco de dados</h3><p data-i18n="f7.d">Analise scripts SQL e encontre problemas antes de chegarem ao ambiente de produção.</p></div>
+        <div class="card"><h3 data-i18n="f8.t">Português, espanhol e inglês</h3><p data-i18n="f8.d">Interface e ajuda completas nos três idiomas, trocados a qualquer momento.</p></div>
+        <div class="card"><h3 data-i18n="f9.t">Temas claro, escuro e alto contraste</h3><p data-i18n="f9.d">Cores e fontes do editor ajustáveis. O layout das janelas é lembrado entre sessões.</p></div>
+        <div class="card"><h3 data-i18n="f10.t">Atualização automática</h3><p data-i18n="f10.d">A IDE avisa quando há versão nova e se atualiza sozinha, mantendo suas configurações.</p></div>
+        <div class="card"><h3 data-i18n="f11.t">Configurações portáteis</h3><p data-i18n="f11.d">Exporte e importe suas preferências para preparar uma nova máquina ou padronizar a equipe.</p></div>
+        <div class="card"><h3 data-i18n="f12.t">Console, busca e problemas</h3><p data-i18n="f12.d">Terminal, busca global, lista de problemas e histórico local de arquivos sempre à mão.</p></div>
+      </div>
+    </section>
+
+    <section id="requisitos" class="section alt">
+      <div class="wrap two-col">
+        <div>
+          <p class="kicker" data-i18n="req.k">Requisitos</p>
+          <h2 data-i18n="req.t">O que você precisa</h2>
+          <p class="muted" data-i18n="req.d">O instalador já traz o ambiente Java que a IDE usa. Você não precisa instalar nada antes.</p>
+        </div>
+        <table class="req">
+          <tbody>
+            <tr><th data-i18n="req.os">Sistema</th><td data-i18n="req.osv">Windows 10 ou 11, 64 bits</td></tr>
+            <tr><th data-i18n="req.ram">Memória</th><td data-i18n="req.ramv">4 GB mínimo, 8 GB recomendado</td></tr>
+            <tr><th data-i18n="req.disk">Disco</th><td data-i18n="req.diskv">1,5 GB livres</td></tr>
+            <tr><th data-i18n="req.java">Java</th><td data-i18n="req.javav">Incluído no instalador</td></tr>
+            <tr><th data-i18n="req.net">Internet</th><td data-i18n="req.netv">Opcional; usada para atualizações e dependências Maven/Gradle</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="instalacao" class="section wrap">
+      <header class="section-head">
+        <p class="kicker" data-i18n="ins.k">Instalação</p>
+        <h2 data-i18n="ins.t">Pronto em poucos minutos</h2>
+      </header>
+      <ol class="steps">
+        <li><h3 data-i18n="s1.t">Baixe o instalador</h3><p data-i18n="s1.d">Clique em “Baixar para Windows”. O arquivo tem cerca de 343 MB.</p></li>
+        <li><h3 data-i18n="s2.t">Execute o arquivo</h3><p data-i18n="s2.d">Dê dois cliques no instalador. Se o Windows exibir “O Windows protegeu o computador”, clique em “Mais informações” e depois em “Executar assim mesmo”.</p></li>
+        <li><h3 data-i18n="s3.t">Siga o assistente</h3><p data-i18n="s3.d">Aceite a licença, confirme a pasta de instalação e conclua. Ao final, o Silo IDE aparece no menu Iniciar.</p></li>
+        <li><h3 data-i18n="s4.t">Abra e configure</h3><p data-i18n="s4.d">Na primeira execução, escolha o idioma e o tema, informe a pasta dos seus projetos e, se quiser, cadastre suas conexões de banco.</p></li>
+        <li><h3 data-i18n="s5.t">Mantenha atualizado</h3><p data-i18n="s5.d">Quando sair uma versão nova, a IDE avisa. Basta confirmar para atualizar, sem reinstalar.</p></li>
+      </ol>
+    </section>
+
+    <section id="download" class="download">
+      <div class="wrap download-inner">
+        <img src="assets/marca.png" alt="" width="88" height="88">
+        <div>
+          <h2 data-i18n="dl.t">Baixe o Silo IDE</h2>
+          <p><span data-i18n="meta.version">Versão</span> <span class="js-version">1.0.4-RC</span> · <span data-i18n="meta.os">Windows 10/11 de 64 bits</span> · <span class="js-size">343 MB</span></p>
+          <p class="note js-dl-note" hidden data-i18n="dl.soon">O link de download será liberado em breve.</p>
+        </div>
+        <a class="btn btn-light js-download" href="#download">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="cta.download">Baixar para Windows</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="faq" class="section wrap narrow">
+      <header class="section-head">
+        <p class="kicker" data-i18n="faq.k">Perguntas frequentes</p>
+        <h2 data-i18n="faq.t">Dúvidas comuns</h2>
+      </header>
+      <details><summary data-i18n="q1">O que significa “RC” na versão?</summary><p data-i18n="a1">Release Candidate: uma versão candidata, completa e estável para uso, que ainda recebe ajustes finos antes da versão final.</p></details>
+      <details><summary data-i18n="q2">Preciso instalar o Java antes?</summary><p data-i18n="a2">Não. O ambiente Java da IDE já vem no instalador. Para compilar seus projetos, você aponta nas configurações o JDK que cada projeto usa.</p></details>
+      <details><summary data-i18n="q3">Funciona em macOS ou Linux?</summary><p data-i18n="a3">Por enquanto o instalador é apenas para Windows de 64 bits.</p></details>
+      <details><summary data-i18n="q4">Quais bancos de dados posso acessar?</summary><p data-i18n="a4">Bancos com driver JDBC, como Oracle, PostgreSQL, SQL Server e MySQL. Você cadastra as conexões uma vez e alterna entre elas pela aba Banco.</p></details>
+      <details><summary data-i18n="q5">Por que o Windows mostra um aviso ao instalar?</summary><p data-i18n="a5">O SmartScreen avisa sobre programas recém-lançados que ainda têm poucos downloads. Baixe sempre por este site, clique em “Mais informações” e em “Executar assim mesmo”.</p></details>
+      <details><summary data-i18n="q6">Como recebo novas versões?</summary><p data-i18n="a6">A atualização é automática: a IDE verifica ao iniciar e oferece a nova versão. Suas configurações e projetos são mantidos.</p></details>
+      <details><summary data-i18n="q7">Posso levar minhas configurações para outro computador?</summary><p data-i18n="a7">Sim. Use exportar configurações na máquina atual e importar na nova.</p></details>
+      <details><summary data-i18n="q8">Como faço para desinstalar?</summary><p data-i18n="a8">Pelo Windows, em Configurações › Aplicativos, como qualquer outro programa.</p></details>
+    </section>
+
+    <section id="contato" class="section alt">
+      <div class="wrap contact">
+        <div>
+          <p class="kicker" data-i18n="ct.k">Contato</p>
+          <h2 data-i18n="ct.t">Fale com o suporte</h2>
+          <p class="muted" data-i18n="ct.d">Dúvidas, sugestões, problemas ou interesse em licenças para a sua equipe ou empresa? Fale com o suporte da Silo Tecnologia.</p>
+        </div>
+        <div class="contact-box">
+          <a class="btn btn-primary js-support" href="#contato" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <span data-i18n="ct.btn">Falar com o suporte</span>
+          </a>
+          <p class="muted js-support-soon" data-i18n="ct.soon">Canal de suporte em breve. Enquanto isso, a ajuda completa está dentro da IDE, no menu Ajuda.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <img src="assets/marca.png" alt="" width="28" height="28">
+      <span>© <span class="js-year">2026</span> Silo Tecnologia. <span data-i18n="ft.rights">Todos os direitos reservados.</span></span>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
