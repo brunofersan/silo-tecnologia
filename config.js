@@ -6,9 +6,9 @@
 //  Enquanto DOWNLOAD_URL estiver vazio, o botão mostra "em breve".
 // =====================================================================
 window.SILO_CONFIG = {
-  DOWNLOAD_URL: "https://drive.google.com/file/d/1HN9irh1pBYvJNIKQ4_j9wE-unnl_ExXy/view?usp=sharing",
+  DOWNLOAD_URL: "https://drive.google.com/file/d/1tyBJPprJOJ64N-0jrOOA9QyTY1RD1Il_/view?usp=sharing",
   // Versão portátil (sem instalação). Vazio = botão some.
-  PORTABLE_URL: "https://drive.google.com/file/d/1Oa-qnkByJ_Iv2-yvoEsrAxYWveYFkNj3/view?usp=sharing",
+  PORTABLE_URL: "https://drive.google.com/file/d/1WyRELNoar-D-NmkeKqglmx1kP3D92JRE/view?usp=sharing",
   VERSION: "1.0.5-RC",
   INSTALLER_SIZE: "226 MB",
   RELEASE_DATE: "2026-10-27",
