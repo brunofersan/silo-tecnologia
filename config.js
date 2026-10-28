@@ -14,16 +14,16 @@ window.SILO_CONFIG = {
       date: "2026-10-28",
       installerSize: "226 MB",
       portableSize: "239 MB",
-      installerUrl: "",
-      portableUrl: ""
+      installerUrl: "https://drive.google.com/file/d/1OJz9n1NA53R13v53TGdP-iYgAQwDLHNt/view?usp=sharing",
+      portableUrl: "https://drive.google.com/file/d/1tsNMYUPDltBN2QDufeQlCzxbRiBCQWA3/view?usp=sharing"
     },
     {
       version: "1.0.6-RC",
       date: "2026-10-27",
       installerSize: "226 MB",
       portableSize: "239 MB",
-      installerUrl: "",
-      portableUrl: ""
+      installerUrl: "https://drive.google.com/file/d/1aCF7XWOzU4QnTJb7PNANmm3BfGTP07Eb/view?usp=sharing",
+      portableUrl: "https://drive.google.com/file/d/16AHpFUNGDbkfcttaccJDLLTATzDkuxKn/view?usp=sharing"
     },
     {
       version: "1.0.5-RC",
