@@ -1,15 +1,29 @@
 # Silo IDE: notas de versão
 
-**Versão disponível para download:** 1.0.6-RC (Windows 10 e 11, 64 bits)
+**Versão disponível para download:** 1.1.0-RC (Windows 10 e 11, 64 bits)
 
 | Arquivo | Tamanho | Uso |
 |---|---|---|
-| `SiloIDE-1.0.6-RC-setup.exe` | 226 MB | Instalador (não precisa de administrador) |
-| `SiloIDE-1.0.6-RC-portable.zip` | 239 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
+| `SiloIDE-1.1.0-RC-setup.exe` | 226 MB | Instalador (não precisa de administrador) |
+| `SiloIDE-1.1.0-RC-portable.zip` | 239 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
 Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**.
 
 ---
+
+## 1.1.0-RC
+
+**Renomear em todo o projeto, vários cursores, monitor de SQL e mais 7 novidades.**
+
+- **Renomear em todo o projeto (Shift+F6):** classe, método ou campo em todos os arquivos do módulo, com prévia e escolha do que aplicar.
+- **Histórico local:** botão direito no arquivo aberto mostra as versões salvas nos últimos 30 dias, com comparação lado a lado e restauração, mesmo fora do Git.
+- **Stash e cherry-pick** no botão direito do projeto, junto com o painel **TODO e FIXME** com todas as pendências do código.
+- **Marcadores:** Ctrl+Alt+B marca a linha, Ctrl+Alt+N e Ctrl+Alt+Shift+N andam entre eles e Ctrl+Alt+Shift+B lista todos.
+- **Vários cursores:** Alt+clique, Alt+J para a próxima ocorrência e Alt+Shift+A para seleção em coluna.
+- **Mensagem de commit pela IA:** o botão ✨ **Sugerir mensagem** escreve a mensagem a partir das mudanças preparadas.
+- **Data Source > 🧰:** diagrama das tabelas com exportação em PNG, massa de dados de teste (CPF e CNPJ válidos) e monitor de SQL que avisa sobre consultas N+1 e lentas.
+- **Arquivo faltando no classpath:** o Log diz qual arquivo de configuração falta e onde colocá-lo.
+- **Desempenho:** mais rápido para digitar em arquivos grandes e com menos uso de memória no Log.
 
 ## 1.0.6-RC
 
