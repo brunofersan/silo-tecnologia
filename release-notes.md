@@ -1,15 +1,23 @@
 # Silo IDE: notas de versão
 
-**Versão disponível para download:** 1.2.0 (Windows 10 e 11, 64 bits)
+**Versão disponível para download:** 1.2.1 (Windows 10 e 11, 64 bits)
 
 | Arquivo | Tamanho | Uso |
 |---|---|---|
-| `SiloIDE-1.2.0-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
-| `SiloIDE-1.2.0-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
+| `SiloIDE-1.2.1-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
+| `SiloIDE-1.2.1-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
 Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**.
 
 ---
+
+## 1.2.1
+
+**Correções: diff de arquivos grandes, scripts com BOM e relatórios de erro.**
+
+- **Diff sem travar:** comparar arquivos grandes não estoura mais a memória nem congela a tela.
+- **Scripts com BOM:** compilar e validar no banco funciona com scripts salvos com BOM (antes dava ORA-00911).
+- **Relatórios de erro:** o envio automático por e-mail volta a funcionar e não se perde mais nas atualizações.
 
 ## 1.2.0
 

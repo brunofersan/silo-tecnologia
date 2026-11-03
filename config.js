@@ -10,6 +10,14 @@
 window.SILO_CONFIG = {
   VERSIONS: [
     {
+      version: "1.2.1",
+      date: "2026-11-03",
+      installerSize: "234 MB",
+      portableSize: "247 MB",
+      installerUrl: "https://drive.google.com/file/d/155BmsRGha7JFKbtG2jTU_df5Unx0qtHT/view?usp=sharing",
+      portableUrl: "https://drive.google.com/file/d/1qWY8Uj-5SMynPHFFqFX9GylEEHKaLdJe/view?usp=sharing"
+    },
+    {
       version: "1.2.0",
       date: "2026-11-03",
       installerSize: "234 MB",
