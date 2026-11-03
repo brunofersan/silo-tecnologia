@@ -1,15 +1,31 @@
 # Silo IDE: notas de versão
 
-**Versão disponível para download:** 1.1.0-RC (Windows 10 e 11, 64 bits)
+**Versão disponível para download:** 1.2.0 (Windows 10 e 11, 64 bits)
 
 | Arquivo | Tamanho | Uso |
 |---|---|---|
-| `SiloIDE-1.1.0-RC-setup.exe` | 226 MB | Instalador (não precisa de administrador) |
-| `SiloIDE-1.1.0-RC-portable.zip` | 239 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
+| `SiloIDE-1.2.0-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
+| `SiloIDE-1.2.0-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
 Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**.
 
 ---
+
+## 1.2.0
+
+**Breakpoints com condição e logpoint, terminal de verdade no Console, depurador PL/SQL e mais 13 novidades.**
+
+- **Breakpoints mais espertos:** condição, contagem de passagens, logpoint (escreve no Log sem parar) e breakpoint de exceção.
+- **Valores na linha:** parado no depurador, o editor mostra o valor das variáveis ao fim de cada linha.
+- **Nada se perde:** salvamento automático (Arquivo > Salvamento automático) e recuperação dos arquivos não salvos depois de uma queda.
+- **Buscar ação** (`Ctrl+3`): qualquer comando dos menus pelo nome ou pelas iniciais.
+- **Editor dividido** (`Ctrl+Alt+\`), **trilha pacote › classe › método** com cabeçalho fixo e **contagem de referências** em cada classe e método.
+- **Revisão do diff pela IA:** 🔍 Revisar com IA no Stage / Commit aponta problemas antes do commit.
+- **Rebase interativo visual** (botão direito no projeto): squash, fixup, reordenar, editar mensagem e descartar commits.
+- **Data Source > 🧰:** painel de migrações Flyway e Liquibase e depurador PL/SQL.
+- **Análise estática** (botão direito no projeto Maven): Checkstyle, PMD e SonarQube, com marcação no editor.
+- **Terminal de verdade no Console:** cores, Tab, setas e programas interativos como `claude` e `vim`.
+- **Correção:** Ctrl+C, Ctrl+X e Ctrl+V em todos os editores usam só texto puro e não dão mais erro no Java 25.
 
 ## 1.1.0-RC
 
