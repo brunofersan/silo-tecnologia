@@ -1,0 +1,45 @@
+{
+  "name": "Catálogo oficial do Silo IDE",
+  "extensions": [
+    {
+      "id": "silo-meia-noite",
+      "name": "Silo Meia-noite",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Tema escuro azul-marinho, com contraste suave para longas sessões.",
+      "author": "Silo Tecnologia",
+      "url": "https://brunofersan.github.io/silo-tecnologia/extensions/silo-meia-noite-1.0.0.zip",
+      "sha256": "c69ce15309ea250629ed61c91f8fdfe43e8757e9106f8254e295692f4e89adab"
+    },
+    {
+      "id": "silo-papel",
+      "name": "Silo Papel",
+      "version": "1.0.0",
+      "type": "theme",
+      "description": "Tema claro em tons de papel, bom para telas muito claras e apresentações.",
+      "author": "Silo Tecnologia",
+      "url": "https://brunofersan.github.io/silo-tecnologia/extensions/silo-papel-1.0.0.zip",
+      "sha256": "174e99080296ff4102ac0a5148c886603bc77c1ed01f923b77ffdc34853b7110"
+    },
+    {
+      "id": "silo-plsql-essencial",
+      "name": "PL/SQL essencial",
+      "version": "1.0.0",
+      "type": "snippets",
+      "description": "Cursor, BULK COLLECT, package, função, MERGE e log autônomo (Ctrl+Shift+J).",
+      "author": "Silo Tecnologia",
+      "url": "https://brunofersan.github.io/silo-tecnologia/extensions/silo-plsql-essencial-1.0.0.zip",
+      "sha256": "e472e008fd871c4fed4f14a768389a685b62f7c4affdd49057e5b615d882e07c"
+    },
+    {
+      "id": "silo-java-jdbc",
+      "name": "Java e JDBC",
+      "version": "1.0.0",
+      "type": "snippets",
+      "description": "CallableStatement para procedures e funções, PreparedStatement e transação.",
+      "author": "Silo Tecnologia",
+      "url": "https://brunofersan.github.io/silo-tecnologia/extensions/silo-java-jdbc-1.0.0.zip",
+      "sha256": "810cd8b58ed3914a7f7f9d30828609339cab819ce05270c78995d2fb303b90e5"
+    }
+  ]
+}

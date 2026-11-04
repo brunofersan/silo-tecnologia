@@ -7,9 +7,19 @@
 | `SiloIDE-1.2.1-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-1.2.1-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0 e a 1.3.1 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1 e a 1.3.2 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
 
 ---
+
+## 1.3.2
+
+**Navegação entre o Java e o PL/SQL, catálogos de extensões e barra mais limpa.**
+
+- **Java para PL/SQL:** Ctrl+clique (ou F3) no nome da package ou procedure dentro de uma string de chamada, como `prepareCall("{call PKG_PEDIDO.CALCULA(?)}")`, abre o fonte já na procedure ou função. Nas classes Java que só repassam a chamada para o banco, **Alt+F3** vai direto para o PL/SQL.
+- **De onde vem o fonte:** dos projetos de banco abertos no Silo IDE e, se não estiver neles, do banco conectado no Data Source.
+- **PL/SQL para Java:** num arquivo de package, F3 ou Ctrl+clique vai à definição e **Ctrl+Shift+G** (**Usos no Java**) lista todas as classes que chamam aquela package ou procedure.
+- **Extensões:** o campo **Catálogo** virou uma lista com o catálogo oficial do Silo IDE (temas e snippets publicados aqui no site) e os temas e snippets do VS Code do Open VSX, convertidos na instalação. Também dá para instalar um `.vsix` baixado.
+- **Visual:** **Aplicar configuração em todos** e **Abrir no navegador** ficaram só com o ícone; o nome aparece ao parar o mouse.
 
 ## 1.3.1
 
