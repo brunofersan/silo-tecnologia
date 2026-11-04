@@ -101,6 +101,12 @@
     en: { sending: "Sending...", ok: "Message sent. We will reply to the e-mail you provided.", fail: "Could not send right now. Please try again in a few minutes.", invalid: "Please fill in name, a valid e-mail and message." }
   };
   var form = document.getElementById("supportForm");
+  var assuntoParam = null;
+  try { assuntoParam = new URLSearchParams(location.search).get("assunto"); } catch (e) {}
+  if (form && assuntoParam) {
+    var sel = form.querySelector("select[name=assunto]");
+    if (sel && sel.querySelector('option[value="' + assuntoParam.replace(/"/g, "") + '"]')) sel.value = assuntoParam;
+  }
   var formKey = (cfg.FORM_ACCESS_KEY || "").trim();
   var statusEl = form && form.querySelector(".form-status");
   if (form && !formKey) {

@@ -18,3 +18,10 @@ O site fica em https://brunofersan.github.io/silo-tecnologia/.
 ## Idiomas
 
 Português no `index.html`; espanhol e inglês em `i18n.js` (mesmas chaves `data-i18n`).
+
+## Tomadinha
+
+`tomadinha.html` é a página "O que vem por aí" da Tomadinha, aberta pelo link do card em Produtos. Estilo próprio
+(cores da marca da Tomadinha) e textos em espanhol e inglês em `tomadinha.js`. O botão "Quero ser avisado" abre o
+formulário com o assunto Tomadinha (`index.html?assunto=Tomadinha#contato`). Quando o app for lançado, troque o
+selo "Lançamento em breve" e os botões pelos links das lojas.
