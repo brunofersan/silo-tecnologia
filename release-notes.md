@@ -7,9 +7,17 @@
 | `SiloIDE-1.2.1-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-1.2.1-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4 e a 1.2.5 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5 e a 1.3.0 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
 
 ---
+
+## 1.3.0
+
+**Suporte a Kotlin e Android para apps mobile.**
+
+- **Kotlin:** realce próprio, autocompletar com as funções, classes e constantes do projeto, os componentes e modifiers do Compose (o `import` entra sozinho) e os recursos `R.string`, `R.color`, `R.drawable`...
+- **XML do Android:** layouts e manifesto sugerem views, atributos `android:`, valores como `match_parent` e os recursos `@string/`, `@color/` e `@drawable/` do projeto.
+- **Navegação:** Ctrl+clique leva à declaração da função Kotlin ou do recurso no `strings.xml`, e Ctrl+O mostra a estrutura do arquivo Kotlin.
 
 ## 1.2.5
 
