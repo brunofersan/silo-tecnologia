@@ -7,9 +7,24 @@
 | `SiloIDE-1.2.1-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-1.2.1-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2 chega só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
 
 ---
+
+## 1.2.2
+
+**Simulador de celular, projetos em subpastas, Data Source mais compacto e mais 6 novidades.**
+
+- **Simulador de celular:** projetos Flutter, Expo, React Native, Ionic e Compose Multiplatform rodam numa janela com iPhone, Pixel, Galaxy ou iPad, com girar, voltar e recarregar. O botão 📱 abre o Tomcat local no tamanho do celular.
+- **Instalação em um clique:** o simulador instala o que falta (Android SDK, emulador, aparelho virtual, JDK 17, Node.js e Flutter) na pasta do usuário, sem Android Studio e sem administrador; o 🤖 roda o app no emulador do Android.
+- **Projetos em subpastas:** escanear e adicionar acham os projetos com `pom.xml` ou Gradle dentro de outras pastas, com a profundidade escolhida para cada pasta raiz.
+- **Data Source mais compacto:** barra só com ícones e o resto no menu 🧰.
+- **INSERT, UPDATE e MERGE:** gerados no script a partir do resultado, como no SQL Developer, usando a chave primária da tabela.
+- **Fixar e comparar resultados:** 📌 guarda o resultado numa aba e dois resultados fixados podem ser comparados lado a lado, com as diferenças destacadas.
+- **Visualizar Markdown:** arquivos `.md` têm a aba Visualizar, com as cores do tema.
+- **Iniciar, Depurar ou Publicar** num só combo com o botão ▶, e barra de progresso enquanto o Tomcat sobe.
+- **Histórico de busca** na Busca e no Localizar, guardado entre reinícios.
+- **Correções:** erro ao clicar no editor, margem de breakpoints sumindo em algumas resoluções, dicas piscando, paleta de Componentes sem tradução e logo sem nitidez.
 
 ## 1.2.1
 
