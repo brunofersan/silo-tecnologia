@@ -7,9 +7,15 @@
 | `SiloIDE-1.2.1-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-1.2.1-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3 e a 1.2.4 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4 e a 1.2.5 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
 
 ---
+
+## 1.2.5
+
+**Apps Spring Boot abrem pelo Tomcat mesmo quando ele roda em Java 8.**
+
+- **Sem erro 500 de versão do Java:** com um projeto em Java 8 e um app Spring Boot selecionados juntos, abrir o app pelo endereço do Tomcat dava erro 500 (UnsupportedClassVersionError). O proxy que a IDE coloca no Tomcat agora é compilado para Java 8 e funciona em qualquer versão do Java.
 
 ## 1.2.4
 

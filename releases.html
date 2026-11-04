@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=1.2.4-1">
+  <link rel="stylesheet" href="styles.css?v=1.2.5-1">
 </head>
 <body>
   <header class="topbar">
@@ -74,8 +74,13 @@
 </tr>
 </tbody>
 </table>
-<p>Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>. A 1.2.2, a 1.2.3 e a 1.2.4 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.</p>
+<p>Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>. A 1.2.2, a 1.2.3, a 1.2.4 e a 1.2.5 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.</p>
 <hr />
+<h2 id="v1-2-5">1.2.5</h2>
+<p><strong>Apps Spring Boot abrem pelo Tomcat mesmo quando ele roda em Java 8.</strong></p>
+<ul>
+<li><strong>Sem erro 500 de versão do Java:</strong> com um projeto em Java 8 e um app Spring Boot selecionados juntos, abrir o app pelo endereço do Tomcat dava erro 500 (UnsupportedClassVersionError). O proxy que a IDE coloca no Tomcat agora é compilado para Java 8 e funciona em qualquer versão do Java.</li>
+</ul>
 <h2 id="v1-2-4">1.2.4</h2>
 <p><strong>Iniciar o Tomcat confere o webapp antes de pular o build.</strong></p>
 <ul>
@@ -242,8 +247,8 @@
     </div>
   </footer>
 
-  <script src="config.js?v=1.2.4-1"></script>
-  <script src="i18n.js?v=1.2.4-1"></script>
-  <script src="main.js?v=1.2.4-1"></script>
+  <script src="config.js?v=1.2.5-1"></script>
+  <script src="i18n.js?v=1.2.5-1"></script>
+  <script src="main.js?v=1.2.5-1"></script>
 </body>
 </html>
