@@ -7,9 +7,16 @@
 | `SiloIDE-1.2.1-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-1.2.1-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2 chega só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2 e a 1.2.3 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
 
 ---
+
+## 1.2.3
+
+**Rodar no Android em um clique e salvar já atualiza o módulo publicado.**
+
+- **Rodar no Android em um clique:** a IDE resolve o Java 17, o Android SDK e a plataforma do projeto, abre o emulador, compila, instala e abre o app, mostrando cada etapa.
+- **Salvar e ver na hora:** salvar uma tela (ou outro `.xml`, `.properties`, `.js`) já atualiza o módulo publicado, sem publicar de novo.
 
 ## 1.2.2
 
