@@ -7,9 +7,15 @@
 | `SiloIDE-1.2.1-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-1.2.1-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2 e a 1.2.3 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3 e a 1.2.4 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
 
 ---
+
+## 1.2.4
+
+**Iniciar o Tomcat confere o webapp antes de pular o build.**
+
+- **Sem ClassNotFoundException por build incompleto:** ao subir o Tomcat, a IDE confere se os listeners, filtros e servlets do `web.xml` existem nas classes ou nos jars do `WEB-INF/lib`. Se faltar algum (build interrompido, feito pela metade ou com jars apagados), compila o projeto de novo em vez de pular o build, e o log diz qual classe falta e em qual pasta.
 
 ## 1.2.3
 
