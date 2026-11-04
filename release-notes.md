@@ -7,9 +7,22 @@
 | `SiloIDE-1.2.1-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-1.2.1-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5 e a 1.3.0 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0 e a 1.3.1 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
 
 ---
+
+## 1.3.1
+
+**Push confiável, ajuda com arquivo preso no Maven, Jira e mais atalhos no dia a dia.**
+
+- **Commit e push:** no primeiro push de uma branch o Silo IDE roda `git push --set-upstream origin <branch>` sozinho, confere a resposta do git e se a branch chegou mesmo no remoto. Se falhar, mostra a mensagem do git e o motivo provável em vez de dar o push como feito.
+- **Maven:** quando o `mvn clean` falha com "Failed to delete" porque um jar da pasta `target` está em uso (por exemplo pelo Tomcat ainda rodando a versão anterior), o Silo IDE mostra quem segura o arquivo, pergunta se pode parar o Tomcat e encerrar esses processos e roda o Maven de novo.
+- **Stack trace:** no Log e no Console, Ctrl+clique numa linha `at pacote.Classe.metodo(Arquivo.java:42)` abre o arquivo do projeto na linha.
+- **Trocar de branch:** com arquivos alterados, o Silo IDE pergunta antes se guarda num stash e troca, leva as alterações ou cancela, e oferece restaurar quando você volta.
+- **Jira:** em **Tarefas**, cole o ticket ou o link ou busque por texto; o Silo IDE mostra o resumo e o status, cria a branch com o nome do ticket e já começa a mensagem do commit com a chave.
+- **Blame da linha:** o rodapé mostra quem alterou por último a linha do cursor, quando e a mensagem do commit.
+- **Atualização:** o aviso de versão nova mostra as novidades dela antes de instalar.
+- **Visual:** ícones de configurações e ajuda do topo redesenhados, acompanhando o tema.
 
 ## 1.3.0
 
