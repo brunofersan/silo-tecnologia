@@ -7,9 +7,27 @@
 | `SiloIDE-1.2.1-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-1.2.1-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1 e a 1.3.2 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3 e a 1.3.4 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
+
+**Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 1.3.3 (139 MB), na página inicial em **Baixar para Mac**. Ele se atualiza sozinho para a 1.3.4 na primeira abertura.
 
 ---
+
+## 1.3.4
+
+**Silo IDE para macOS e Git Bash no Console.**
+
+- **macOS (chip Apple):** instalador `.dmg` e atualização automática. A janela usa a barra de título nativa do Mac, sem os botões do Windows (os ícones de configurações, ajuda e idioma ficam mais à direita), e os diálogos usam a moldura do sistema.
+- **Terminal no Console:** no macOS e no Linux a lista de shells ganhou o **Terminal**, que abre o zsh ou o bash do sistema na pasta escolhida.
+- **Git Bash no Windows:** o Console também encontra o Git Bash no Git que acompanha a IDE, quando o Git do computador não é encontrado.
+
+## 1.3.3
+
+**Breakpoint que não para agora explica o motivo.**
+
+- **Diagnóstico no Console:** ao conectar e a cada classe carregada, o depurador confere os breakpoints e escreve no Console (linhas `[debug]`) por que um deles não vai parar: classe que ainda não carregou no servidor, linha sem código, fonte diferente do que está rodando ou classe compilada sem informação de linhas.
+- **Linha sem código:** um breakpoint numa continuação de expressão ou anotação passa para a próxima linha com código, até 5 linhas abaixo, e o Console avisa qual.
+- **Falha ao conectar:** o motivo também aparece no Console, e não só na barra da aba Debug.
 
 ## 1.3.2
 
