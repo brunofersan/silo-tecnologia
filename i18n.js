@@ -1,6 +1,6 @@
 window.SILO_I18N = {
   es: {
-    "nav.donate": "Apoya", "dn.k": "Apoya", "dn.t": "Silo IDE es gratuito. Ayuda a mantenerlo.",
+    "nav.donate": "Apoya", "dn.pill": "♥ Apoya Silo IDE", "dn.k": "Apoya", "dn.t": "Silo IDE es gratuito. Ayuda a mantenerlo.",
     "dn.d": "Si el IDE te ayuda en tu día a día, una donación de cualquier valor ayuda a pagar el desarrollo y el mantenimiento. Donar es opcional: nada cambia en lo que recibes.",
     "dn.pix": "Copia la clave y haz el Pix en la app de tu banco.", "dn.copy": "Copiar clave", "dn.copied": "Clave copiada", "dn.other": "Otras formas de apoyar",
     "ft.privacy": "Privacidad",
@@ -131,7 +131,7 @@ window.SILO_I18N = {
     "dl.terms": "Al descargar, aceptas los"
   },
   en: {
-    "nav.donate": "Support", "dn.k": "Support", "dn.t": "Silo IDE is free. Help keep it going.",
+    "nav.donate": "Support", "dn.pill": "♥ Support Silo IDE", "dn.k": "Support", "dn.t": "Silo IDE is free. Help keep it going.",
     "dn.d": "If the IDE helps you every day, a donation of any amount helps pay for development and maintenance. Donating is optional: nothing changes in what you get.",
     "dn.pix": "Copy the key and make the Pix payment in your bank app.", "dn.copy": "Copy key", "dn.copied": "Key copied", "dn.other": "Other ways to support",
     "ft.privacy": "Privacy",

@@ -72,7 +72,7 @@
   var donateSection = document.getElementById("apoie");
   if (donateSection && (pixKey || donateLinks.length)) {
     donateSection.hidden = false;
-    document.querySelectorAll(".js-donate-nav").forEach(function (a) { a.hidden = false; });
+    document.querySelectorAll(".js-donate-nav, .js-donate-pill").forEach(function (a) { a.hidden = false; });
     var pixBox = donateSection.querySelector(".js-donate-pix");
     if (pixKey && pixBox) {
       pixBox.hidden = false;
