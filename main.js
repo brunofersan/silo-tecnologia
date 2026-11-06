@@ -126,61 +126,6 @@
     }
   }
 
-  var ads = cfg.ADS || {};
-  var adsClient = (ads.client || "").trim();
-  var consentBox = document.getElementById("consent");
-  var adsLoaded = false;
-  function adsChoice() { try { return localStorage.getItem("silo-ads"); } catch (e) { return null; } }
-  function saveAdsChoice(value) { try { localStorage.setItem("silo-ads", value); } catch (e) {} }
-  function loadAds() {
-    if (adsLoaded || !/^ca-pub-\d+$/.test(adsClient)) return;
-    adsLoaded = true;
-    var script = document.createElement("script");
-    script.async = true;
-    script.crossOrigin = "anonymous";
-    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + adsClient;
-    document.head.appendChild(script);
-    document.querySelectorAll(".ad-slot").forEach(function (slot) {
-      var id = ((ads.slots || {})[slot.getAttribute("data-ad")] || "").trim();
-      if (!/^\d+$/.test(id)) return;
-      var ins = document.createElement("ins");
-      ins.className = "adsbygoogle";
-      ins.style.display = "block";
-      ins.setAttribute("data-ad-client", adsClient);
-      ins.setAttribute("data-ad-slot", id);
-      ins.setAttribute("data-ad-format", "auto");
-      ins.setAttribute("data-full-width-responsive", "true");
-      slot.appendChild(ins);
-      slot.hidden = false;
-      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
-    });
-  }
-  if (/^ca-pub-\d+$/.test(adsClient)) {
-    document.querySelectorAll(".js-consent-open").forEach(function (a) {
-      a.hidden = false;
-      a.addEventListener("click", function (ev) {
-        ev.preventDefault();
-        if (consentBox) consentBox.hidden = false;
-      });
-    });
-    var choice = adsChoice();
-    if (ads.ownConsent === false || choice === "granted") loadAds();
-    else if (choice !== "denied" && consentBox) consentBox.hidden = false;
-    var accept = document.querySelector(".js-consent-accept");
-    var decline = document.querySelector(".js-consent-decline");
-    if (accept) accept.addEventListener("click", function () {
-      saveAdsChoice("granted");
-      if (consentBox) consentBox.hidden = true;
-      loadAds();
-    });
-    if (decline) decline.addEventListener("click", function () {
-      var hadAds = adsLoaded;
-      saveAdsChoice("denied");
-      if (consentBox) consentBox.hidden = true;
-      if (hadAds) location.reload();
-    });
-  }
-
   function t(key, fallback) {
     var d = dict[currentLang];
     return d && d[key] ? d[key] : fallback;

@@ -29,19 +29,9 @@ window.SILO_CONFIG = {
   //   pixHolder nome que aparece no app do banco ao pagar (opcional, ajuda a pessoa a conferir)
   //   links     outros meios, só https: [{ label: "PayPal", url: "https://www.paypal.com/..." }]
   DONATE: {
-    pixKey: "",
-    pixHolder: "",
-    links: []
-  },
-  // Anúncios do Google AdSense. Sem "client" nada é carregado nem aparece.
-  //   client      ID do editor, no formato ca-pub-0000000000000000
-  //   slots       ID de cada bloco de anúncio criado no AdSense: { middle: "...", bottom: "..." }
-  //   ownConsent  true: o aviso de cookies deste site decide se os anúncios carregam;
-  //               false: use só o aviso do próprio Google (AdSense > Privacidade e mensagens)
-  ADS: {
-    client: "",
-    slots: { middle: "", bottom: "" },
-    ownConsent: true
+    pixKey: "52a31425-6b1a-4553-bfa9-342bf99a7632",
+    pixHolder: "Bruno Ferreira dos Santos",
+    links: [{ label: "Mercado Pago", url: "https://link.mercadopago.com.br/doacaosilotech" }]
   },
   VERSIONS: [
     {

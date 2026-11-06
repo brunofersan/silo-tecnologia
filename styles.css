@@ -304,15 +304,3 @@ details p { padding: 0 20px 16px; margin: 0; color: var(--muted); }
 .pix-row code { flex: 1 1 220px; min-width: 0; padding: 10px 12px; border: 1px dashed var(--line); border-radius: 10px; background: var(--bg-alt); overflow-wrap: anywhere; font-size: .95rem; }
 .donate-links { display: flex; gap: 12px; flex-wrap: wrap; }
 .donate-card[hidden], .donate-links[hidden], #apoie[hidden], .js-pix-holder[hidden] { display: none; }
-
-/* ---------- publicidade ---------- */
-.ad-slot { width: min(1160px, 100% - 32px); margin: 32px auto; text-align: center; }
-.ad-slot[hidden] { display: none; }
-.ad-slot:has(ins[data-ad-status="unfilled"]) { display: none; }
-.ad-label { display: block; margin-bottom: 6px; color: var(--muted); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
-
-/* ---------- aviso de cookies dos anúncios ---------- */
-.consent { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 50; max-width: 760px; margin-inline: auto; display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center; padding: 16px 18px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
-.consent[hidden] { display: none; }
-.consent p { margin: 0; flex: 1 1 280px; font-size: .92rem; }
-.consent .btn { padding: 8px 16px; font-size: .9rem; }
