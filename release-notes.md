@@ -7,9 +7,18 @@
 | `SiloIDE-1.2.1-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-1.2.1-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3 e a 1.3.4 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4 e a 1.3.5 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
 
-**Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 1.3.3 (139 MB), na página inicial em **Baixar para Mac**. Ele se atualiza sozinho para a 1.3.4 na primeira abertura.
+**Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 1.3.3 (139 MB), na página inicial em **Baixar para Mac**. Ele se atualiza sozinho para a 1.3.5 na primeira abertura.
+
+---
+
+## 1.3.5
+
+**Uma janela só e busca de arquivos que aguenta código colado.**
+
+- **Uma única IDE aberta:** ao abrir o Silo IDE de novo, a janela que já está aberta vem para a frente, em vez de abrir uma segunda IDE.
+- **Busca de arquivos:** colar código no campo de busca (com chaves, parênteses ou colchetes) não gera mais erro. Só `*` e `?` valem como curingas; o resto é texto. A mesma regra vale para a busca de nomes no editor e para o filtro de arquivos da busca em texto.
 
 ---
 

@@ -24,38 +24,6 @@ window.SILO_CONFIG = {
       portableSize: "247 MB",
       installerUrl: "https://drive.google.com/file/d/155BmsRGha7JFKbtG2jTU_df5Unx0qtHT/view?usp=sharing",
       portableUrl: "https://drive.google.com/file/d/1qWY8Uj-5SMynPHFFqFX9GylEEHKaLdJe/view?usp=sharing"
-    },
-    {
-      version: "1.2.0",
-      date: "2026-11-03",
-      installerSize: "234 MB",
-      portableSize: "247 MB",
-      installerUrl: "https://drive.google.com/file/d/1zVHLY2g_1eYkFG52aE1HgK7vXrUURjF0/view?usp=sharing",
-      portableUrl: "https://drive.google.com/file/d/1RiEgza-P1dGkxamxgBjK-dB8kuE8MA8i/view?usp=sharing"
-    },
-    {
-      version: "1.1.0-RC",
-      date: "2026-10-28",
-      installerSize: "226 MB",
-      portableSize: "239 MB",
-      installerUrl: "https://drive.google.com/file/d/1OJz9n1NA53R13v53TGdP-iYgAQwDLHNt/view?usp=sharing",
-      portableUrl: "https://drive.google.com/file/d/1tsNMYUPDltBN2QDufeQlCzxbRiBCQWA3/view?usp=sharing"
-    },
-    {
-      version: "1.0.6-RC",
-      date: "2026-10-27",
-      installerSize: "226 MB",
-      portableSize: "239 MB",
-      installerUrl: "https://drive.google.com/file/d/1aCF7XWOzU4QnTJb7PNANmm3BfGTP07Eb/view?usp=sharing",
-      portableUrl: "https://drive.google.com/file/d/16AHpFUNGDbkfcttaccJDLLTATzDkuxKn/view?usp=sharing"
-    },
-    {
-      version: "1.0.5-RC",
-      date: "2026-10-27",
-      installerSize: "226 MB",
-      portableSize: "238 MB",
-      installerUrl: "https://drive.google.com/file/d/1tyBJPprJOJ64N-0jrOOA9QyTY1RD1Il_/view?usp=sharing",
-      portableUrl: "https://drive.google.com/file/d/1WyRELNoar-D-NmkeKqglmx1kP3D92JRE/view?usp=sharing"
     }
   ],
   // Chave de acesso do Web3Forms (https://web3forms.com). O formulário de

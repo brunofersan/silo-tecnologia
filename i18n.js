@@ -1,6 +1,6 @@
 window.SILO_I18N = {
   es: {
-    "nav.versions": "Versiones", "vs.k": "Versiones", "vs.t": "Elige la versión", "vs.d": "Recomendamos siempre la versión más reciente. Las anteriores siguen disponibles para quien las necesite.", "vs.h1": "Versión", "vs.h2": "Fecha", "vs.h3": "Instalador", "vs.h4": "Portátil", "vs.h5": "Notas", "vs.current": "actual", "vs.installer": "Instalador", "vs.portable": "Portátil", "vs.notes": "Qué cambió", "vs.soon": "próximamente", "vs.all": "Ver todas las notas de versión", "ft.releases": "Notas de versión",
+    "nav.versions": "Versiones", "vs.k": "Versiones", "vs.t": "Versión disponible", "vs.d": "Instala esta versión: las nuevas llegan por la actualización automática, al abrir el programa.", "vs.h1": "Versión", "vs.h2": "Fecha", "vs.h3": "Instalador", "vs.h4": "Portátil", "vs.h5": "Notas", "vs.current": "actual", "vs.installer": "Instalador", "vs.portable": "Portátil", "vs.notes": "Qué cambió", "vs.soon": "próximamente", "vs.all": "Ver todas las notas de versión", "ft.releases": "Notas de versión",
     "rn.k": "Notas de versión", "rn.t": "Qué cambió en cada versión", "rn.lang": "Las notas de versión están disponibles solo en portugués.", "rn.back": "Volver al sitio", "rn.loading": "Cargando notas de versión...", "rn.fail": "No fue posible cargar las notas de versión.",
     "nav.features": "Funciones",
     "nav.requirements": "Requisitos",
@@ -124,7 +124,7 @@ window.SILO_I18N = {
     "dl.terms": "Al descargar, aceptas los"
   },
   en: {
-    "nav.versions": "Versions", "vs.k": "Versions", "vs.t": "Choose a version", "vs.d": "We always recommend the latest version. Earlier ones remain available for anyone who needs them.", "vs.h1": "Version", "vs.h2": "Date", "vs.h3": "Installer", "vs.h4": "Portable", "vs.h5": "Notes", "vs.current": "current", "vs.installer": "Installer", "vs.portable": "Portable", "vs.notes": "What changed", "vs.soon": "coming soon", "vs.all": "See all release notes", "ft.releases": "Release notes",
+    "nav.versions": "Versions", "vs.k": "Versions", "vs.t": "Available version", "vs.d": "Install this version: newer ones arrive through automatic update when the program opens.", "vs.h1": "Version", "vs.h2": "Date", "vs.h3": "Installer", "vs.h4": "Portable", "vs.h5": "Notes", "vs.current": "current", "vs.installer": "Installer", "vs.portable": "Portable", "vs.notes": "What changed", "vs.soon": "coming soon", "vs.all": "See all release notes", "ft.releases": "Release notes",
     "rn.k": "Release notes", "rn.t": "What changed in each version", "rn.lang": "Release notes are available in Portuguese only.", "rn.back": "Back to site", "rn.loading": "Loading release notes...", "rn.fail": "Could not load the release notes.",
     "nav.features": "Features",
     "nav.requirements": "Requirements",
