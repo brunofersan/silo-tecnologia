@@ -13,10 +13,18 @@ window.SILO_CONFIG = {
   MAC: {
     version: "2.0.0",
     date: "2026-11-06",
-    size: "139 MB",
+    size: "138 MB",
     url: "https://drive.google.com/file/d/1H6_TBzAW7IjGo9a6QI4avdpQK3GQ3gfQ/view?usp=sharing"
   },
   VERSIONS: [
+    {
+      version: "2.0.0",
+      date: "2026-11-06",
+      installerSize: "235 MB",
+      portableSize: "247 MB",
+      installerUrl: "https://drive.google.com/file/d/1IO5zKZXGLwgwc6Rj_KcJggh9miMzwQCW/view?usp=sharing",
+      portableUrl: "https://drive.google.com/file/d/1k9Iqi7gamOGApqJlmgvBRkDHL8e5X_T-/view?usp=sharing"
+    },
     {
       version: "1.2.1",
       date: "2026-11-03",
