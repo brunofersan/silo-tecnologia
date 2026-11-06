@@ -11,7 +11,7 @@ window.SILO_CONFIG = {
   // Instalador do macOS (Apple Silicon), independente da lista de versões do Windows.
   // url vazio = o botão "Baixar para Mac" fica escondido.
   MAC: {
-    version: "1.3.3",
+    version: "2.0.0",
     date: "2026-11-06",
     size: "139 MB",
     url: "https://drive.google.com/file/d/1H6_TBzAW7IjGo9a6QI4avdpQK3GQ3gfQ/view?usp=sharing"

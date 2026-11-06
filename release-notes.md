@@ -7,9 +7,19 @@
 | `SiloIDE-1.2.1-setup.exe` | 234 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-1.2.1-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4 e a 1.3.5 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5 e a 2.0.0 chegam só pela atualização automática: instale a 1.2.1 e ela se atualiza na primeira abertura.
 
-**Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 1.3.3 (139 MB), na página inicial em **Baixar para Mac**. Ele se atualiza sozinho para a 1.3.5 na primeira abertura.
+**Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 2.0.0 (139 MB), na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
+
+---
+
+## 2.0.0
+
+**Temas novos e nomes novos nos textos.**
+
+- **Temas:** em **Exibir > Tema** há três opções novas: **Grafite** (escuro em cinza neutro), **Daltonismo** (azul e laranja no lugar de verde e vermelho, inclusive nas cores de diferenças do Git) e **Seguir o sistema** (muda sozinho entre claro e escuro junto com o Windows ou o macOS).
+- **Nomes:** textos, ajuda e documentação passam a falar em Módulos, Prontuário, Prescrição e SiloEditor.
+- **Temas de extensões:** as cores do visual ganharam nomes novos. Temas de extensões instalados antes da 2.0 precisam ser instalados de novo em **Exibir > Extensões**.
 
 ---
 
