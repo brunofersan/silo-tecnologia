@@ -32,14 +32,6 @@ window.SILO_CONFIG = {
       portableSize: "247 MB",
       installerUrl: "https://drive.google.com/file/d/1IO5zKZXGLwgwc6Rj_KcJggh9miMzwQCW/view?usp=sharing",
       portableUrl: "https://drive.google.com/file/d/1k9Iqi7gamOGApqJlmgvBRkDHL8e5X_T-/view?usp=sharing"
-    },
-    {
-      version: "1.2.1",
-      date: "2026-11-03",
-      installerSize: "234 MB",
-      portableSize: "247 MB",
-      installerUrl: "https://drive.google.com/file/d/155BmsRGha7JFKbtG2jTU_df5Unx0qtHT/view?usp=sharing",
-      portableUrl: "https://drive.google.com/file/d/1qWY8Uj-5SMynPHFFqFX9GylEEHKaLdJe/view?usp=sharing"
     }
   ],
   // Chave de acesso do Web3Forms (https://web3forms.com). O formulário de
