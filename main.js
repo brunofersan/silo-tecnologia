@@ -51,6 +51,19 @@
     if (mac.size) setText(".js-mac-size", mac.size);
   }
 
+  var linux = cfg.LINUX || {};
+  var linuxUrl = (linux.url || "").trim();
+  if (linuxUrl) {
+    document.querySelectorAll(".js-linux").forEach(function (a) {
+      a.href = linuxUrl;
+      a.rel = "noopener";
+      a.hidden = false;
+    });
+    document.querySelectorAll(".js-linux-info").forEach(function (n) { n.hidden = false; });
+    if (linux.version) setText(".js-linux-version", linux.version);
+    if (linux.size) setText(".js-linux-size", linux.size);
+  }
+
   function t(key, fallback) {
     var d = dict[currentLang];
     return d && d[key] ? d[key] : fallback;

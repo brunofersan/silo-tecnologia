@@ -11,6 +11,8 @@ Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o p
 
 **Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 2.0.0 (138 MB), na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
+**Para Linux (x64, com GTK 3):** pacote `.tar.gz` da 2.0.0 (143 MB), na página inicial em **Baixar para Linux**. Extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro. Esse pacote não tem atualização automática.
+
 ---
 
 ## 2.0.0

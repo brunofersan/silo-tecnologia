@@ -16,6 +16,14 @@ window.SILO_CONFIG = {
     size: "138 MB",
     url: "https://drive.google.com/file/d/1H6_TBzAW7IjGo9a6QI4avdpQK3GQ3gfQ/view?usp=sharing"
   },
+  // Pacote do Linux x64 (.tar.gz), independente da lista de versões do Windows.
+  // url vazio = o botão "Baixar para Linux" fica escondido.
+  LINUX: {
+    version: "2.0.0",
+    date: "2026-11-06",
+    size: "143 MB",
+    url: "https://drive.google.com/file/d/1_2nBrJx6pw0f0JYybyjpbOilwnBz2hpg/view?usp=sharing"
+  },
   VERSIONS: [
     {
       version: "2.0.0",
