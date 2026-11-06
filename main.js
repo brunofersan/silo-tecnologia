@@ -38,6 +38,19 @@
     });
   }
 
+  var mac = cfg.MAC || {};
+  var macUrl = (mac.url || "").trim();
+  if (macUrl) {
+    document.querySelectorAll(".js-mac").forEach(function (a) {
+      a.href = macUrl;
+      a.rel = "noopener";
+      a.hidden = false;
+    });
+    document.querySelectorAll(".js-mac-info").forEach(function (n) { n.hidden = false; });
+    if (mac.version) setText(".js-mac-version", mac.version);
+    if (mac.size) setText(".js-mac-size", mac.size);
+  }
+
   function t(key, fallback) {
     var d = dict[currentLang];
     return d && d[key] ? d[key] : fallback;
