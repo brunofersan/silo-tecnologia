@@ -24,6 +24,25 @@ window.SILO_CONFIG = {
     size: "143 MB",
     url: "https://drive.google.com/file/d/1_2nBrJx6pw0f0JYybyjpbOilwnBz2hpg/view?usp=sharing"
   },
+  // Doações. Tudo opcional: a seção "Apoie" só aparece se houver chave Pix ou algum link.
+  //   pixKey    chave Pix (e-mail, telefone, CPF/CNPJ ou chave aleatória)
+  //   pixHolder nome que aparece no app do banco ao pagar (opcional, ajuda a pessoa a conferir)
+  //   links     outros meios, só https: [{ label: "PayPal", url: "https://www.paypal.com/..." }]
+  DONATE: {
+    pixKey: "",
+    pixHolder: "",
+    links: []
+  },
+  // Anúncios do Google AdSense. Sem "client" nada é carregado nem aparece.
+  //   client      ID do editor, no formato ca-pub-0000000000000000
+  //   slots       ID de cada bloco de anúncio criado no AdSense: { middle: "...", bottom: "..." }
+  //   ownConsent  true: o aviso de cookies deste site decide se os anúncios carregam;
+  //               false: use só o aviso do próprio Google (AdSense > Privacidade e mensagens)
+  ADS: {
+    client: "",
+    slots: { middle: "", bottom: "" },
+    ownConsent: true
+  },
   VERSIONS: [
     {
       version: "2.0.0",

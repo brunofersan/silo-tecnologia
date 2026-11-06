@@ -180,8 +180,8 @@ p { margin: 0 0 1em; }
 .steps p { color: var(--muted); font-size: .92rem; margin: 0; }
 
 .download { background: #0f172a; color: #fff; padding: 48px 0; }
-.download-inner { display: flex; align-items: center; gap: 28px; }
-.download-inner > div { flex: 1; }
+.download-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
+.download-inner > div { flex: 1 1 320px; }
 .download-inner .btn { flex-shrink: 0; }
 .download h2 { margin-bottom: 4px; }
 .download p { margin: 0; color: #a9b8cf; }
@@ -294,3 +294,25 @@ details p { padding: 0 20px 16px; margin: 0; color: var(--muted); }
 .meta-link { color: var(--blue); font-weight: 600; text-decoration: none; }
 .meta-link:hover { text-decoration: underline; }
 @media (prefers-color-scheme: dark) { .meta-link { color: #7dd3fc; } }
+
+/* ---------- apoie (doações) ---------- */
+.donate-grid { display: grid; gap: 16px; }
+.donate-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
+.donate-card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.donate-card p { margin: 0 0 12px; }
+.pix-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.pix-row code { flex: 1 1 220px; min-width: 0; padding: 10px 12px; border: 1px dashed var(--line); border-radius: 10px; background: var(--bg-alt); overflow-wrap: anywhere; font-size: .95rem; }
+.donate-links { display: flex; gap: 12px; flex-wrap: wrap; }
+.donate-card[hidden], .donate-links[hidden], #apoie[hidden], .js-pix-holder[hidden] { display: none; }
+
+/* ---------- publicidade ---------- */
+.ad-slot { width: min(1160px, 100% - 32px); margin: 32px auto; text-align: center; }
+.ad-slot[hidden] { display: none; }
+.ad-slot:has(ins[data-ad-status="unfilled"]) { display: none; }
+.ad-label { display: block; margin-bottom: 6px; color: var(--muted); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+
+/* ---------- aviso de cookies dos anúncios ---------- */
+.consent { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 50; max-width: 760px; margin-inline: auto; display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center; padding: 16px 18px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.consent[hidden] { display: none; }
+.consent p { margin: 0; flex: 1 1 280px; font-size: .92rem; }
+.consent .btn { padding: 8px 16px; font-size: .9rem; }

@@ -1,5 +1,10 @@
 window.SILO_I18N = {
   es: {
+    "nav.donate": "Apoya", "dn.k": "Apoya", "dn.t": "Silo IDE es gratuito. Ayuda a mantenerlo.",
+    "dn.d": "Si el IDE te ayuda en tu día a día, una donación de cualquier valor ayuda a pagar el desarrollo y el mantenimiento. Donar es opcional: nada cambia en lo que recibes.",
+    "dn.pix": "Copia la clave y haz el Pix en la app de tu banco.", "dn.copy": "Copiar clave", "dn.copied": "Clave copiada", "dn.other": "Otras formas de apoyar",
+    "ad.label": "Publicidad", "ft.privacy": "Privacidad",
+    "ck.text": "Este sitio puede mostrar anuncios de Google para mantener Silo IDE gratuito. Usan cookies. ¿Aceptas?", "ck.accept": "Aceptar", "ck.decline": "Rechazar", "ck.more": "Más información", "ck.manage": "Preferencias de anuncios",
     "nav.versions": "Versiones", "vs.k": "Versiones", "vs.t": "Versión disponible", "vs.d": "Instala esta versión: las nuevas llegan por la actualización automática, al abrir el programa.", "vs.h1": "Versión", "vs.h2": "Fecha", "vs.h3": "Instalador", "vs.h4": "Portátil", "vs.h5": "Notas", "vs.current": "actual", "vs.installer": "Instalador", "vs.portable": "Portátil", "vs.notes": "Qué cambió", "vs.soon": "próximamente", "vs.all": "Ver todas las notas de versión", "ft.releases": "Notas de versión",
     "rn.k": "Notas de versión", "rn.t": "Qué cambió en cada versión", "rn.lang": "Las notas de versión están disponibles solo en portugués.", "rn.back": "Volver al sitio", "rn.loading": "Cargando notas de versión...", "rn.fail": "No fue posible cargar las notas de versión.",
     "nav.features": "Funciones",
@@ -127,6 +132,11 @@ window.SILO_I18N = {
     "dl.terms": "Al descargar, aceptas los"
   },
   en: {
+    "nav.donate": "Support", "dn.k": "Support", "dn.t": "Silo IDE is free. Help keep it going.",
+    "dn.d": "If the IDE helps you every day, a donation of any amount helps pay for development and maintenance. Donating is optional: nothing changes in what you get.",
+    "dn.pix": "Copy the key and make the Pix payment in your bank app.", "dn.copy": "Copy key", "dn.copied": "Key copied", "dn.other": "Other ways to support",
+    "ad.label": "Advertising", "ft.privacy": "Privacy",
+    "ck.text": "This site may show Google ads to keep Silo IDE free. They use cookies. Do you accept?", "ck.accept": "Accept", "ck.decline": "Decline", "ck.more": "Learn more", "ck.manage": "Ad preferences",
     "nav.versions": "Versions", "vs.k": "Versions", "vs.t": "Available version", "vs.d": "Install this version: newer ones arrive through automatic update when the program opens.", "vs.h1": "Version", "vs.h2": "Date", "vs.h3": "Installer", "vs.h4": "Portable", "vs.h5": "Notes", "vs.current": "current", "vs.installer": "Installer", "vs.portable": "Portable", "vs.notes": "What changed", "vs.soon": "coming soon", "vs.all": "See all release notes", "ft.releases": "Release notes",
     "rn.k": "Release notes", "rn.t": "What changed in each version", "rn.lang": "Release notes are available in Portuguese only.", "rn.back": "Back to site", "rn.loading": "Loading release notes...", "rn.fail": "Could not load the release notes.",
     "nav.features": "Features",

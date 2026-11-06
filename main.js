@@ -64,6 +64,123 @@
     if (linux.size) setText(".js-linux-size", linux.size);
   }
 
+  var donate = cfg.DONATE || {};
+  var pixKey = (donate.pixKey || "").trim();
+  var donateLinks = (donate.links || []).filter(function (l) {
+    return l && /^https:\/\//.test(l.url || "") && (l.label || "").trim();
+  });
+  var donateSection = document.getElementById("apoie");
+  if (donateSection && (pixKey || donateLinks.length)) {
+    donateSection.hidden = false;
+    document.querySelectorAll(".js-donate-nav").forEach(function (a) { a.hidden = false; });
+    var pixBox = donateSection.querySelector(".js-donate-pix");
+    if (pixKey && pixBox) {
+      pixBox.hidden = false;
+      donateSection.querySelector(".js-pix-key").textContent = pixKey;
+      var holder = (donate.pixHolder || "").trim();
+      var holderEl = donateSection.querySelector(".js-pix-holder");
+      if (holder && holderEl) {
+        holderEl.textContent = holder;
+        holderEl.hidden = false;
+      }
+      var copyBtn = donateSection.querySelector(".js-pix-copy");
+      var copyLabel = copyBtn.querySelector("span");
+      var copyTimer = null;
+      copyBtn.addEventListener("click", function () {
+        function done() {
+          copyLabel.textContent = t("dn.copied", "Chave copiada");
+          clearTimeout(copyTimer);
+          copyTimer = setTimeout(function () { copyLabel.textContent = t("dn.copy", "Copiar chave"); }, 2000);
+        }
+        function fallback() {
+          var area = document.createElement("textarea");
+          area.value = pixKey;
+          area.setAttribute("readonly", "");
+          area.style.position = "fixed";
+          area.style.opacity = "0";
+          document.body.appendChild(area);
+          area.select();
+          try { document.execCommand("copy"); done(); } catch (e) {}
+          document.body.removeChild(area);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(pixKey).then(done, fallback);
+        } else {
+          fallback();
+        }
+      });
+    }
+    var othersBox = donateSection.querySelector(".js-donate-others");
+    if (donateLinks.length && othersBox) {
+      othersBox.hidden = false;
+      var linksEl = othersBox.querySelector(".js-donate-links");
+      donateLinks.forEach(function (l) {
+        var a = document.createElement("a");
+        a.className = "btn btn-ghost";
+        a.href = l.url;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        a.textContent = l.label.trim();
+        linksEl.appendChild(a);
+      });
+    }
+  }
+
+  var ads = cfg.ADS || {};
+  var adsClient = (ads.client || "").trim();
+  var consentBox = document.getElementById("consent");
+  var adsLoaded = false;
+  function adsChoice() { try { return localStorage.getItem("silo-ads"); } catch (e) { return null; } }
+  function saveAdsChoice(value) { try { localStorage.setItem("silo-ads", value); } catch (e) {} }
+  function loadAds() {
+    if (adsLoaded || !/^ca-pub-\d+$/.test(adsClient)) return;
+    adsLoaded = true;
+    var script = document.createElement("script");
+    script.async = true;
+    script.crossOrigin = "anonymous";
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + adsClient;
+    document.head.appendChild(script);
+    document.querySelectorAll(".ad-slot").forEach(function (slot) {
+      var id = ((ads.slots || {})[slot.getAttribute("data-ad")] || "").trim();
+      if (!/^\d+$/.test(id)) return;
+      var ins = document.createElement("ins");
+      ins.className = "adsbygoogle";
+      ins.style.display = "block";
+      ins.setAttribute("data-ad-client", adsClient);
+      ins.setAttribute("data-ad-slot", id);
+      ins.setAttribute("data-ad-format", "auto");
+      ins.setAttribute("data-full-width-responsive", "true");
+      slot.appendChild(ins);
+      slot.hidden = false;
+      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
+    });
+  }
+  if (/^ca-pub-\d+$/.test(adsClient)) {
+    document.querySelectorAll(".js-consent-open").forEach(function (a) {
+      a.hidden = false;
+      a.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        if (consentBox) consentBox.hidden = false;
+      });
+    });
+    var choice = adsChoice();
+    if (ads.ownConsent === false || choice === "granted") loadAds();
+    else if (choice !== "denied" && consentBox) consentBox.hidden = false;
+    var accept = document.querySelector(".js-consent-accept");
+    var decline = document.querySelector(".js-consent-decline");
+    if (accept) accept.addEventListener("click", function () {
+      saveAdsChoice("granted");
+      if (consentBox) consentBox.hidden = true;
+      loadAds();
+    });
+    if (decline) decline.addEventListener("click", function () {
+      var hadAds = adsLoaded;
+      saveAdsChoice("denied");
+      if (consentBox) consentBox.hidden = true;
+      if (hadAds) location.reload();
+    });
+  }
+
   function t(key, fallback) {
     var d = dict[currentLang];
     return d && d[key] ? d[key] : fallback;
