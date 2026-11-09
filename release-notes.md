@@ -7,11 +7,27 @@
 | `SiloIDE-2.0.0-setup.exe` | 235 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-2.0.0-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4 e a 1.3.5 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5 e a 2.0.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
 
 **Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 2.0.0 (138 MB), na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
 **Para Linux (x64, com GTK 3):** pacote `.tar.gz` da 2.0.0 (143 MB), na página inicial em **Baixar para Linux**. Extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro. Esse pacote não tem atualização automática.
+
+---
+
+## 2.0.1
+
+**Projetos clonados aparecem na lista e telas Morphis sem reiniciar o Tomcat.**
+
+- **Telas Morphis sem reiniciar o Tomcat:** ao salvar um Task.Config, Struct, Manager.Config, ValueSet ou texto de uma tela, a IDE recarrega só o módulo daquela tela, e não o Tomcat inteiro. Depois é só abrir a tela de novo no navegador.
+- **F5 e Atualizar** na lista de projetos também procuram projetos novos nas pastas do repositório, como um projeto clonado fora da IDE.
+- **Projeto que voltou:** um projeto da lista cuja pasta foi apagada e clonada de novo volta a aparecer sem reiniciar a IDE.
+- **Clonar projeto** adiciona os projetos que estão em subpastas do repositório e avisa quando o git não consegue clonar.
+- **Avisos** mostram o texto inteiro, em várias linhas, em vez de cortar com reticências.
+- **Dependência fora do Nexus:** quando a compilação para porque falta uma biblioteca que não está no Nexus nem na máquina, o Log mostra quem pede essa versão e o nome certo do projeto a clonar, sem perder tempo compilando de novo com `-U`.
+- **Abrir e arrastar arquivos:** **Arquivo > Abrir arquivo...** abre `.txt`, `.md` e qualquer arquivo de texto, mesmo fora dos projetos; arquivos arrastados do Explorer para a janela (ou soltos no atalho da IDE) abrem no editor.
+- **Jira:** na janela de Tarefas, mude o status do card e lance horas (`1h 30m`, `45m`, `1:30`...) com o dia e o que foi feito.
+- **Temas antigos:** temas de extensões instalados antes da 2.0 passam sozinhos para as cores novas, sem reinstalar.
 
 ---
 

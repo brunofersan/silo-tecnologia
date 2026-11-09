@@ -74,9 +74,23 @@
 </tr>
 </tbody>
 </table>
-<p>Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4 e a 1.3.5 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.</p>
+<p>Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5 e a 2.0.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.</p>
 <p><strong>Para macOS (chip Apple, macOS 11 ou mais novo):</strong> instalador <code>.dmg</code> da 2.0.0 (138 MB), na página inicial em <strong>Baixar para Mac</strong>. As versões seguintes chegam sozinhas pela atualização automática.</p>
 <p><strong>Para Linux (x64, com GTK 3):</strong> pacote <code>.tar.gz</code> da 2.0.0 (143 MB), na página inicial em <strong>Baixar para Linux</strong>. Extraia com <code>tar xzf</code> e rode <code>./SiloIDE/silo-ide.sh</code>; o Java já vai dentro. Esse pacote não tem atualização automática.</p>
+<hr />
+<h2 id="v2-0-1">2.0.1</h2>
+<p><strong>Projetos clonados aparecem na lista e telas Morphis sem reiniciar o Tomcat.</strong></p>
+<ul>
+<li><strong>Telas Morphis sem reiniciar o Tomcat:</strong> ao salvar um Task.Config, Struct, Manager.Config, ValueSet ou texto de uma tela, a IDE recarrega só o módulo daquela tela, e não o Tomcat inteiro. Depois é só abrir a tela de novo no navegador.</li>
+<li><strong>F5 e Atualizar</strong> na lista de projetos também procuram projetos novos nas pastas do repositório, como um projeto clonado fora da IDE.</li>
+<li><strong>Projeto que voltou:</strong> um projeto da lista cuja pasta foi apagada e clonada de novo volta a aparecer sem reiniciar a IDE.</li>
+<li><strong>Clonar projeto</strong> adiciona os projetos que estão em subpastas do repositório e avisa quando o git não consegue clonar.</li>
+<li><strong>Avisos</strong> mostram o texto inteiro, em várias linhas, em vez de cortar com reticências.</li>
+<li><strong>Dependência fora do Nexus:</strong> quando a compilação para porque falta uma biblioteca que não está no Nexus nem na máquina, o Log mostra quem pede essa versão e o nome certo do projeto a clonar, sem perder tempo compilando de novo com <code>-U</code>.</li>
+<li><strong>Abrir e arrastar arquivos:</strong> <strong>Arquivo &gt; Abrir arquivo...</strong> abre <code>.txt</code>, <code>.md</code> e qualquer arquivo de texto, mesmo fora dos projetos; arquivos arrastados do Explorer para a janela (ou soltos no atalho da IDE) abrem no editor.</li>
+<li><strong>Jira:</strong> na janela de Tarefas, mude o status do card e lance horas (<code>1h 30m</code>, <code>45m</code>, <code>1:30</code>...) com o dia e o que foi feito.</li>
+<li><strong>Temas antigos:</strong> temas de extensões instalados antes da 2.0 passam sozinhos para as cores novas, sem reinstalar.</li>
+</ul>
 <hr />
 <h2 id="v2-0-0">2.0.0</h2>
 <p><strong>Temas novos e nomes novos nos textos.</strong></p>
