@@ -7,11 +7,24 @@
 | `SiloIDE-2.0.0-setup.exe` | 235 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-2.0.0-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1 e a 2.0.2 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2 e a 2.0.3 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
 
 **Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 2.0.0 (138 MB), na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
 **Para Linux (x64, com GTK 3):** pacote `.tar.gz` da 2.0.0 (143 MB), na página inicial em **Baixar para Linux**. Extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro. Esse pacote não tem atualização automática.
+
+---
+
+## 2.0.3
+
+**Quanto de memória a IDE está usando, diff como no IntelliJ e mais ajuda com o Jira.**
+
+- **Rodapé:** mostra a memória do próprio Silo IDE (ex.: **IDE 412 de 1536 MB**) com uma barrinha que fica vermelha a partir de 85% do limite. Passe o mouse para ver heap usado e reservado, limite, memória fora do heap e threads; clique para liberar memória na hora (o Log diz quanto foi liberado). Tomcat, Node e Gradle continuam na aba **Memória**.
+- **Diff como no IntelliJ:** dentro de um bloco alterado, as palavras que mudaram ficam num tom mais forte. Entre o HEAD e o arquivo local, uma faixa liga cada bloco ao seu par, e o botão **»** reverte só aquele bloco. Ao lado da barra de rolagem, um mapa mostra todas as alterações do arquivo, e o botão **␣** ignora espaços em branco ao comparar.
+- **Clonar e instalar dependência fora do Nexus:** quando a compilação falha porque falta uma biblioteca que não está no Nexus nem na máquina, a IDE procura o repositório Git do projeto dono (no `<scm>` dos poms do repositório local do Maven, na URL usada da última vez e ao lado dos projetos já clonados) e pergunta se pode clonar. Se houver tag ou branch da versão pedida, clona nela; depois adiciona o projeto à lista, roda `mvn install` e compila de novo.
+- **Avisos dos seus tickets:** com a IDE aberta, ela confere os seus tickets do Jira de tempos em tempos (padrão: a cada 5 minutos, em Conexão > Atualizar) e avisa quando chega um ticket novo para você ou quando um status muda. A lista **👤 Meus tickets** se atualiza sozinha.
+- **Começar um ticket:** ao abrir um ticket pela busca, a branch com o nome dele já fica pronta, é só teclar Enter. Ao criar a branch, o card passa para Em andamento (dá para desmarcar).
+- **🕘 Horas do dia:** sugere quanto lançar em cada ticket a partir dos seus commits do dia em todos os projetos, mostra o que já foi lançado, distribui um total como `8h` e lança tudo de uma vez.
 
 ---
 

@@ -74,9 +74,20 @@
 </tr>
 </tbody>
 </table>
-<p>Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1 e a 2.0.2 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.</p>
+<p>Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2 e a 2.0.3 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.</p>
 <p><strong>Para macOS (chip Apple, macOS 11 ou mais novo):</strong> instalador <code>.dmg</code> da 2.0.0 (138 MB), na página inicial em <strong>Baixar para Mac</strong>. As versões seguintes chegam sozinhas pela atualização automática.</p>
 <p><strong>Para Linux (x64, com GTK 3):</strong> pacote <code>.tar.gz</code> da 2.0.0 (143 MB), na página inicial em <strong>Baixar para Linux</strong>. Extraia com <code>tar xzf</code> e rode <code>./SiloIDE/silo-ide.sh</code>; o Java já vai dentro. Esse pacote não tem atualização automática.</p>
+<hr />
+<h2 id="v2-0-3">2.0.3</h2>
+<p><strong>Quanto de memória a IDE está usando, diff como no IntelliJ e mais ajuda com o Jira.</strong></p>
+<ul>
+<li><strong>Rodapé:</strong> mostra a memória do próprio Silo IDE (ex.: <strong>IDE 412 de 1536 MB</strong>) com uma barrinha que fica vermelha a partir de 85% do limite. Passe o mouse para ver heap usado e reservado, limite, memória fora do heap e threads; clique para liberar memória na hora (o Log diz quanto foi liberado). Tomcat, Node e Gradle continuam na aba <strong>Memória</strong>.</li>
+<li><strong>Diff como no IntelliJ:</strong> dentro de um bloco alterado, as palavras que mudaram ficam num tom mais forte. Entre o HEAD e o arquivo local, uma faixa liga cada bloco ao seu par, e o botão <strong>»</strong> reverte só aquele bloco. Ao lado da barra de rolagem, um mapa mostra todas as alterações do arquivo, e o botão <strong>␣</strong> ignora espaços em branco ao comparar.</li>
+<li><strong>Clonar e instalar dependência fora do Nexus:</strong> quando a compilação falha porque falta uma biblioteca que não está no Nexus nem na máquina, a IDE procura o repositório Git do projeto dono (no <code>&lt;scm&gt;</code> dos poms do repositório local do Maven, na URL usada da última vez e ao lado dos projetos já clonados) e pergunta se pode clonar. Se houver tag ou branch da versão pedida, clona nela; depois adiciona o projeto à lista, roda <code>mvn install</code> e compila de novo.</li>
+<li><strong>Avisos dos seus tickets:</strong> com a IDE aberta, ela confere os seus tickets do Jira de tempos em tempos (padrão: a cada 5 minutos, em Conexão &gt; Atualizar) e avisa quando chega um ticket novo para você ou quando um status muda. A lista <strong>👤 Meus tickets</strong> se atualiza sozinha.</li>
+<li><strong>Começar um ticket:</strong> ao abrir um ticket pela busca, a branch com o nome dele já fica pronta, é só teclar Enter. Ao criar a branch, o card passa para Em andamento (dá para desmarcar).</li>
+<li><strong>🕘 Horas do dia:</strong> sugere quanto lançar em cada ticket a partir dos seus commits do dia em todos os projetos, mostra o que já foi lançado, distribui um total como <code>8h</code> e lança tudo de uma vez.</li>
+</ul>
 <hr />
 <h2 id="v2-0-2">2.0.2</h2>
 <p><strong>Vários tickets do Jira de uma vez.</strong></p>
