@@ -7,11 +7,20 @@
 | `SiloIDE-2.0.0-setup.exe` | 235 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-2.0.0-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0 e a 2.1.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1 e a 2.2.0 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
 
 **Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 2.0.0 (138 MB), na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
 **Para Linux (x64, com GTK 3):** pacote `.tar.gz` da 2.0.0 (143 MB), na página inicial em **Baixar para Linux**. Extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro. Esse pacote não tem atualização automática.
+
+---
+
+## 2.2.0
+
+**Uma aba só para arquivos, Git e o que sobe no Tomcat.**
+
+- **Abas Subir e Git dentro da aba Arquivos:** no painel Projetos ficou só a aba **Arquivos**. Ao lado do nome de cada projeto aparecem a caixa para subir no Tomcat, a branch e a quantidade de alterações, e o botão direito no projeto traz pull, push, commit, troca de branch e as outras opções do Git junto com as de arquivos.
+- **Alterações e Subir no Tomcat em cada projeto:** dentro do projeto, o nó **Alterações** lista os arquivos alterados (clique para ver o diff; o botão direito tem stage, commit, reverter e excluir) e o nó **Subir no Tomcat** mostra o que está escolhido e deixa marcar forms, reports e telas. O F5 relê as pastas e o status do Git de uma vez.
 
 ---
 
