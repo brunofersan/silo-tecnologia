@@ -186,6 +186,19 @@ p { margin: 0 0 1em; }
 .download h2 { margin-bottom: 4px; }
 .download p { margin: 0; color: #a9b8cf; }
 .download .note { margin-top: 6px; color: #fcd34d; }
+.download .note-how { margin-top: 6px; color: #e2e8f0; }
+
+.dl-dialog { width: min(480px, calc(100vw - 32px)); padding: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); color: var(--ink); box-shadow: var(--shadow); }
+.dl-dialog::backdrop { background: rgba(15, 23, 42, .55); }
+.dl-dialog form { padding: 24px; }
+.dl-dialog h3 { margin: 0; }
+.dl-dialog p { margin: 0; }
+.dl-dialog .terms-note { font-size: .85rem; }
+.dl-dialog .terms-note a { color: var(--blue); }
+.dl-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.dl-dialog .btn-ghost { background: transparent; border: 1px solid var(--line); color: var(--ink); }
+.dl-dialog .form-status:empty { display: none; }
+@media (prefers-color-scheme: dark) { .dl-dialog .terms-note a { color: #7dd3fc; } }
 
 details { border: 1px solid var(--line); border-radius: 12px; background: var(--card); margin-bottom: 10px; }
 summary { cursor: pointer; list-style: none; padding: 16px 20px; font-weight: 600; display: flex; justify-content: space-between; gap: 16px; }

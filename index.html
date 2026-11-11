@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2.0.0-8">
+  <link rel="stylesheet" href="styles.css?v=2.0.0-9">
 </head>
 <body>
   <header class="topbar">
@@ -191,7 +191,7 @@
         <h2 data-i18n="ins.t">Pronto em poucos minutos</h2>
       </header>
       <ol class="steps">
-        <li><h3 data-i18n="s1.t">Baixe o instalador</h3><p data-i18n="s1.d">Clique em “Baixar para Windows” e salve o arquivo no seu computador.</p></li>
+        <li><h3 data-i18n="s1.t">Peça o download</h3><p data-i18n="s1.d">Clique em “Baixar para Windows”, informe seu nome e e-mail e aguarde: assim que o pedido for aprovado, o link para baixar chega no seu e-mail.</p></li>
         <li><h3 data-i18n="s2.t">Execute o arquivo</h3><p data-i18n="s2.d">Dê dois cliques no instalador. Se o Windows exibir “O Windows protegeu o computador”, clique em “Mais informações” e depois em “Executar assim mesmo”.</p></li>
         <li><h3 data-i18n="s3.t">Siga o assistente</h3><p data-i18n="s3.d">Aceite a licença, confirme a pasta de instalação e conclua. Ao final, o Silo IDE aparece no menu Iniciar.</p></li>
         <li><h3 data-i18n="s4.t">Abra e configure</h3><p data-i18n="s4.d">Na primeira execução, escolha o idioma e o tema, informe a pasta dos seus projetos e, se quiser, cadastre suas conexões de banco.</p></li>
@@ -205,6 +205,7 @@
         <div>
           <h2 data-i18n="dl.t">Download gratuito do Silo IDE</h2>
           <p><span data-i18n="meta.version">Versão</span> <span class="js-version">2.0.0</span> · <span data-i18n="meta.os">Windows 10/11 de 64 bits</span> · <span class="js-size">235 MB</span></p>
+          <p class="note-how js-dl-how" hidden data-i18n="dl.how">O download é liberado por e-mail: peça pelo botão e você recebe o link assim que o pedido for aprovado.</p>
           <p class="terms-note"><span data-i18n="dl.terms">Ao baixar, você concorda com os</span> <a href="termos.html" data-i18n="ft.terms">Termos de uso</a> · <a href="releases.html" data-i18n="ft.releases">Notas da versão</a></p>
           <p class="note js-dl-note" hidden data-i18n="dl.soon">O link de download será liberado em breve.</p>
           <p class="note js-mac-info" hidden><span data-i18n="mac.label">macOS 11 ou mais novo (Apple Silicon)</span> · <span data-i18n="meta.version">Versão</span> <span class="js-mac-version"></span> · <span class="js-mac-size"></span> · <span data-i18n="mac.how">Abra o .dmg e arraste o Silo IDE para Aplicativos. Na primeira vez, clique com o botão direito e escolha Abrir.</span></p>
@@ -338,6 +339,29 @@
 
   </main>
 
+  <dialog id="dlDialog" class="dl-dialog" aria-labelledby="dlTitle">
+    <form class="support-form" id="dlForm" novalidate>
+      <input type="text" name="site" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <h3 id="dlTitle" data-i18n="rq.t">Pedir o download do Silo IDE</h3>
+      <p class="muted" data-i18n="rq.d">Informe seu nome e e-mail. Você recebe agora a chave do pedido e, assim que ele for aprovado, o link para baixar chega no seu e-mail.</p>
+      <label><span data-i18n="fm.name">Nome</span><input name="nome" required maxlength="120" autocomplete="name"></label>
+      <label><span data-i18n="fm.email">Seu e-mail</span><input name="email" type="email" required maxlength="160" autocomplete="email"></label>
+      <label><span data-i18n="rq.sys">Sistema</span>
+        <select name="sistema" required>
+          <option value="win" data-i18n="rq.win">Windows (instalador e versão portátil)</option>
+          <option value="mac" data-i18n="rq.mac">macOS 11 ou mais novo (Apple Silicon)</option>
+          <option value="linux" data-i18n="rq.linux">Linux x64</option>
+        </select>
+      </label>
+      <p class="terms-note muted"><span data-i18n="rq.terms">Ao pedir o download, você concorda com os</span> <a href="termos.html" data-i18n="ft.terms">Termos de uso</a>.</p>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <div class="dl-actions">
+        <button class="btn btn-primary" type="submit" data-i18n="rq.send">Pedir download</button>
+        <button class="btn btn-ghost js-dl-close" type="button" data-i18n="rq.close">Fechar</button>
+      </div>
+    </form>
+  </dialog>
+
   <footer class="footer">
     <div class="wrap footer-inner">
       <img src="assets/marca.png" alt="" width="28" height="28">
@@ -349,8 +373,8 @@
   </footer>
 
 
-  <script src="config.js?v=2.0.0-8"></script>
-  <script src="i18n.js?v=2.0.0-8"></script>
-  <script src="main.js?v=2.0.0-8"></script>
+  <script src="config.js?v=2.0.0-9"></script>
+  <script src="i18n.js?v=2.0.0-9"></script>
+  <script src="main.js?v=2.0.0-9"></script>
 </body>
 </html>
