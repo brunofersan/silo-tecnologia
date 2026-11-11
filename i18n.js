@@ -91,8 +91,8 @@ window.SILO_I18N = {
     "req.netv": "Opcional; se usa para actualizaciones y dependencias Maven/Gradle",
     "ins.k": "Instalación",
     "ins.t": "Listo en pocos minutos",
-    "s1.t": "Descarga el instalador",
-    "s1.d": "Haz clic en “Descargar para Windows” y guarda el archivo en tu equipo.",
+    "s1.t": "Solicita la descarga",
+    "s1.d": "Haz clic en “Descargar para Windows”, indica tu nombre y correo y espera: en cuanto se apruebe la solicitud, el enlace de descarga llega a tu correo.",
     "s2.t": "Ejecuta el archivo",
     "s2.d": "Haz doble clic en el instalador. Si Windows muestra “Windows protegió su PC”, haz clic en “Más información” y luego en “Ejecutar de todas formas”.",
     "s3.t": "Sigue el asistente",
@@ -128,6 +128,8 @@ window.SILO_I18N = {
     "ct.soon": "Formulario de soporte próximamente. Mientras tanto, la ayuda completa está dentro del IDE, en el menú Ayuda.",
     "ft.rights": "Todos los derechos reservados.",
     "ft.terms": "Términos de uso",
+    "rq.t": "Solicitar la descarga de Silo IDE", "rq.d": "Indica tu nombre y correo. Recibes ahora la clave de la solicitud y, en cuanto se apruebe, el enlace de descarga llega a tu correo.", "rq.sys": "Sistema", "rq.win": "Windows (instalador y versión portátil)", "rq.mac": "macOS 11 o superior (Apple Silicon)", "rq.linux": "Linux x64", "rq.terms": "Al solicitar la descarga, aceptas los", "rq.send": "Solicitar descarga", "rq.close": "Cerrar",
+    "dl.how": "La descarga se libera por correo: solicítala con el botón y recibirás el enlace en cuanto se apruebe la solicitud.",
     "dl.terms": "Al descargar, aceptas los"
   },
   en: {
@@ -222,8 +224,8 @@ window.SILO_I18N = {
     "req.netv": "Optional; used for updates and Maven/Gradle dependencies",
     "ins.k": "Install",
     "ins.t": "Ready in a few minutes",
-    "s1.t": "Download the installer",
-    "s1.d": "Click “Download for Windows” and save the file to your computer.",
+    "s1.t": "Request the download",
+    "s1.d": "Click “Download for Windows”, enter your name and e-mail and wait: as soon as the request is approved, the download link arrives in your e-mail.",
     "s2.t": "Run the file",
     "s2.d": "Double-click the installer. If Windows shows “Windows protected your PC”, click “More info” and then “Run anyway”.",
     "s3.t": "Follow the wizard",
@@ -259,6 +261,8 @@ window.SILO_I18N = {
     "ct.soon": "Support form coming soon. Meanwhile, full help is inside the IDE, in the Help menu.",
     "ft.rights": "All rights reserved.",
     "ft.terms": "Terms of use",
+    "rq.t": "Request the Silo IDE download", "rq.d": "Enter your name and e-mail. You get the request key now and, as soon as it is approved, the download link arrives in your e-mail.", "rq.sys": "System", "rq.win": "Windows (installer and portable version)", "rq.mac": "macOS 11 or newer (Apple Silicon)", "rq.linux": "Linux x64", "rq.terms": "By requesting the download, you agree to the", "rq.send": "Request download", "rq.close": "Close",
+    "dl.how": "The download is released by e-mail: request it with the button and you will get the link as soon as the request is approved.",
     "dl.terms": "By downloading, you agree to the"
   }
 };
