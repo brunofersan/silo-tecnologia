@@ -7,11 +7,27 @@
 | `SiloIDE-2.0.0-setup.exe` | 235 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-2.0.0-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1 e a 2.2.2 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2 e a 2.3.0 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
 
 **Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 2.0.0 (138 MB), na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
 **Para Linux (x64, com GTK 3):** pacote `.tar.gz` da 2.0.0 (143 MB), na página inicial em **Baixar para Linux**. Extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro. Esse pacote não tem atualização automática.
+
+---
+
+## 2.3.0
+
+**Revisão de merge request do GitLab com IA, menus organizados, Notas e links no log.**
+
+- **Comentários do merge request (GitLab):** botão direito no projeto > Git > **Comentários do MR (GitLab)** lista o que o revisor pediu na branch atual, com arquivo, linha e o código ao lado. Dois cliques abrem o arquivo na linha; dá para responder e marcar como resolvido sem sair da IDE.
+- **Onde corrigir (IA):** a IA lê todos os comentários a resolver e descreve quais arquivos e linhas mudar e o quê.
+- **Corrigir com IA:** a IA propõe a correção de um comentário e mostra o diff para você aceitar ou recusar. Nada é commitado sozinho.
+- **Aviso de comentários:** o Log avisa quando o merge request da branch tem comentários a resolver (ao abrir a IDE, depois de cada push e de 10 em 10 minutos).
+- **Menus do botão direito organizados:** as opções ficam em submenus por assunto. No projeto: Git, Maven, Gradle, Jira e tarefas, Código, Celular e Aplicação. Nos arquivos: Novo, Copiar/colar/excluir, Histórico e Mostrar em. No editor: Navegar e buscar, Banco de dados, Refatorar, Depuração e Histórico.
+- **Gradle no botão direito:** build, clean build, test, assemble, tasks ou as tarefas que quiser, nos projetos Gradle.
+- **Ticket da branch:** Jira e tarefas > **Abrir o ticket da branch no navegador**.
+- **Notas:** a faixa 📝 na borda direita abre um bloco de notas por cima dos painéis, na altura toda da janela, com lista de tarefas. Clique na bolinha para concluir e o texto fica riscado; clicar fora recolhe. Fica salvo sozinho.
+- **Links no Log e no Console:** Ctrl+clique num endereço, como o link para criar o merge request que o GitLab mostra depois do push, abre no navegador padrão.
 
 ---
 
