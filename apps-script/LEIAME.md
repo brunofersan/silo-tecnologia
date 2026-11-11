@@ -6,8 +6,10 @@ Os instaladores não têm mais link público no site. Quem quer baixar preenche 
 2. O script gera uma chave (ex.: `SILO-7KQ2-M9XD`), grava o pedido numa planilha e manda dois e-mails:
    - para o dono: chave, nome, e-mail, sistema e os botões **Aprovar** e **Recusar**;
    - para a pessoa: "recebemos seu pedido, chave tal".
-3. O dono clica em **Aprovar** e confirma. A pessoa recebe um e-mail com um link pessoal que vale 7 dias (`LINK_DAYS`).
-4. O link abre uma página com o(s) arquivo(s) do sistema escolhido (Windows: instalador e portátil).
+3. O dono clica em **Aprovar**, que abre `aprovar.html` no site, e confirma. A pessoa recebe um e-mail com um link pessoal (`baixar.html?t=...`) que vale 7 dias (`LINK_DAYS`).
+4. O link abre uma página do site com o(s) arquivo(s) do sistema escolhido (Windows: instalador e portátil).
+
+As páginas de aprovar e baixar ficam no site e falam com o script por trás, sem login. Abrir a URL do script direto no navegador falha ("Não foi possível abrir o arquivo") quando o navegador tem mais de uma conta Google logada.
 
 Recusar só marca o pedido como recusado na planilha, sem mandar e-mail. Aprovar de novo um pedido já aprovado gera um link novo e reenvia o e-mail.
 Também dá para aprovar pelo editor do Apps Script: rode `aprovarChave("SILO-XXXX-XXXX")`.
@@ -40,6 +42,7 @@ Para uma versão nova do instalador, use **Gerenciar versões › Enviar nova ve
    | `FILE_MAC` | ID da cópia do .dmg |
    | `FILE_LINUX` | ID da cópia do .tar.gz |
    | `WEBAPP_URL` | URL do app da Web (`.../exec`), preenchida depois do passo 3; garante que os links dos e-mails usem a implantação certa |
+   | `SITE_URL` | opcional, endereço do site (padrão `https://brunofersan.github.io/silo-tecnologia/`) |
    | `LINK_DAYS` | opcional, dias que o link vale (padrão 7) |
    | `MAX_PER_HOUR` | opcional, limite de pedidos por hora (padrão 30) |
 

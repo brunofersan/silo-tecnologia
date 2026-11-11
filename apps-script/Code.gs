@@ -60,6 +60,8 @@ var TEXT = {
 function doPost(e) {
   try {
     var data = JSON.parse((e && e.postData && e.postData.contents) || "{}");
+    if (data.acao === "baixar") return json_(downloadInfo_(data.t, true));
+    if (data.acao === "ver" || data.acao === "aprovar" || data.acao === "recusar") return json_(decision_(data));
     return json_(createRequest_(data));
   } catch (err) {
     console.error(err);
@@ -116,9 +118,9 @@ function createRequest_(data) {
 }
 
 function notifyOwner_(key, name, email, platform, lang, previous) {
-  var base = execUrl_();
-  var approve = base + "?acao=aprovar&chave=" + encodeURIComponent(key) + "&sig=" + sign_("aprovar:" + key);
-  var deny = base + "?acao=recusar&chave=" + encodeURIComponent(key) + "&sig=" + sign_("recusar:" + key);
+  var base = siteUrl_() + "aprovar.html?chave=" + encodeURIComponent(key);
+  var approve = base + "&acao=aprovar&sig=" + sign_("aprovar:" + key);
+  var deny = base + "&acao=recusar&sig=" + sign_("recusar:" + key);
   var plat = PLATFORMS[platform].label.pt;
   var prevText = previous.total ? previous.total + " pedido(s) anterior(es) deste e-mail, " + previous.approved + " aprovado(s)." : "Primeiro pedido deste e-mail.";
   var body = "Novo pedido de download do Silo IDE\n\n" +
@@ -133,30 +135,41 @@ function notifyOwner_(key, name, email, platform, lang, previous) {
     "<p>" + esc_(prevText) + "</p>" +
     "<p><a href='" + approve + "' style='background:#14918f;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:bold'>Aprovar</a>" +
     " &nbsp; <a href='" + deny + "' style='color:#b91c1c'>Recusar</a></p>" +
-    "<p style='color:#666'>Os botões abrem uma página de confirmação. Os pedidos ficam na planilha <a href='" + sheet_().getParent().getUrl() + "'>Pedidos de download do Silo IDE</a>.</p>";
+    "<p style='color:#666'>Os botões abrem uma página de confirmação no site. Os pedidos ficam na planilha <a href='" + sheet_().getParent().getUrl() + "'>Pedidos de download do Silo IDE</a>.</p>";
   MailApp.sendEmail({ to: owner_(), subject: "Pedido de download " + key + ": " + name + " (" + plat + ")", body: body, htmlBody: html, name: "Site Silo Tecnologia", replyTo: email });
 }
 
-function decisionPage_(p) {
-  var action = p.acao;
-  var key = String(p.chave || "");
-  if (!key || !safeEquals_(String(p.sig || ""), sign_(action + ":" + key))) return page_("Silo IDE", "<p>Link de aprovação inválido.</p>");
+function decision_(p) {
+  var action = p.acao === "ver" ? String(p.para || "") : p.acao;
+  var key = String(p.chave || "").trim().toUpperCase();
+  if ((action !== "aprovar" && action !== "recusar") || !key || !safeEquals_(String(p.sig || ""), sign_(action + ":" + key))) return { ok: false, error: "invalid" };
   var row = findRow_(key);
-  if (!row) return page_("Silo IDE", "<p>Pedido " + esc_(key) + " não encontrado.</p>");
-  var info = row.values;
-  var summary = "<p><b>" + esc_(key) + "</b> · " + esc_(info[COL.name - 1]) + " · " + esc_(info[COL.email - 1]) + " · " + esc_(PLATFORMS[info[COL.platform - 1]] ? PLATFORMS[info[COL.platform - 1]].label.pt : info[COL.platform - 1]) + "</p>";
-  var current = info[COL.status - 1];
-  if (p.ok !== "1") {
-    var verb = action === "aprovar" ? "Aprovar" : "Recusar";
-    var note = current !== STATUS.pending ? "<p>Status atual: " + esc_(current) + ".</p>" : "";
-    var url = execUrl_() + "?acao=" + action + "&chave=" + encodeURIComponent(key) + "&sig=" + encodeURIComponent(p.sig) + "&ok=1";
-    return page_(verb + " pedido", summary + note + "<p><a class='btn' target='_top' href='" + url + "'>" + verb + " este pedido</a></p>");
-  }
+  if (!row) return { ok: false, error: "notfound" };
+  var v = row.values;
+  var info = { ok: true, key: key, name: v[COL.name - 1], email: v[COL.email - 1], platform: PLATFORMS[v[COL.platform - 1]] ? PLATFORMS[v[COL.platform - 1]].label.pt : String(v[COL.platform - 1]), status: v[COL.status - 1] };
+  if (p.acao === "ver") return info;
   if (action === "aprovar") {
     var result = approve_(key);
-    return page_("Pedido aprovado", summary + "<p>Aprovado. O link foi enviado para " + esc_(result.email) + " e vale até " + esc_(result.until) + ".</p>");
+    info.status = STATUS.approved;
+    info.until = result.until;
+  } else {
+    deny_(key);
+    info.status = STATUS.denied;
   }
-  deny_(key);
+  info.done = true;
+  return info;
+}
+
+function decisionPage_(p) {
+  var info = decision_({ acao: p.ok === "1" ? p.acao : "ver", para: p.acao, chave: p.chave, sig: p.sig });
+  if (!info.ok) return page_("Silo IDE", "<p>" + (info.error === "notfound" ? "Pedido não encontrado." : "Link de aprovação inválido.") + "</p>");
+  var summary = "<p><b>" + esc_(info.key) + "</b> · " + esc_(info.name) + " · " + esc_(info.email) + " · " + esc_(info.platform) + "</p>";
+  if (!info.done) {
+    var verb = p.acao === "aprovar" ? "Aprovar" : "Recusar";
+    var url = execUrl_() + "?acao=" + p.acao + "&chave=" + encodeURIComponent(info.key) + "&sig=" + encodeURIComponent(p.sig) + "&ok=1";
+    return page_(verb + " pedido", summary + "<p>Status atual: " + esc_(info.status) + ".</p><p><a class='btn' target='_top' href='" + url + "'>" + verb + " este pedido</a></p>");
+  }
+  if (info.status === STATUS.approved) return page_("Pedido aprovado", summary + "<p>Aprovado. O link foi enviado para " + esc_(info.email) + " e vale até " + esc_(info.until) + ".</p>");
   return page_("Pedido recusado", summary + "<p>Recusado. Nenhum e-mail foi enviado para a pessoa.</p>");
 }
 
@@ -181,7 +194,7 @@ function approve_(key) {
   var lang = TEXT[v[COL.lang - 1]] ? v[COL.lang - 1] : "pt";
   var t = TEXT[lang];
   var until = formatDate_(expires, lang);
-  var link = execUrl_() + "?acao=baixar&t=" + token;
+  var link = siteUrl_() + "baixar.html?t=" + token;
   var vars = { name: v[COL.name - 1], key: key, platform: PLATFORMS[v[COL.platform - 1]].label[lang], link: link, until: until };
   MailApp.sendEmail({ to: v[COL.email - 1], subject: t.okSubject, body: fill_(t.ok, vars), name: "Silo Tecnologia", replyTo: owner_() });
   return { email: v[COL.email - 1], until: formatDate_(expires, "pt") };
@@ -196,22 +209,35 @@ function deny_(key) {
   row.sheet.getRange(row.index, COL.expires).setValue("");
 }
 
-function downloadPage_(token) {
-  token = String(token);
+function downloadInfo_(token, count) {
+  token = String(token || "");
   var row = /^[a-f0-9]{64}$/.test(token) ? findRow_(token, COL.token) : null;
-  if (!row || row.values[COL.status - 1] !== STATUS.approved) return page_(TEXT.pt.pageTitle, "<p>" + TEXT.pt.pageInvalid + "</p><p>" + TEXT.es.pageInvalid + "</p><p>" + TEXT.en.pageInvalid + "</p>");
+  if (!row || row.values[COL.status - 1] !== STATUS.approved) return { ok: false, error: "invalid" };
   var v = row.values;
   var lang = TEXT[v[COL.lang - 1]] ? v[COL.lang - 1] : "pt";
-  var t = TEXT[lang];
-  if (new Date(v[COL.expires - 1]).getTime() < Date.now()) return page_(t.pageTitle, "<p>" + esc_(t.pageExpired) + "</p>");
-  var links = PLATFORMS[v[COL.platform - 1]].files.map(function (k) {
+  if (new Date(v[COL.expires - 1]).getTime() < Date.now()) return { ok: false, error: "expired", lang: lang };
+  var files = [];
+  PLATFORMS[v[COL.platform - 1]].files.forEach(function (k) {
     var id = prop_(k, "").trim();
-    return id ? "<p><a class='btn' target='_blank' rel='noopener' href='https://drive.google.com/uc?export=download&id=" + encodeURIComponent(id) + "'>" + esc_(FILE_LABEL[k][lang]) + "</a></p>" : "";
+    if (id) files.push({ label: FILE_LABEL[k][lang], url: "https://drive.google.com/uc?export=download&id=" + encodeURIComponent(id) });
+  });
+  if (!files.length) return { ok: false, error: "missing", lang: lang };
+  if (count) {
+    row.sheet.getRange(row.index, COL.downloads).setValue(Number(v[COL.downloads - 1] || 0) + 1);
+    row.sheet.getRange(row.index, COL.lastDl).setValue(new Date());
+  }
+  return { ok: true, lang: lang, name: v[COL.name - 1], files: files };
+}
+
+function downloadPage_(token) {
+  var info = downloadInfo_(token, true);
+  if (!info.ok && info.error === "invalid") return page_(TEXT.pt.pageTitle, "<p>" + TEXT.pt.pageInvalid + "</p><p>" + TEXT.es.pageInvalid + "</p><p>" + TEXT.en.pageInvalid + "</p>");
+  var t = TEXT[info.lang];
+  if (!info.ok) return page_(t.pageTitle, "<p>" + esc_(info.error === "expired" ? t.pageExpired : t.pageMissing) + "</p>");
+  var links = info.files.map(function (f) {
+    return "<p><a class='btn' target='_blank' rel='noopener' href='" + esc_(f.url) + "'>" + esc_(f.label) + "</a></p>";
   }).join("");
-  if (!links) return page_(t.pageTitle, "<p>" + esc_(t.pageMissing) + "</p>");
-  row.sheet.getRange(row.index, COL.downloads).setValue(Number(v[COL.downloads - 1] || 0) + 1);
-  row.sheet.getRange(row.index, COL.lastDl).setValue(new Date());
-  return page_(t.pageTitle, "<p>" + esc_(fill_(t.pageReady, { name: v[COL.name - 1] })) + "</p>" + links + "<p class='muted'>" + esc_(t.pageHint) + "</p>");
+  return page_(t.pageTitle, "<p>" + esc_(fill_(t.pageReady, { name: info.name })) + "</p>" + links + "<p class='muted'>" + esc_(t.pageHint) + "</p>");
 }
 
 function configurar() {
@@ -317,6 +343,11 @@ function execUrl_() {
   var u = prop_("WEBAPP_URL", "") || ScriptApp.getService().getUrl();
   if (!u) throw new Error("O script ainda não foi implantado como app da Web.");
   return u.replace(/\/dev$/, "/exec");
+}
+
+function siteUrl_() {
+  var u = prop_("SITE_URL", "https://brunofersan.github.io/silo-tecnologia/");
+  return /\/$/.test(u) ? u : u + "/";
 }
 
 function formatDate_(d, lang) {
