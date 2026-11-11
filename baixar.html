@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Download | Silo IDE</title>
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pedido.css?v=1">
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html" aria-label="Silo Tecnologia">
+        <img src="assets/marca.png" alt="" width="36" height="36">
+        <span><strong>Silo</strong> Tecnologia</span>
+      </a>
+    </div>
+  </div>
+  <main class="wrap">
+    <div class="card">
+      <h1 id="title">Download do Silo IDE</h1>
+      <p id="status" class="muted">Carregando...</p>
+      <div class="files" id="files"></div>
+      <p id="hint" class="muted" hidden></p>
+    </div>
+  </main>
+  <script src="config.js?v=2.0.0-10"></script>
+  <script>
+  (function () {
+    var T = {
+      pt: { title: "Download do Silo IDE", loading: "Carregando...", ready: "Olá, {name}. Escolha o arquivo para baixar:", expired: "Este link expirou. Peça o download de novo pelo site.", invalid: "Link inválido. Confira se copiou o endereço inteiro do e-mail.", missing: "O arquivo ainda não está disponível. Tente de novo mais tarde.", fail: "Não foi possível carregar agora. Tente de novo em alguns minutos.", hint: "Se o Google Drive avisar que não consegue verificar vírus em arquivos grandes, clique em Baixar assim mesmo. Depois de instalar, as novas versões chegam pela atualização automática da IDE." },
+      es: { title: "Descarga de Silo IDE", loading: "Cargando...", ready: "Hola, {name}. Elige el archivo para descargar:", expired: "Este enlace expiró. Solicita la descarga de nuevo en el sitio.", invalid: "Enlace no válido. Verifica que copiaste la dirección completa del correo.", missing: "El archivo aún no está disponible. Inténtalo de nuevo más tarde.", fail: "No fue posible cargar ahora. Inténtalo de nuevo en unos minutos.", hint: "Si Google Drive avisa que no puede analizar virus en archivos grandes, haz clic en Descargar de todos modos. Después de instalar, las nuevas versiones llegan por la actualización automática del IDE." },
+      en: { title: "Silo IDE download", loading: "Loading...", ready: "Hello, {name}. Choose the file to download:", expired: "This link has expired. Please request the download again on the website.", invalid: "Invalid link. Check that you copied the whole address from the e-mail.", missing: "The file is not available yet. Please try again later.", fail: "Could not load right now. Please try again in a few minutes.", hint: "If Google Drive says it can't scan large files for viruses, click Download anyway. After installing, new versions arrive through the IDE's automatic update." }
+    };
+    var nav = (navigator.language || "pt").slice(0, 2).toLowerCase();
+    var lang = T[nav] ? nav : "pt";
+    try { var saved = localStorage.getItem("silo-lang"); if (T[saved]) lang = saved; } catch (e) {}
+    var url = ((window.SILO_CONFIG || {}).DOWNLOAD_REQUEST_URL || "").trim();
+    var token = new URLSearchParams(location.search).get("t") || "";
+    var statusEl = document.getElementById("status");
+    function setLang(l) {
+      lang = T[l] ? l : lang;
+      document.documentElement.lang = { pt: "pt-BR", es: "es", en: "en" }[lang];
+      document.title = T[lang].title + " | Silo IDE";
+      document.getElementById("title").textContent = T[lang].title;
+    }
+    function msg(key, cls) { statusEl.textContent = T[lang][key]; statusEl.className = cls || "muted"; }
+    setLang(lang);
+    msg("loading");
+    if (!url || !/^[a-f0-9]{64}$/.test(token)) { msg("invalid", "err"); return; }
+    fetch(url, { method: "POST", body: JSON.stringify({ acao: "baixar", t: token }) })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (res.lang) setLang(res.lang);
+        if (!res.ok) { msg(res.error === "expired" ? "expired" : res.error === "missing" ? "missing" : "invalid", "err"); return; }
+        statusEl.textContent = T[lang].ready.replace("{name}", res.name || "");
+        statusEl.className = "";
+        var box = document.getElementById("files");
+        res.files.forEach(function (f) {
+          if (!/^https:\/\/drive\.google\.com\//.test(f.url)) return;
+          var a = document.createElement("a");
+          a.className = "btn btn-primary";
+          a.href = f.url;
+          a.rel = "noopener noreferrer";
+          a.textContent = f.label;
+          box.appendChild(a);
+        });
+        var hint = document.getElementById("hint");
+        hint.textContent = T[lang].hint;
+        hint.hidden = false;
+      })
+      .catch(function () { msg("fail", "err"); });
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+:root { --bg:#ffffff; --bg-alt:#f4f7fb; --ink:#0f172a; --muted:#5b6b82; --line:#e2e8f0; --teal:#14918f; --grad:linear-gradient(135deg,#14918f 0%,#2563eb 100%); --card:#ffffff; color-scheme:light; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0b1220; --bg-alt:#0f1a2e; --ink:#e6edf7; --muted:#93a3bb; --line:#1f2c44; --teal:#2fb8b5; --card:#111c31; color-scheme:dark; } }
+* { box-sizing:border-box; }
+[hidden] { display:none !important; }
+body { margin:0; background:var(--bg-alt); color:var(--ink); font:16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:var(--teal); }
+.wrap { width:min(560px, 100% - 32px); margin-inline:auto; }
+.topbar { background:var(--bg); border-bottom:1px solid var(--line); }
+.topbar-inner { display:flex; align-items:center; gap:10px; height:64px; }
+.brand { display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink); font-size:1.05rem; }
+.brand img { width:36px; height:36px; }
+.brand strong { font-weight:800; }
+main { padding:40px 0 64px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:28px; }
+h1 { font-size:1.5rem; line-height:1.2; margin:0 0 12px; }
+p { margin:0 0 12px; }
+.muted { color:var(--muted); font-size:.92rem; }
+.summary { display:grid; grid-template-columns:auto 1fr; gap:6px 16px; margin:0 0 20px; }
+.summary dt { color:var(--muted); }
+.summary dd { margin:0; font-weight:600; word-break:break-word; }
+.actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:8px; }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 20px; border-radius:10px; font:600 1rem Inter, system-ui, sans-serif; text-decoration:none; border:1px solid transparent; cursor:pointer; }
+.btn-primary { background:var(--grad); color:#fff; }
+.btn-danger { background:transparent; border-color:#dc2626; color:#dc2626; }
+.btn:disabled { opacity:.55; cursor:not-allowed; }
+.files { display:grid; gap:10px; margin:16px 0; }
+.ok { color:#059669; }
+.err { color:#dc2626; }
+@media (prefers-color-scheme: dark) { .ok { color:#34d399; } .err { color:#f87171; } .btn-danger { border-color:#f87171; color:#f87171; } }
