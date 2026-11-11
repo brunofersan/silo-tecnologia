@@ -7,11 +7,20 @@
 | `SiloIDE-2.0.0-setup.exe` | 235 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-2.0.0-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1 e a 2.2.0 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0 e a 2.2.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
 
 **Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 2.0.0 (138 MB), na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
 **Para Linux (x64, com GTK 3):** pacote `.tar.gz` da 2.0.0 (143 MB), na página inicial em **Baixar para Linux**. Extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro. Esse pacote não tem atualização automática.
+
+---
+
+## 2.2.1
+
+**Correções na aba Arquivos e excluir arquivo ou pasta.**
+
+- **Árvore que não expandia:** quando a IDE abria já na aba Arquivos, as pastas não expandiam até trocar de aba e voltar. Agora expandem direto.
+- **Excluir pela árvore:** botão direito > **Excluir** ou a tecla Delete no que está selecionado. A IDE pede confirmação, apaga a pasta com tudo o que tem dentro e, quando o Windows permite, manda para a Lixeira. Depois, a seleção vai para o item seguinte ou o anterior.
 
 ---
 
