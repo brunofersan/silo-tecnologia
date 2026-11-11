@@ -39,6 +39,7 @@ Para uma versão nova do instalador, use **Gerenciar versões › Enviar nova ve
    | `FILE_WIN_PORTABLE` | ID da cópia da versão portátil (.zip) |
    | `FILE_MAC` | ID da cópia do .dmg |
    | `FILE_LINUX` | ID da cópia do .tar.gz |
+   | `WEBAPP_URL` | URL do app da Web (`.../exec`), preenchida depois do passo 3; garante que os links dos e-mails usem a implantação certa |
    | `LINK_DAYS` | opcional, dias que o link vale (padrão 7) |
    | `MAX_PER_HOUR` | opcional, limite de pedidos por hora (padrão 30) |
 

@@ -48,7 +48,7 @@ window.SILO_CONFIG = {
   ],
   // Endereço do app da Web do Apps Script que recebe os pedidos de download
   // (termina em /exec). Vazio = botões de download desativados com aviso "em breve".
-  DOWNLOAD_REQUEST_URL: "",
+  DOWNLOAD_REQUEST_URL: "https://script.google.com/macros/s/AKfycbxYkXqfyuo_KIXj32SSr9-3FwOLbIRBd9ekRbCklZ-d9ujzJIUw31DN3NyNjOdr0zLyVQ/exec",
   // Chave de acesso do Web3Forms (https://web3forms.com). O formulário de
   // suporte envia para o e-mail cadastrado lá, sem mostrar o e-mail no site.
   // Vazio = formulário desativado com aviso "em breve".
