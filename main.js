@@ -155,13 +155,16 @@
     return currentLang === "en" ? p[1] + "/" + p[2] + "/" + p[0] : p[2] + "/" + p[1] + "/" + p[0];
   }
   function anchor(v) { return "v" + v.toLowerCase().replace(/[^a-z0-9]+/g, "-"); }
-  function fileCell(available, label, size) {
+  function fileCell(available, label, size, platform) {
     var td = document.createElement("td");
-    if (available && requestUrl) {
+    if (!label) {
+      td.textContent = "–";
+      td.className = "muted";
+    } else if (available && requestUrl) {
       var a = document.createElement("a");
       a.href = "#download";
       a.className = "js-request";
-      a.setAttribute("data-platform", "win");
+      a.setAttribute("data-platform", platform);
       a.textContent = label + (size ? " · " + size : "");
       td.appendChild(a);
     } else {
@@ -173,26 +176,34 @@
     return td;
   }
   var versionsBody = document.getElementById("versionsBody");
+  function versionRows() {
+    var rows = [];
+    if (latest.version) rows.push({ os: t("vs.win", "Windows 10/11 (64 bits)"), version: latest.version, date: latest.date, platform: "win",
+      installer: [latest.installer, t("vs.installer", "Instalador"), latest.installerSize],
+      portable: [latest.portable, t("vs.portable", "Portátil"), latest.portableSize] });
+    if (mac.available && mac.version) rows.push({ os: t("vs.mac", "macOS (Apple Silicon)"), version: mac.version, date: mac.date, platform: "mac",
+      installer: [true, ".dmg", mac.size], portable: [false, "", ""] });
+    if (linux.available && linux.version) rows.push({ os: t("vs.linux", "Linux x64"), version: linux.version, date: linux.date, platform: "linux",
+      installer: [false, "", ""], portable: [true, ".tar.gz", linux.size] });
+    return rows;
+  }
   function renderVersions() {
     if (!versionsBody) return;
     versionsBody.textContent = "";
-    versions.forEach(function (v, i) {
+    versionRows().forEach(function (v) {
       var tr = document.createElement("tr");
       var th = document.createElement("th");
       th.scope = "row";
-      th.textContent = v.version;
-      if (i === 0) {
-        var tag = document.createElement("span");
-        tag.className = "tag";
-        tag.textContent = t("vs.current", "atual");
-        th.appendChild(tag);
-      }
+      th.textContent = v.os;
       tr.appendChild(th);
+      var ver = document.createElement("td");
+      ver.textContent = v.version;
+      tr.appendChild(ver);
       var td = document.createElement("td");
       td.textContent = fmtDate(v.date) || "–";
       tr.appendChild(td);
-      tr.appendChild(fileCell(i === 0 && v.installer, t("vs.installer", "Instalador"), v.installerSize));
-      tr.appendChild(fileCell(i === 0 && v.portable, t("vs.portable", "Portátil"), v.portableSize));
+      tr.appendChild(fileCell(v.installer[0], v.installer[1], v.installer[2], v.platform));
+      tr.appendChild(fileCell(v.portable[0], v.portable[1], v.portable[2], v.platform));
       var notes = document.createElement("td");
       var na = document.createElement("a");
       na.href = "releases.html#" + anchor(v.version);
