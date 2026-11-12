@@ -16,6 +16,18 @@
   if (latest.installerSize) setText(".js-size", latest.installerSize);
   setText(".js-year", String(new Date().getFullYear()));
 
+  function newer(a, b) {
+    var x = String(a || "").split("."), y = String(b || "").split(".");
+    for (var i = 0; i < Math.max(x.length, y.length); i++) {
+      var d = (parseInt(x[i], 10) || 0) - (parseInt(y[i], 10) || 0);
+      if (d) return d > 0;
+    }
+    return false;
+  }
+  var newest = (cfg.LATEST || "").trim() || latest.version || "";
+  if (newest) setText(".js-latest", newest);
+  if (newer(newest, latest.version)) document.querySelectorAll(".js-update-note").forEach(function (n) { n.hidden = false; });
+
   var requestUrl = (cfg.DOWNLOAD_REQUEST_URL || "").trim();
   var mac = cfg.MAC || {};
   var linux = cfg.LINUX || {};

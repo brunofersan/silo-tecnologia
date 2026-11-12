@@ -99,6 +99,12 @@ p { margin: 0 0 1em; }
 .lead { font-size: 1.12rem; color: var(--muted); max-width: 560px; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 14px; }
 .meta { font-size: .88rem; color: var(--muted); }
+.update-note-hero {
+  margin: 12px 0 0; max-width: 560px; font-size: .9rem; color: var(--ink);
+  padding: 10px 14px; border: 1px solid color-mix(in srgb, var(--teal) 45%, var(--line));
+  border-left: 4px solid var(--teal); border-radius: 10px;
+  background: color-mix(in srgb, var(--teal) 8%, var(--card));
+}
 
 .hero-visual { position: relative; }
 .window {
@@ -187,6 +193,7 @@ p { margin: 0 0 1em; }
 .download p { margin: 0; color: #a9b8cf; }
 .download .note { margin-top: 6px; color: #fcd34d; }
 .download .note-how { margin-top: 6px; color: #e2e8f0; }
+.download .update-note { margin-top: 6px; color: #7ee7e1; }
 
 .dl-dialog { width: min(480px, calc(100vw - 32px)); padding: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); color: var(--ink); box-shadow: var(--shadow); }
 .dl-dialog::backdrop { background: rgba(15, 23, 42, .55); }

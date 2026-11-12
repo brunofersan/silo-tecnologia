@@ -11,6 +11,10 @@
 //  As notas ficam em release-notes.md (rode tools/build-releases.py).
 // =====================================================================
 window.SILO_CONFIG = {
+  // Versão mais nova do Silo IDE, entregue pela atualização automática.
+  // Quando for maior que a do instalador (VERSIONS[0]), o site avisa que o
+  // instalador é de uma versão anterior e que a IDE se atualiza sozinha.
+  LATEST: "2.4.0",
   // Instalador do macOS (Apple Silicon), independente da lista de versões do Windows.
   // available: false = o botão "Baixar para Mac" fica escondido.
   MAC: {
