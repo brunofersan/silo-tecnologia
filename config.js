@@ -12,8 +12,9 @@
 // =====================================================================
 window.SILO_CONFIG = {
   // Versão mais nova do Silo IDE, entregue pela atualização automática.
-  // Quando for maior que a do instalador (VERSIONS[0]), o site avisa que o
-  // instalador é de uma versão anterior e que a IDE se atualiza sozinha.
+  // Quando for maior que a do instalador de algum sistema (VERSIONS[0], MAC ou
+  // LINUX), o site avisa quais instaladores são de versão anterior e que a IDE
+  // se atualiza sozinha.
   LATEST: "2.4.0",
   // Instalador do macOS (Apple Silicon), independente da lista de versões do Windows.
   // available: false = o botão "Baixar para Mac" fica escondido.
@@ -26,9 +27,9 @@ window.SILO_CONFIG = {
   // Pacote do Linux x64 (.tar.gz), independente da lista de versões do Windows.
   // available: false = o botão "Baixar para Linux" fica escondido.
   LINUX: {
-    version: "2.0.0",
-    date: "2026-11-06",
-    size: "143 MB",
+    version: "2.4.0",
+    date: "2026-11-12",
+    size: "144 MB",
     available: true
   },
   // Doações. Tudo opcional: a seção "Apoie" só aparece se houver chave Pix ou algum link.

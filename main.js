@@ -26,7 +26,19 @@
   }
   var newest = (cfg.LATEST || "").trim() || latest.version || "";
   if (newest) setText(".js-latest", newest);
-  if (newer(newest, latest.version)) document.querySelectorAll(".js-update-note").forEach(function (n) { n.hidden = false; });
+  var behind = [["Windows", latest.installer || latest.portable, latest.version], ["Mac", (cfg.MAC || {}).available, (cfg.MAC || {}).version], ["Linux", (cfg.LINUX || {}).available, (cfg.LINUX || {}).version]]
+    .filter(function (p) { return p[1] && p[2] && newer(newest, p[2]); });
+  function renderBehind() {
+    if (!behind.length) return;
+    var names = behind.map(function (p) { return p[0]; });
+    var and = (dict[currentLang] || {})["up.and"] || " e ";
+    var text = names.length > 1 ? names.slice(0, -1).join(", ") + and + names[names.length - 1] : names[0];
+    var oldest = behind.reduce(function (a, p) { return newer(a, p[2]) ? p[2] : a; }, behind[0][2]);
+    setText(".js-behind", text);
+    setText(".js-behind-version", oldest);
+  }
+  renderBehind();
+  if (behind.length) document.querySelectorAll(".js-update-note").forEach(function (n) { n.hidden = false; });
 
   var requestUrl = (cfg.DOWNLOAD_REQUEST_URL || "").trim();
   var mac = cfg.MAC || {};
@@ -339,6 +351,7 @@
     });
     try { localStorage.setItem("silo-lang", lang); } catch (e) {}
     renderVersions();
+    renderBehind();
     document.dispatchEvent(new CustomEvent("silo-lang", { detail: lang }));
   }
 
