@@ -29,8 +29,8 @@ window.SILO_CONFIG = {
       date: "2026-11-13",
       installerSize: "",
       portableSize: "",
-      installerId: "",
-      portableId: "",
+      installerId: "1tQiotNFNI8ZTCDWM3qTqRmpJ06tbE_DS",
+      portableId: "1j8e-jorz0a5sVebLxo3sSW6HAyA5aLex",
       installer: true,
       portable: true
     }
