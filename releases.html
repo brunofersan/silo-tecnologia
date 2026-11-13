@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2.5.1-1">
+  <link rel="stylesheet" href="styles.css?v=2.6.0-1">
 </head>
 <body>
   <header class="topbar">
@@ -74,9 +74,42 @@
 </tr>
 </tbody>
 </table>
-<p>Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0 e a 2.5.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.</p>
+<p>Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0, a 2.5.1, a 2.5.2, a 2.5.3, a 2.5.4 e a 2.6.0 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.</p>
 <p><strong>Para macOS (chip Apple, macOS 11 ou mais novo):</strong> instalador <code>.dmg</code> da 2.0.0 (138 MB), na página inicial em <strong>Baixar para Mac</strong>. As versões seguintes chegam sozinhas pela atualização automática.</p>
 <p><strong>Para Linux (x64, com GTK 3):</strong> pacote <code>.tar.gz</code> da 2.4.0 (144 MB), na página inicial em <strong>Baixar para Linux</strong>. Extraia com <code>tar xzf</code> e rode <code>./SiloIDE/silo-ide.sh</code>; o Java já vai dentro. Esse pacote não tem atualização automática.</p>
+<hr />
+<h2 id="v2-6-0">2.6.0</h2>
+<p><strong>Plugins, paleta de comandos, revisão de código por linha, filtro no log, backup das configurações e muito mais.</strong></p>
+<ul>
+<li><strong>Plugins:</strong> loja de plugins da equipe e Plugins &gt; Gerenciar para ligar e desligar, com dependências entre plugins. Nada muda para quem já usa: o que existia continua ligado.</li>
+<li><strong>Navegação e editor:</strong> paleta de comandos (Ctrl+Shift+P), sessões de trabalho, recentes com prévia (Ctrl+E), Ctrl+G, minimapa, guias de indentação, parênteses coloridos, dobrar código, templates, modo Zen, zoom, macros, ferramentas de linhas, comparar seleções e anotações por linha.</li>
+<li><strong>SQL e banco:</strong> formatador de PL/SQL, Ctrl+clique em tabela e coluna para ir à definição, quem usa a coluna, objetos inválidos do schema e aviso dos dependentes antes de compilar.</li>
+<li><strong>Git:</strong> desfazer o último commit ainda não enviado e revisar pull requests (GitHub) e merge requests (GitLab) com comentário por linha.</li>
+<li><strong>Log do Tomcat:</strong> filtro de texto e cores por tipo de linha; a detecção de erro ficou bem mais rápida.</li>
+<li><strong>Visual:</strong> abas coloridas e fixadas, densidade, ícones de status, barra de status, fonte por linguagem, temas da comunidade e editor de temas.</li>
+<li><strong>Outros:</strong> Notas e terminal com abas, relatório semanal, SonarQube no menu do projeto, importar atalhos de outras IDEs, backup completo das configurações com backup automático diário e Primeiros passos para quem acabou de instalar.</li>
+</ul>
+<hr />
+<h2 id="v2-5-4">2.5.4</h2>
+<p><strong>Novo logo e janela aparecendo mais cedo.</strong></p>
+<ul>
+<li><strong>Novo logo.</strong></li>
+<li><strong>Janela aparece mais cedo:</strong> o terminal embutido do bloco Log agora é montado depois de a janela abrir, e não antes; até lá o bloco mostra o console comum.</li>
+</ul>
+<hr />
+<h2 id="v2-5-3">2.5.3</h2>
+<p><strong>Abertura mais leve com muitos projetos.</strong></p>
+<ul>
+<li><strong>Abertura mais leve:</strong> a árvore do bloco Arquivos não é mais redesenhada inteira a cada projeto que termina de ler o status do Git, e o menu do botão direito de cada arquivo só é montado quando você clica.</li>
+</ul>
+<hr />
+<h2 id="v2-5-2">2.5.2</h2>
+<p><strong>Menos memória e Ctrl+Shift+R rápido.</strong></p>
+<ul>
+<li><strong>Menos memória:</strong> os dicionários do corretor ortográfico e as contagens de uso acima dos métodos ocupam uma fração do espaço de antes.</li>
+<li><strong>Ctrl+Shift+R rápido com muitos projetos:</strong> a busca de arquivos não trava mais a janela a cada letra; com centenas de milhares de arquivos, cada busca caiu de cerca de 2 segundos para poucos milissegundos.</li>
+<li><strong>Listas de arquivos liberadas:</strong> as listas da busca rápida e do filtro do bloco Arquivos são descartadas depois de um tempo sem uso e remontadas quando você volta a buscar.</li>
+</ul>
 <hr />
 <h2 id="v2-5-1">2.5.1</h2>
 <p><strong>Barra de rolagem nos avisos longos e Diff que não fica mais vazio.</strong></p>
@@ -416,8 +449,8 @@
     </div>
   </footer>
 
-  <script src="config.js?v=2.5.1-1"></script>
-  <script src="i18n.js?v=2.5.1-1"></script>
-  <script src="main.js?v=2.5.1-1"></script>
+  <script src="config.js?v=2.6.0-1"></script>
+  <script src="i18n.js?v=2.6.0-1"></script>
+  <script src="main.js?v=2.6.0-1"></script>
 </body>
 </html>

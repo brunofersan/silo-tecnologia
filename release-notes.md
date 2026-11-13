@@ -7,11 +7,52 @@
 | `SiloIDE-2.0.0-setup.exe` | 235 MB | Instalador (não precisa de administrador) |
 | `SiloIDE-2.0.0-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0 e a 2.5.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0, a 2.5.1, a 2.5.2, a 2.5.3, a 2.5.4 e a 2.6.0 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
 
 **Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 2.0.0 (138 MB), na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
 **Para Linux (x64, com GTK 3):** pacote `.tar.gz` da 2.4.0 (144 MB), na página inicial em **Baixar para Linux**. Extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro. Esse pacote não tem atualização automática.
+
+---
+
+## 2.6.0
+
+**Plugins, paleta de comandos, revisão de código por linha, filtro no log, backup das configurações e muito mais.**
+
+- **Plugins:** loja de plugins da equipe e Plugins > Gerenciar para ligar e desligar, com dependências entre plugins. Nada muda para quem já usa: o que existia continua ligado.
+- **Navegação e editor:** paleta de comandos (Ctrl+Shift+P), sessões de trabalho, recentes com prévia (Ctrl+E), Ctrl+G, minimapa, guias de indentação, parênteses coloridos, dobrar código, templates, modo Zen, zoom, macros, ferramentas de linhas, comparar seleções e anotações por linha.
+- **SQL e banco:** formatador de PL/SQL, Ctrl+clique em tabela e coluna para ir à definição, quem usa a coluna, objetos inválidos do schema e aviso dos dependentes antes de compilar.
+- **Git:** desfazer o último commit ainda não enviado e revisar pull requests (GitHub) e merge requests (GitLab) com comentário por linha.
+- **Log do Tomcat:** filtro de texto e cores por tipo de linha; a detecção de erro ficou bem mais rápida.
+- **Visual:** abas coloridas e fixadas, densidade, ícones de status, barra de status, fonte por linguagem, temas da comunidade e editor de temas.
+- **Outros:** Notas e terminal com abas, relatório semanal, SonarQube no menu do projeto, importar atalhos de outras IDEs, backup completo das configurações com backup automático diário e Primeiros passos para quem acabou de instalar.
+
+---
+
+## 2.5.4
+
+**Novo logo e janela aparecendo mais cedo.**
+
+- **Novo logo.**
+- **Janela aparece mais cedo:** o terminal embutido do bloco Log agora é montado depois de a janela abrir, e não antes; até lá o bloco mostra o console comum.
+
+---
+
+## 2.5.3
+
+**Abertura mais leve com muitos projetos.**
+
+- **Abertura mais leve:** a árvore do bloco Arquivos não é mais redesenhada inteira a cada projeto que termina de ler o status do Git, e o menu do botão direito de cada arquivo só é montado quando você clica.
+
+---
+
+## 2.5.2
+
+**Menos memória e Ctrl+Shift+R rápido.**
+
+- **Menos memória:** os dicionários do corretor ortográfico e as contagens de uso acima dos métodos ocupam uma fração do espaço de antes.
+- **Ctrl+Shift+R rápido com muitos projetos:** a busca de arquivos não trava mais a janela a cada letra; com centenas de milhares de arquivos, cada busca caiu de cerca de 2 segundos para poucos milissegundos.
+- **Listas de arquivos liberadas:** as listas da busca rápida e do filtro do bloco Arquivos são descartadas depois de um tempo sem uso e remontadas quando você volta a buscar.
 
 ---
 
