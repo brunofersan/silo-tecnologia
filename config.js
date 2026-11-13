@@ -15,7 +15,7 @@ window.SILO_CONFIG = {
   // Quando for maior que a do instalador de algum sistema (VERSIONS[0], MAC ou
   // LINUX), o site avisa quais instaladores são de versão anterior e que a IDE
   // se atualiza sozinha.
-  LATEST: "2.6.0",
+  LATEST: "2.6.1",
   // Instalador do macOS (Apple Silicon), independente da lista de versões do Windows.
   // available: false = o botão "Baixar para Mac" fica escondido.
   MAC: {
