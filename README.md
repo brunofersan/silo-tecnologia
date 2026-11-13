@@ -10,7 +10,7 @@ Site estático do Silo IDE (HTML, CSS e JS puros), publicado pelo GitHub Pages.
 
 ## Downloads com aprovação
 
-Os botões de download abrem um pedido (nome, e-mail, sistema). O dono aprova pelo e-mail e a pessoa recebe o link. O backend é um Google Apps Script em `apps-script/`; a configuração está em [apps-script/LEIAME.md](apps-script/LEIAME.md). `DOWNLOAD_REQUEST_URL` no `config.js` é a URL do app da Web (vazio = downloads desativados).
+Os botões de download levam direto ao arquivo no Google Drive: em `config.js`, `installerId` e `portableId` de `VERSIONS[0]` são os IDs dos arquivos (compartilhados com "qualquer pessoa com o link"). Vazio = botão desativado com "em breve". Só há download para Windows.
 
 `FORM_ACCESS_KEY` é a chave do Web3Forms do formulário de suporte (as mensagens chegam no e-mail cadastrado lá, que não aparece no site).
 
