@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2.6.1-1">
+  <link rel="stylesheet" href="styles.css?v=3.0.0-1">
 </head>
 <body>
   <header class="topbar">
@@ -51,7 +51,7 @@
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <div class="hero-tags">
-            <p class="eyebrow"><span class="dot"></span> <span data-i18n="hero.badge">Nova versão</span> <span class="js-latest">2.5.1</span></p>
+            <p class="eyebrow"><span class="dot"></span> <span data-i18n="hero.badge">Nova versão</span> <span class="js-latest">3.0.0</span></p>
             <a class="donate-pill js-donate-pill" href="#apoie" hidden data-i18n="dn.pill">♥ Apoie o Silo IDE</a>
           </div>
           <h1 data-i18n="hero.title">Tudo o que você usa para desenvolver, numa única IDE leve e rápida.</h1>
@@ -62,11 +62,9 @@
               <span data-i18n="cta.download">Baixar para Windows</span>
             </a>
             <a class="btn btn-ghost js-portable" href="#download" hidden data-i18n="cta.portable">Versão portátil</a>
-            <a class="btn btn-ghost js-mac" href="#download" hidden data-i18n="cta.mac">Baixar para Mac</a>
-            <a class="btn btn-ghost js-linux" href="#download" hidden data-i18n="cta.linux">Baixar para Linux</a>
           </div>
-          <p class="meta"><span data-i18n="meta.version">Versão</span> <span class="js-version">2.0.0</span> · <span data-i18n="meta.os">Windows 10/11 de 64 bits</span> · <span class="js-size">235 MB</span> · <a class="meta-link" href="releases.html" data-i18n="ft.releases">Notas da versão</a></p>
-          <p class="update-note update-note-hero js-update-note" hidden><span data-i18n="up.a">A versão atual é a</span> <strong class="js-latest">2.5.1</strong><span data-i18n="up.b">. O instalador para</span> <span class="js-behind">Windows e Mac</span> <span data-i18n="up.b2">ainda é o da</span> <span class="js-behind-version">2.0.0</span><span data-i18n="up.c">, mas depois de instalado o Silo IDE se atualiza sozinho para a</span> <span class="js-latest">2.5.1</span><span data-i18n="up.d">, sem precisar baixar de novo.</span></p>
+          <p class="meta"><span data-i18n="meta.version">Versão</span> <span class="js-version">3.0.0</span> · <span data-i18n="meta.os">Windows 10/11 de 64 bits</span> <span class="js-size-wrap">· <span class="js-size"></span></span> · <a class="meta-link" href="releases.html" data-i18n="ft.releases">Notas da versão</a></p>
+          <p class="update-note update-note-hero js-update-note" hidden><span data-i18n="up.a">A versão atual é a</span> <strong class="js-latest">3.0.0</strong><span data-i18n="up.b">. O instalador para</span> <span class="js-behind">Windows</span> <span data-i18n="up.b2">ainda é o da</span> <span class="js-behind-version">2.0.0</span><span data-i18n="up.c">, mas depois de instalado o Silo IDE se atualiza sozinho para a</span> <span class="js-latest">3.0.0</span><span data-i18n="up.d">, sem precisar baixar de novo.</span></p>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
@@ -179,7 +177,7 @@
         </div>
         <table class="req">
           <tbody>
-            <tr><th data-i18n="req.os">Sistema</th><td data-i18n="req.osv">Windows 10 ou 11, 64 bits; macOS 11 ou mais novo (Apple Silicon); Linux x64</td></tr>
+            <tr><th data-i18n="req.os">Sistema</th><td data-i18n="req.osv">Windows 10 ou 11, 64 bits</td></tr>
             <tr><th data-i18n="req.ram">Memória</th><td data-i18n="req.ramv">4 GB mínimo, 8 GB recomendado</td></tr>
             <tr><th data-i18n="req.disk">Disco</th><td data-i18n="req.diskv">1,5 GB livres</td></tr>
             <tr><th data-i18n="req.java">Java</th><td data-i18n="req.javav">Incluído no instalador</td></tr>
@@ -195,7 +193,7 @@
         <h2 data-i18n="ins.t">Pronto em poucos minutos</h2>
       </header>
       <ol class="steps">
-        <li><h3 data-i18n="s1.t">Peça o download</h3><p data-i18n="s1.d">Clique em “Baixar para Windows”, informe seu nome e e-mail e aguarde: assim que o pedido for aprovado, o link para baixar chega no seu e-mail.</p></li>
+        <li><h3 data-i18n="s1.t">Baixe o instalador</h3><p data-i18n="s1.d">Clique em “Baixar para Windows”: o download começa na hora, sem cadastro.</p></li>
         <li><h3 data-i18n="s2.t">Execute o arquivo</h3><p data-i18n="s2.d">Dê dois cliques no instalador. Se o Windows exibir “O Windows protegeu o computador”, clique em “Mais informações” e depois em “Executar assim mesmo”.</p></li>
         <li><h3 data-i18n="s3.t">Siga o assistente</h3><p data-i18n="s3.d">Aceite a licença, confirme a pasta de instalação e conclua. Ao final, o Silo IDE aparece no menu Iniciar.</p></li>
         <li><h3 data-i18n="s4.t">Abra e configure</h3><p data-i18n="s4.d">Na primeira execução, escolha o idioma e o tema, informe a pasta dos seus projetos e, se quiser, cadastre suas conexões de banco.</p></li>
@@ -208,21 +206,16 @@
         <img src="assets/marca.png?v=13" alt="" width="88" height="88">
         <div>
           <h2 data-i18n="dl.t">Download gratuito do Silo IDE</h2>
-          <p><span data-i18n="meta.version">Versão</span> <span class="js-version">2.0.0</span> · <span data-i18n="meta.os">Windows 10/11 de 64 bits</span> · <span class="js-size">235 MB</span></p>
-          <p class="update-note js-update-note" hidden><span data-i18n="up.a">A versão atual é a</span> <strong class="js-latest">2.5.1</strong><span data-i18n="up.b">. O instalador para</span> <span class="js-behind">Windows e Mac</span> <span data-i18n="up.b2">ainda é o da</span> <span class="js-behind-version">2.0.0</span><span data-i18n="up.c">, mas depois de instalado o Silo IDE se atualiza sozinho para a</span> <span class="js-latest">2.5.1</span><span data-i18n="up.d">, sem precisar baixar de novo.</span></p>
-          <p class="note-how js-dl-how" hidden data-i18n="dl.how">O download é liberado por e-mail: peça pelo botão e você recebe o link assim que o pedido for aprovado.</p>
+          <p><span data-i18n="meta.version">Versão</span> <span class="js-version">3.0.0</span> · <span data-i18n="meta.os">Windows 10/11 de 64 bits</span> <span class="js-size-wrap">· <span class="js-size"></span></span></p>
+          <p class="update-note js-update-note" hidden><span data-i18n="up.a">A versão atual é a</span> <strong class="js-latest">3.0.0</strong><span data-i18n="up.b">. O instalador para</span> <span class="js-behind">Windows</span> <span data-i18n="up.b2">ainda é o da</span> <span class="js-behind-version">2.0.0</span><span data-i18n="up.c">, mas depois de instalado o Silo IDE se atualiza sozinho para a</span> <span class="js-latest">3.0.0</span><span data-i18n="up.d">, sem precisar baixar de novo.</span></p>
           <p class="terms-note"><span data-i18n="dl.terms">Ao baixar, você concorda com os</span> <a href="termos.html" data-i18n="ft.terms">Termos de uso</a> · <a href="releases.html" data-i18n="ft.releases">Notas da versão</a></p>
           <p class="note js-dl-note" hidden data-i18n="dl.soon">O link de download será liberado em breve.</p>
-          <p class="note js-mac-info" hidden><span data-i18n="mac.label">macOS 11 ou mais novo (Apple Silicon)</span> · <span data-i18n="meta.version">Versão</span> <span class="js-mac-version"></span> · <span class="js-mac-size"></span> · <span data-i18n="mac.how">Abra o .dmg e arraste o Silo IDE para Aplicativos. Na primeira vez, clique com o botão direito e escolha Abrir.</span></p>
-          <p class="note js-linux-info" hidden><span data-i18n="linux.label">Linux x64 com GTK 3</span> · <span data-i18n="meta.version">Versão</span> <span class="js-linux-version"></span> · <span class="js-linux-size"></span> · <span data-i18n="linux.how">Extraia com tar xzf e rode ./SiloIDE/silo-ide.sh. O Java já vai no pacote.</span></p>
         </div>
         <a class="btn btn-light js-download" href="#download">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span data-i18n="cta.download">Baixar para Windows</span>
         </a>
         <a class="btn btn-outline-light js-portable" href="#download" hidden data-i18n="cta.portable">Versão portátil</a>
-        <a class="btn btn-outline-light js-mac" href="#download" hidden data-i18n="cta.mac">Baixar para Mac</a>
-        <a class="btn btn-outline-light js-linux" href="#download" hidden data-i18n="cta.linux">Baixar para Linux</a>
       </div>
     </section>
 
@@ -230,7 +223,7 @@
       <header class="section-head">
         <p class="kicker" data-i18n="vs.k">Versões</p>
         <h2 data-i18n="vs.t">Versões disponíveis</h2>
-        <p class="muted"><span data-i18n="vs.d">Baixe o instalador do seu sistema. A versão atual é a</span> <strong class="js-latest">2.5.1</strong><span data-i18n="vs.d2">: no Windows e no Mac ela chega sozinha pela atualização automática, ao abrir o programa.</span></p>
+        <p class="muted"><span data-i18n="vs.d">Baixe o instalador do seu sistema. A versão atual é a</span> <strong class="js-latest">3.0.0</strong><span data-i18n="vs.d2">: depois de instalada, ela chega sozinha pela atualização automática, ao abrir o programa.</span></p>
       </header>
       <div class="table-scroll">
         <table class="versions">
@@ -258,7 +251,7 @@
       <details><summary data-i18n="q1">O que significa “RC” na versão?</summary><p data-i18n="a1">Release Candidate: uma versão candidata, completa e estável para uso, que ainda recebe ajustes finos antes da versão final.</p></details>
       <details><summary data-i18n="q2">Preciso instalar o Java antes?</summary><p data-i18n="a2">Não. O ambiente Java da IDE já vem no instalador. Para compilar seus projetos, você aponta nas configurações o JDK que cada projeto usa.</p></details>
       <details><summary data-i18n="q9">Qual a diferença entre o instalador e a versão portátil?</summary><p data-i18n="a9">O instalador coloca o Silo IDE no menu Iniciar e é o caminho recomendado. A versão portátil vem em uma pasta pronta para usar: basta extrair e abrir, sem instalar, ideal para máquinas sem permissão de administrador.</p></details>
-      <details><summary data-i18n="q3">Funciona em macOS ou Linux?</summary><p data-i18n="a3">Funciona em macOS 11 ou mais novo, em Macs com chip Apple (M1 ou superior), pelo botão “Baixar para Mac”, e em Linux x64, pelo botão “Baixar para Linux” (pacote .tar.gz). Para Linux ARM ainda não há pacote.</p></details>
+      <details><summary data-i18n="q3">Funciona em macOS ou Linux?</summary><p data-i18n="a3">Por enquanto o download é só para Windows 10 e 11 de 64 bits.</p></details>
       <details><summary data-i18n="q4">Quais bancos de dados posso acessar?</summary><p data-i18n="a4">Oracle, PostgreSQL, SQL Server, MySQL e MariaDB. A IDE baixa o driver JDBC quando falta. Você cadastra as conexões uma vez e alterna entre elas pela aba Banco.</p></details>
       <details><summary data-i18n="q5">Por que o Windows mostra um aviso ao instalar?</summary><p data-i18n="a5">O SmartScreen avisa sobre programas recém-lançados que ainda têm poucos downloads. Baixe sempre por este site, clique em “Mais informações” e em “Executar assim mesmo”.</p></details>
       <details><summary data-i18n="q6">Como recebo novas versões?</summary><p data-i18n="a6">A atualização é automática: a IDE verifica ao iniciar e oferece a nova versão. Suas configurações e projetos são mantidos.</p></details>
@@ -345,29 +338,6 @@
 
   </main>
 
-  <dialog id="dlDialog" class="dl-dialog" aria-labelledby="dlTitle">
-    <form class="support-form" id="dlForm" novalidate>
-      <input type="text" name="site" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <h3 id="dlTitle" data-i18n="rq.t">Pedir o download do Silo IDE</h3>
-      <p class="muted" data-i18n="rq.d">Informe seu nome e e-mail. Você recebe agora a chave do pedido e, assim que ele for aprovado, o link para baixar chega no seu e-mail.</p>
-      <label><span data-i18n="fm.name">Nome</span><input name="nome" required maxlength="120" autocomplete="name"></label>
-      <label><span data-i18n="fm.email">Seu e-mail</span><input name="email" type="email" required maxlength="160" autocomplete="email"></label>
-      <label><span data-i18n="rq.sys">Sistema</span>
-        <select name="sistema" required>
-          <option value="win" data-i18n="rq.win">Windows (instalador e versão portátil)</option>
-          <option value="mac" data-i18n="rq.mac">macOS 11 ou mais novo (Apple Silicon)</option>
-          <option value="linux" data-i18n="rq.linux">Linux x64</option>
-        </select>
-      </label>
-      <p class="terms-note muted"><span data-i18n="rq.terms">Ao pedir o download, você concorda com os</span> <a href="termos.html" data-i18n="ft.terms">Termos de uso</a>.</p>
-      <p class="form-status" role="status" aria-live="polite"></p>
-      <div class="dl-actions">
-        <button class="btn btn-primary" type="submit" data-i18n="rq.send">Pedir download</button>
-        <button class="btn btn-ghost js-dl-close" type="button" data-i18n="rq.close">Fechar</button>
-      </div>
-    </form>
-  </dialog>
-
   <footer class="footer">
     <div class="wrap footer-inner">
       <img src="assets/marca.png?v=13" alt="" width="28" height="28">
@@ -379,8 +349,8 @@
   </footer>
 
 
-  <script src="config.js?v=2.6.1-1"></script>
-  <script src="i18n.js?v=2.6.1-1"></script>
-  <script src="main.js?v=2.6.1-1"></script>
+  <script src="config.js?v=3.0.0-1"></script>
+  <script src="i18n.js?v=3.0.0-1"></script>
+  <script src="main.js?v=3.0.0-1"></script>
 </body>
 </html>
