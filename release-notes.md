@@ -16,7 +16,7 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 **Só a IDE no instalador, com plugins à parte e download livre.**
 
 - **Instalador mais enxuto:** o instalador e a atualização trazem só a IDE, sem plugins de produto e sem aplicações web embarcadas. Quem já tem plugins continua com eles; plugins novos são instalados em **Plugins > Gerenciar plugins > Instalar de arquivo**.
-- **CAS e Editor encontrados no computador:** o plugin procura nas pastas comuns e nos webapps do Tomcat, sem atrasar a abertura, e deixa escolher a pasta em **Configurações > Aplicações**.
+- **Aplicações encontradas no computador:** os plugins procuram as aplicações de que precisam nas pastas comuns e nos webapps do Tomcat, sem atrasar a abertura, e deixam escolher a pasta em **Configurações > Aplicações**.
 - **Plugins completos:** cada plugin traz os seus textos e a sua ajuda em português, espanhol e inglês.
 - **Node 10 sob demanda:** projetos Angular 7 ou anteriores recebem o Node 10 na primeira vez que precisam, sem pesar no instalador.
 - **Download livre:** o instalador para Windows é baixado direto pelo site, sem pedido por e-mail.
