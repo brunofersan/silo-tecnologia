@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3.0.0-3">
+  <link rel="stylesheet" href="styles.css?v=3.0.0-4">
 </head>
 <body>
   <header class="topbar">
@@ -94,7 +94,7 @@
 <hr />
 <p>Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0, a 2.5.1, a 2.5.2, a 2.5.3, a 2.5.4, a 2.6.0 e a 2.6.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.</p>
 <p><strong>Para macOS (chip Apple, macOS 11 ou mais novo):</strong> instalador <code>.dmg</code> da 3.0.0, na página inicial em <strong>Baixar para Mac</strong>. As versões seguintes chegam sozinhas pela atualização automática.</p>
-<p><strong>Para Linux (x64, com GTK 3):</strong> pacote <code>.tar.gz</code> da 3.0.0, na página inicial em <strong>Baixar para Linux</strong>. Extraia com <code>tar xzf</code> e rode <code>./SiloIDE/silo-ide.sh</code>; o Java já vai dentro. Esse pacote não tem atualização automática.</p>
+<p><strong>Para Linux (x64, com GTK 3):</strong> pacote <code>.tar.gz</code> da 3.0.0, na página inicial em <strong>Baixar para Linux</strong>. Extraia com <code>tar xzf</code> e rode <code>./SiloIDE/silo-ide.sh</code>; o Java já vai dentro. As versões seguintes chegam sozinhas pela atualização automática.</p>
 <hr />
 <h2 id="v2-6-1">2.6.1</h2>
 <p><strong>Plugins embutidos em arquivos separados.</strong></p>
@@ -232,9 +232,9 @@
 </ul>
 <hr />
 <h2 id="v2-0-1">2.0.1</h2>
-<p><strong>Projetos clonados aparecem na lista e telas Morphis sem reiniciar o Tomcat.</strong></p>
+<p><strong>Projetos clonados aparecem na lista e telas sem reiniciar o Tomcat.</strong></p>
 <ul>
-<li><strong>Telas Morphis sem reiniciar o Tomcat:</strong> ao salvar um Task.Config, Struct, Manager.Config, ValueSet ou texto de uma tela, a IDE recarrega só o módulo daquela tela, e não o Tomcat inteiro. Depois é só abrir a tela de novo no navegador.</li>
+<li><strong>Telas sem reiniciar o Tomcat:</strong> ao salvar um Task.Config, Struct, Manager.Config, ValueSet ou texto de uma tela, a IDE recarrega só o módulo daquela tela, e não o Tomcat inteiro. Depois é só abrir a tela de novo no navegador.</li>
 <li><strong>F5 e Atualizar</strong> na lista de projetos também procuram projetos novos nas pastas do repositório, como um projeto clonado fora da IDE.</li>
 <li><strong>Projeto que voltou:</strong> um projeto da lista cuja pasta foi apagada e clonada de novo volta a aparecer sem reiniciar a IDE.</li>
 <li><strong>Clonar projeto</strong> adiciona os projetos que estão em subpastas do repositório e avisa quando o git não consegue clonar.</li>
@@ -249,7 +249,7 @@
 <p><strong>Temas novos e nomes novos nos textos.</strong></p>
 <ul>
 <li><strong>Temas:</strong> em <strong>Exibir &gt; Tema</strong> há três opções novas: <strong>Grafite</strong> (escuro em cinza neutro), <strong>Daltonismo</strong> (azul e laranja no lugar de verde e vermelho, inclusive nas cores de diferenças do Git) e <strong>Seguir o sistema</strong> (muda sozinho entre claro e escuro junto com o Windows ou o macOS).</li>
-<li><strong>Nomes:</strong> textos, ajuda e documentação passam a falar em Módulos, Prontuário, Prescrição e SiloEditor.</li>
+<li><strong>Nomes:</strong> textos, ajuda e documentação passam a usar nomes neutros, sem nomes de produtos de terceiros.</li>
 <li><strong>Temas de extensões:</strong> as cores do visual ganharam nomes novos. Temas de extensões instalados antes da 2.0 precisam ser instalados de novo em <strong>Exibir &gt; Extensões</strong>.</li>
 </ul>
 <hr />
@@ -473,8 +473,8 @@
     </div>
   </footer>
 
-  <script src="config.js?v=3.0.0-3"></script>
-  <script src="i18n.js?v=3.0.0-3"></script>
-  <script src="main.js?v=3.0.0-3"></script>
+  <script src="config.js?v=3.0.0-4"></script>
+  <script src="i18n.js?v=3.0.0-4"></script>
+  <script src="main.js?v=3.0.0-4"></script>
 </body>
 </html>
