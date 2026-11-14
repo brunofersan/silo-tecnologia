@@ -21,14 +21,14 @@ window.SILO_CONFIG = {
     version: "3.0.0",
     date: "2026-11-14",
     size: "140 MB",
-    fileId: "",
+    fileId: "1UIrhygx2V5TH72HFejuoZjO3BhenUXYb",
     available: true
   },
   LINUX: {
     version: "3.0.0",
     date: "2026-11-14",
     size: "144 MB",
-    fileId: "",
+    fileId: "1ixTecB-or7W-r2dHJAjJmnS7EiJb8Kl9",
     available: true
   },
   // Doações. Tudo opcional: a seção "Apoie" só aparece se houver chave Pix ou algum link.
