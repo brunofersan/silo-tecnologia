@@ -1,11 +1,13 @@
 # Silo IDE: notas de versão
 
-**Versão disponível para download:** 3.0.0 (Windows 10 e 11, 64 bits)
+**Versão disponível para download:** 3.0.0 (Windows 10 e 11, 64 bits; macOS 11 ou mais novo, chip Apple; Linux x64)
 
 | Arquivo | Uso |
 |---|---|
-| `SiloIDE-3.0.0-setup.exe` | Instalador (não precisa de administrador) |
-| `SiloIDE-3.0.0-portable.zip` | Versão portátil: descompacte e rode `SiloIDE.bat` |
+| `SiloIDE-3.0.0-setup.exe` | Instalador do Windows (não precisa de administrador) |
+| `SiloIDE-3.0.0-portable.zip` | Versão portátil do Windows: descompacte e rode `SiloIDE.bat` |
+| `SiloIDE-3.0.0-macos-arm64.dmg` | macOS: abra e arraste o Silo IDE para Aplicativos; na primeira vez, clique com o botão direito e escolha Abrir |
+| `SiloIDE-3.0.0-linux-x64.tar.gz` | Linux com GTK 3: extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro |
 
 O download é direto, na página inicial. Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**.
 
@@ -19,17 +21,16 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 - **Aplicações encontradas no computador:** os plugins procuram as aplicações de que precisam nas pastas comuns e nos webapps do Tomcat, sem atrasar a abertura, e deixam escolher a pasta em **Configurações > Aplicações**.
 - **Plugins completos:** cada plugin traz os seus textos e a sua ajuda em português, espanhol e inglês.
 - **Node 10 sob demanda:** projetos Angular 7 ou anteriores recebem o Node 10 na primeira vez que precisam, sem pesar no instalador.
-- **Download livre:** o instalador para Windows é baixado direto pelo site, sem pedido por e-mail.
+- **Download livre:** os instaladores para Windows, macOS e Linux são baixados direto pelo site, sem pedido por e-mail.
+- **macOS e Linux na 3.0.0:** o `.dmg` do Mac com chip Apple e o pacote `.tar.gz` do Linux x64 voltam ao site, já na versão 3.0.0.
 
----|---|---|
-| `SiloIDE-2.0.0-setup.exe` | 235 MB | Instalador (não precisa de administrador) |
-| `SiloIDE-2.0.0-portable.zip` | 247 MB | Versão portátil: descompacte e rode `SiloIDE.bat` |
+---
 
 Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0, a 2.5.1, a 2.5.2, a 2.5.3, a 2.5.4, a 2.6.0 e a 2.6.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
 
-**Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 2.0.0 (138 MB), na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
+**Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 3.0.0, na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
-**Para Linux (x64, com GTK 3):** pacote `.tar.gz` da 2.4.0 (144 MB), na página inicial em **Baixar para Linux**. Extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro. Esse pacote não tem atualização automática.
+**Para Linux (x64, com GTK 3):** pacote `.tar.gz` da 3.0.0, na página inicial em **Baixar para Linux**. Extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro. Esse pacote não tem atualização automática.
 
 ---
 
