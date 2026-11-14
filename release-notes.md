@@ -30,7 +30,7 @@ Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o p
 
 **Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 3.0.0, na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
-**Para Linux (x64, com GTK 3):** pacote `.tar.gz` da 3.0.0, na página inicial em **Baixar para Linux**. Extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro. Esse pacote não tem atualização automática.
+**Para Linux (x64, com GTK 3):** pacote `.tar.gz` da 3.0.0, na página inicial em **Baixar para Linux**. Extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro. As versões seguintes chegam sozinhas pela atualização automática.
 
 ---
 
@@ -203,9 +203,9 @@ Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o p
 
 ## 2.0.1
 
-**Projetos clonados aparecem na lista e telas Morphis sem reiniciar o Tomcat.**
+**Projetos clonados aparecem na lista e telas sem reiniciar o Tomcat.**
 
-- **Telas Morphis sem reiniciar o Tomcat:** ao salvar um Task.Config, Struct, Manager.Config, ValueSet ou texto de uma tela, a IDE recarrega só o módulo daquela tela, e não o Tomcat inteiro. Depois é só abrir a tela de novo no navegador.
+- **Telas sem reiniciar o Tomcat:** ao salvar um Task.Config, Struct, Manager.Config, ValueSet ou texto de uma tela, a IDE recarrega só o módulo daquela tela, e não o Tomcat inteiro. Depois é só abrir a tela de novo no navegador.
 - **F5 e Atualizar** na lista de projetos também procuram projetos novos nas pastas do repositório, como um projeto clonado fora da IDE.
 - **Projeto que voltou:** um projeto da lista cuja pasta foi apagada e clonada de novo volta a aparecer sem reiniciar a IDE.
 - **Clonar projeto** adiciona os projetos que estão em subpastas do repositório e avisa quando o git não consegue clonar.
@@ -222,7 +222,7 @@ Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o p
 **Temas novos e nomes novos nos textos.**
 
 - **Temas:** em **Exibir > Tema** há três opções novas: **Grafite** (escuro em cinza neutro), **Daltonismo** (azul e laranja no lugar de verde e vermelho, inclusive nas cores de diferenças do Git) e **Seguir o sistema** (muda sozinho entre claro e escuro junto com o Windows ou o macOS).
-- **Nomes:** textos, ajuda e documentação passam a falar em Módulos, Prontuário, Prescrição e SiloEditor.
+- **Nomes:** textos, ajuda e documentação passam a usar nomes neutros, sem nomes de produtos de terceiros.
 - **Temas de extensões:** as cores do visual ganharam nomes novos. Temas de extensões instalados antes da 2.0 precisam ser instalados de novo em **Exibir > Extensões**.
 
 ---

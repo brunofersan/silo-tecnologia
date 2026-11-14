@@ -4,11 +4,11 @@ Site estático do Silo IDE (HTML, CSS e JS puros), publicado pelo GitHub Pages.
 
 ## Para cada nova versão
 
-1. Em `config.js`, copie o primeiro bloco de `VERSIONS`, cole no topo e preencha versão, data e tamanhos. A primeira da lista é a versão atual. Os links dos instaladores não ficam no site: troque o arquivo no Drive com **Gerenciar versões** (o ID não muda) ou atualize os IDs nas propriedades do Apps Script.
+1. Em `config.js`, copie o primeiro bloco de `VERSIONS`, cole no topo e preencha versão, data e tamanhos. A primeira da lista é a versão atual. Para um instalador novo, troque o arquivo no Drive com **Gerenciar versões** (o ID não muda) ou coloque o ID novo em `installerId`/`portableId`. Troque também `LATEST` e, se houver pacote novo, `MAC` e `LINUX`.
 2. Acrescente as novidades no topo de `release-notes.md` e rode `pip install markdown && python tools/build-releases.py` para gerar `releases.html`.
 3. Aumente o `?v=` dos arquivos em `index.html` e em `tools/releases.template.html`, para o navegador não usar cópia antiga.
 
-## Downloads com aprovação
+## Downloads
 
 Os botões de download levam direto ao arquivo no Google Drive: em `config.js`, `installerId` e `portableId` de `VERSIONS[0]` são os IDs dos arquivos (compartilhados com "qualquer pessoa com o link"). Vazio = botão desativado com "em breve". `MAC.fileId` (.dmg) e `LINUX.fileId` (.tar.gz) fazem o mesmo para os botões "Baixar para Mac" e "Baixar para Linux"; `available: false` esconde o botão.
 

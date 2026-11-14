@@ -27,6 +27,7 @@
   }
   var newest = (cfg.LATEST || "").trim() || latest.version || "";
   if (newest) setText(".js-latest", newest);
+  if (newest) document.querySelectorAll("input[name=versao]").forEach(function (n) { n.placeholder = newest; });
   var mac = cfg.MAC || {};
   var linux = cfg.LINUX || {};
   var behind = [["Windows", latest.installer || latest.portable, latest.version], ["Mac", mac.available, mac.version], ["Linux", linux.available, linux.version]]
