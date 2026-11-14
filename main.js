@@ -27,7 +27,9 @@
   }
   var newest = (cfg.LATEST || "").trim() || latest.version || "";
   if (newest) setText(".js-latest", newest);
-  var behind = [["Windows", latest.installer || latest.portable, latest.version]]
+  var mac = cfg.MAC || {};
+  var linux = cfg.LINUX || {};
+  var behind = [["Windows", latest.installer || latest.portable, latest.version], ["Mac", mac.available, mac.version], ["Linux", linux.available, linux.version]]
     .filter(function (p) { return p[1] && p[2] && newer(newest, p[2]); });
   function renderBehind() {
     if (!behind.length) return;
@@ -47,6 +49,8 @@
   }
   var setupUrl = latest.installer ? driveLink(latest.installerId) : "";
   var portableUrl = latest.portable ? driveLink(latest.portableId) : "";
+  var macUrl = mac.available ? driveLink(mac.fileId) : "";
+  var linuxUrl = linux.available ? driveLink(linux.fileId) : "";
 
   function disable(a) {
     a.href = "#download";
@@ -64,7 +68,16 @@
   }
   bindLink(".js-download", setupUrl, true);
   bindLink(".js-portable", portableUrl, !!latest.portable);
+  bindLink(".js-mac", macUrl, !!mac.available);
+  bindLink(".js-linux", linuxUrl, !!linux.available);
   if (!setupUrl) document.querySelectorAll(".js-dl-note").forEach(function (n) { n.hidden = false; });
+  [["mac", mac], ["linux", linux]].forEach(function (p) {
+    if (!p[1].available) return;
+    document.querySelectorAll(".js-" + p[0] + "-info").forEach(function (n) { n.hidden = false; });
+    if (p[1].version) setText(".js-" + p[0] + "-version", p[1].version);
+    if (p[1].size) setText(".js-" + p[0] + "-size", p[1].size);
+    else document.querySelectorAll(".js-" + p[0] + "-size-wrap").forEach(function (n) { n.hidden = true; });
+  });
 
   var donate = cfg.DONATE || {};
   var pixKey = (donate.pixKey || "").trim();
@@ -163,6 +176,10 @@
     if (latest.version) rows.push({ os: t("vs.win", "Windows 10/11 (64 bits)"), version: latest.version, date: latest.date,
       installer: [setupUrl, latest.installer ? t("vs.installer", "Instalador") : "", latest.installerSize],
       portable: [portableUrl, latest.portable ? t("vs.portable", "Portátil") : "", latest.portableSize] });
+    if (mac.available && mac.version) rows.push({ os: t("vs.mac", "macOS (Apple Silicon)"), version: mac.version, date: mac.date,
+      installer: [macUrl, ".dmg", mac.size], portable: ["", "", ""] });
+    if (linux.available && linux.version) rows.push({ os: t("vs.linux", "Linux x64"), version: linux.version, date: linux.date,
+      installer: ["", "", ""], portable: [linuxUrl, ".tar.gz", linux.size] });
     return rows;
   }
   function renderVersions() {

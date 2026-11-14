@@ -10,7 +10,7 @@ Site estático do Silo IDE (HTML, CSS e JS puros), publicado pelo GitHub Pages.
 
 ## Downloads com aprovação
 
-Os botões de download levam direto ao arquivo no Google Drive: em `config.js`, `installerId` e `portableId` de `VERSIONS[0]` são os IDs dos arquivos (compartilhados com "qualquer pessoa com o link"). Vazio = botão desativado com "em breve". Só há download para Windows.
+Os botões de download levam direto ao arquivo no Google Drive: em `config.js`, `installerId` e `portableId` de `VERSIONS[0]` são os IDs dos arquivos (compartilhados com "qualquer pessoa com o link"). Vazio = botão desativado com "em breve". `MAC.fileId` (.dmg) e `LINUX.fileId` (.tar.gz) fazem o mesmo para os botões "Baixar para Mac" e "Baixar para Linux"; `available: false` esconde o botão.
 
 `FORM_ACCESS_KEY` é a chave do Web3Forms do formulário de suporte (as mensagens chegam no e-mail cadastrado lá, que não aparece no site).
 

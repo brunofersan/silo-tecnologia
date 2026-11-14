@@ -14,6 +14,23 @@ window.SILO_CONFIG = {
   // Quando for maior que a do instalador (VERSIONS[0]), o site avisa que o
   // instalador é de versão anterior e que a IDE se atualiza sozinha.
   LATEST: "3.0.0",
+  // Instalador do macOS (Apple Silicon, .dmg) e pacote do Linux x64 (.tar.gz).
+  //   fileId    ID do arquivo no Google Drive, como installerId abaixo
+  //   available false = botão escondido; com available true e fileId vazio o botão aparece como "em breve"
+  MAC: {
+    version: "3.0.0",
+    date: "2026-11-14",
+    size: "140 MB",
+    fileId: "",
+    available: true
+  },
+  LINUX: {
+    version: "3.0.0",
+    date: "2026-11-14",
+    size: "144 MB",
+    fileId: "",
+    available: true
+  },
   // Doações. Tudo opcional: a seção "Apoie" só aparece se houver chave Pix ou algum link.
   //   pixKey    chave Pix (e-mail, telefone, CPF/CNPJ ou chave aleatória)
   //   pixHolder nome que aparece no app do banco ao pagar (opcional, ajuda a pessoa a conferir)
