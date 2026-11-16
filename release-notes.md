@@ -13,6 +13,17 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.0.1
+
+**Menos memória, guias com tab e Notas mais largas.** Chega pela atualização automática.
+
+- **Menos memória:** o terminal da aba Console só é criado quando você abre a aba, e a memória volta ao sistema também depois de 2 minutos sem uso com a janela na frente.
+- **Guias de indentação com tab:** os arquivos indentados com tab (como boa parte dos .java) agora mostram as guias.
+- **Notas mais largas:** arraste a borda esquerda do bloco de Notas para aumentá-lo; a largura fica salva.
+- **Loja de plugins com link do Google Drive:** aceita o link do pacote de plugins (.zip) ou de um .jar e explica quando o link não pode ser lido.
+
+---
+
 ## 3.0.0
 
 **Só a IDE no instalador, com plugins à parte e download livre.**
@@ -26,7 +37,7 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0, a 2.5.1, a 2.5.2, a 2.5.3, a 2.5.4, a 2.6.0 e a 2.6.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0, a 2.5.1, a 2.5.2, a 2.5.3, a 2.5.4, a 2.6.0, a 2.6.1 e a 3.0.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
 
 **Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 3.0.0, na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
