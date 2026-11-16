@@ -13,6 +13,18 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.0.2
+
+**Abertura mais leve, coloração incremental, atualização de plugins, painel de memória e Notas com arquivos.** Chega pela atualização automática.
+
+- **Abertura mais leve:** as abas restauradas da sessão aparecem só com o nome e carregam o arquivo quando você clica nelas.
+- **Coloração incremental:** ao digitar, só o trecho editado é recolorido, não o arquivo inteiro a cada tecla.
+- **Atualização de plugins pela Loja:** a IDE avisa quando um plugin instalado tem versão nova na Loja da equipe e atualiza todos em um clique.
+- **Painel de memória:** clique no "IDE xxx MB" do rodapé para ver o que ocupa memória (abas, índices, terminal, log, plugins) e liberar memória ou descarregar as abas paradas.
+- **Notas com arquivos:** abra qualquer arquivo de texto, de qualquer extensão, nas Notas, salve com Ctrl+S ou use Salvar como para gravar qualquer aba em um arquivo.
+
+---
+
 ## 3.0.1
 
 **Menos memória, guias com tab e Notas mais largas.** Chega pela atualização automática.
@@ -37,7 +49,7 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0, a 2.5.1, a 2.5.2, a 2.5.3, a 2.5.4, a 2.6.0, a 2.6.1 e a 3.0.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0, a 2.5.1, a 2.5.2, a 2.5.3, a 2.5.4, a 2.6.0, a 2.6.1, a 3.0.1 e a 3.0.2 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
 
 **Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 3.0.0, na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
