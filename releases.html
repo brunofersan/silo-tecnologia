@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3.2.0-2">
+  <link rel="stylesheet" href="styles.css?v=3.3.0">
 </head>
 <body>
   <header class="topbar">
@@ -80,6 +80,16 @@
 </tbody>
 </table>
 <p>O download é direto, na página inicial. Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>.</p>
+<hr />
+<h2 id="v3-3-0">3.3.0</h2>
+<p><strong>A IDE explica os erros do console, sobe o Docker antes da aplicação e mostra a saúde do projeto.</strong> Chega pela atualização automática.</p>
+<ul>
+<li><strong>Diagnóstico de erro no console:</strong> a IDE reconhece erros comuns no Log (porta em uso, Tomcat errado para a aplicação, versão do Java, classe não encontrada, falta de memória, banco de dados, Maven e npm) e mostra 💡 no rodapé com a explicação e, quando dá, o botão que corrige. Os plugins ensinam os erros do seu produto.</li>
+<li><strong>Docker Compose antes da aplicação:</strong> marque no serviço e a IDE sobe os contêineres do projeto, espera ficarem prontos e só então sobe a aplicação.</li>
+<li><strong>Grafo do Git e worktrees:</strong> o histórico com as linhas das branches, filtro e detalhes de cada commit. Com os worktrees, você abre outra branch em outra pasta para corrigir algo urgente sem guardar o que está pela metade.</li>
+<li><strong>Saúde do projeto:</strong> testes do último build, Git, dependências desatualizadas ou vulneráveis e Sonar num só lugar.</li>
+<li><strong>Plugins sem programar, parte 2:</strong> o <code>plugin.json</code> ganha comandos (abrir endereço ou arquivo, copiar texto, rodar git e comandos), snippets, modelos de arquivo, regras do checklist de commit e erros do Log explicados pelo plugin.</li>
+</ul>
 <hr />
 <h2 id="v3-2-0">3.2.0</h2>
 <p><strong>Plugins sem programar, ambiente que se corrige sozinho e Loja oficial.</strong> Chega pela atualização automática.</p>
@@ -530,8 +540,8 @@
     </div>
   </footer>
 
-  <script src="config.js?v=3.2.0-2"></script>
-  <script src="i18n.js?v=3.2.0-2"></script>
-  <script src="main.js?v=3.2.0-2"></script>
+  <script src="config.js?v=3.3.0"></script>
+  <script src="i18n.js?v=3.3.0"></script>
+  <script src="main.js?v=3.3.0"></script>
 </body>
 </html>
