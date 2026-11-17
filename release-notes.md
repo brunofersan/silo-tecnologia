@@ -15,8 +15,9 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ## 3.3.0
 
-**A IDE explica os erros do console, sobe o Docker antes da aplicação e mostra a saúde do projeto.** Chega pela atualização automática.
+**A IDE explica os erros do console, sobe o Docker antes da aplicação e mostra a saúde do projeto.** Chega pela atualização automática no Windows, no Mac e no Linux.
 
+- **Atualização automática também no Mac e no Linux:** quem instalou pelo `.dmg` ou pelo `.tar.gz` recebe a 3.3.0 sozinho, ao abrir o Silo IDE ou em **Ajuda > Procurar atualizações**, como já acontece no Windows. Quem estava na 3.0.0 pula direto para a 3.3.0, com todas as novidades da 3.1.0 e da 3.2.0.
 - **Diagnóstico de erro no console:** a IDE reconhece erros comuns no Log (porta em uso, Tomcat errado para a aplicação, versão do Java, classe não encontrada, falta de memória, banco de dados, Maven e npm) e mostra 💡 no rodapé com a explicação e, quando dá, o botão que corrige. Os plugins ensinam os erros do seu produto.
 - **Docker Compose antes da aplicação:** marque no serviço e a IDE sobe os contêineres do projeto, espera ficarem prontos e só então sobe a aplicação.
 - **Grafo do Git e worktrees:** o histórico com as linhas das branches, filtro e detalhes de cada commit. Com os worktrees, você abre outra branch em outra pasta para corrigir algo urgente sem guardar o que está pela metade.
