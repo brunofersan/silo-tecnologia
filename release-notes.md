@@ -13,6 +13,16 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.4.5
+
+**Sincronização entre máquinas corrigida.** Chega pela atualização automática.
+
+- **Aviso de atualização de outra máquina:** a IDE parava de repetir o aviso a cada abertura. As configurações que chegam agora entram de verdade ao reiniciar, mesmo que a IDE salve algo ao fechar.
+- **Tema e conexões de banco:** o tema e as conexões de banco da outra máquina passam a chegar junto com o resto das configurações.
+- **Plugins que vêm com a IDE:** não pedem mais para reiniciar toda vez.
+
+---
+
 ## 3.4.4
 
 **Preenchimento de formulários no Silo Browser.** Chega pela atualização automática.
