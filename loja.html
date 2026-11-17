@@ -140,7 +140,7 @@
       b.addEventListener("click", function () { lang = b.getAttribute("data-lang"); try { localStorage.setItem("silo-lang", lang); } catch (e) {} render(); });
     });
     render();
-    fetch("plugins/plugins.json?v=3.2.0-2").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    fetch("plugins/plugins.json?v=3.3.0").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (j) { data = j; render(); }).catch(function () { data = false; render(); });
   })();
   </script>

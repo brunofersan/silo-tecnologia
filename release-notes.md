@@ -13,6 +13,18 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.3.0
+
+**A IDE explica os erros do console, sobe o Docker antes da aplicação e mostra a saúde do projeto.** Chega pela atualização automática.
+
+- **Diagnóstico de erro no console:** a IDE reconhece erros comuns no Log (porta em uso, Tomcat errado para a aplicação, versão do Java, classe não encontrada, falta de memória, banco de dados, Maven e npm) e mostra 💡 no rodapé com a explicação e, quando dá, o botão que corrige. Os plugins ensinam os erros do seu produto.
+- **Docker Compose antes da aplicação:** marque no serviço e a IDE sobe os contêineres do projeto, espera ficarem prontos e só então sobe a aplicação.
+- **Grafo do Git e worktrees:** o histórico com as linhas das branches, filtro e detalhes de cada commit. Com os worktrees, você abre outra branch em outra pasta para corrigir algo urgente sem guardar o que está pela metade.
+- **Saúde do projeto:** testes do último build, Git, dependências desatualizadas ou vulneráveis e Sonar num só lugar.
+- **Plugins sem programar, parte 2:** o `plugin.json` ganha comandos (abrir endereço ou arquivo, copiar texto, rodar git e comandos), snippets, modelos de arquivo, regras do checklist de commit e erros do Log explicados pelo plugin.
+
+---
+
 ## 3.2.0
 
 **Plugins sem programar, ambiente que se corrige sozinho e Loja oficial.** Chega pela atualização automática.
