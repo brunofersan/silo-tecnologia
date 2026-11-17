@@ -13,6 +13,18 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.4.0
+
+**A IDE igual em todas as suas máquinas, tema Vidro e navegador.** Chega pela atualização automática.
+
+- **Sincronização entre máquinas:** configurações, notas, tarefas, plugins, sessões e abas abertas ficam iguais no Windows, no Mac e no Linux. A sincronização usa uma pasta de nuvem (Google Drive, OneDrive, Dropbox, iCloud) ou um repositório privado no GitHub, e não exige login. Senhas só vão cifradas, com uma frase secreta que fica com você.
+- **Tema Vidro:** claro e escuro, transparente no estilo do iOS e do macOS.
+- **Navegador da IDE (Chromium):** janela própria com abas e favoritos, baixada só na primeira vez que você abre. Cada aba fechada libera memória, e ao fechar a última o navegador sai da memória.
+- **Senhas de sites:** o navegador oferece salvar a senha ao entrar num site e preenche nas próximas vezes. As senhas ficam cifradas, passam para as suas outras máquinas só pela sincronização com frase secreta, e o recurso pode ser desligado.
+- **Árvore de projetos sempre certa (3.3.3):** ao ligar ou instalar um plugin com a IDE aberta, os projetos voltam ao grupo certo sem reiniciar.
+
+---
+
 ## 3.3.2
 
 **Plugins sem erro de arquivo em uso.** Chega pela atualização automática.
