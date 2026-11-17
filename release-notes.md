@@ -13,6 +13,18 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.4.2
+
+**O navegador agora fica dentro da IDE.** Chega pela atualização automática.
+
+- **Navegador numa aba do editor:** o Navegador (Chromium) abre ao lado dos arquivos, com a barra nas cores do tema da IDE. Cada página aberta é uma aba embaixo, como Código e Diff.
+- **Links em nova aba e atalhos:** links que abrem em nova janela viram uma nova página embaixo. Ctrl+T, Ctrl+W, Ctrl+L, Ctrl+F, zoom, F5 e F12 funcionam dentro da aba (no Mac, Cmd).
+- **Menos memória:** a página que não está à vista não é desenhada, e fechar a última página encerra o navegador.
+- **Reiniciar no Mac e no Linux (3.4.1):** depois de sincronizar ou instalar plugins, o Reiniciar não trava mais na tela de abertura.
+- **Sincronização sem perder o que chegou (3.4.1):** as mudanças de outra máquina ficam guardadas até o reinício.
+
+---
+
 ## 3.4.0
 
 **A IDE igual em todas as suas máquinas, tema Vidro e navegador.** Chega pela atualização automática.
