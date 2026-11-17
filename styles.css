@@ -166,6 +166,7 @@ p { margin: 0 0 1em; }
 .kicker { color: var(--teal); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .8rem; margin-bottom: 6px; }
 @media (prefers-color-scheme: dark) { .kicker { color: #3fd0c9; } }
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.grid + .muted { margin-top: 20px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
 .card h3 { position: relative; padding-left: 16px; }
 .card h3::before { content: ""; position: absolute; left: 0; top: .35em; width: 6px; height: 6px; border-radius: 2px; background: var(--grad); }
