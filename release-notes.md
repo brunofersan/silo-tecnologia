@@ -13,6 +13,37 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.1.0
+
+**Aplicações WAR no Tomcat da IDE, sem plugin.** Chega pela atualização automática.
+
+- **WAR com Maven no Tomcat da IDE:** aplicações web feitas com Maven (sem Spring Boot), novas ou antigas, sobem no Tomcat da IDE junto com as outras aplicações, sem precisar de plugin. Na janela da aplicação, o campo Como subir escolhe entre o Tomcat da IDE e o WildFly.
+- **Regras de módulos nos plugins:** escolha de módulos, publicação parcial, classes compartilhadas e recarga de tela sem reiniciar o Tomcat agora vêm do plugin de telas. Sem ele, a IDE sobe os projetos como uma IDE comum.
+- **Pacote de plugins 3.1.0:** atualize o pacote de plugins junto com a IDE; os plugins novos precisam desta versão.
+
+---
+
+## 3.0.4
+
+**Núcleo mais neutro: banco, telas e ajuda.** Chega pela atualização automática.
+
+- **Conexão com destino nos plugins:** a Conexão com o banco continua na IDE e serve para qualquer projeto; onde ela é gravada nos arquivos do projeto fica a cargo de cada plugin.
+- **Formato de telas no plugin:** ícones, cores, dobra e conferência dos arquivos de tela vêm do plugin de telas. Sem ele, esses arquivos abrem como texto comum.
+- **Ajuda sem exemplos de produto:** os detalhes de cada produto ficam na ajuda dos plugins.
+- **Pacote de plugins 3.0.4:** atualize o pacote de plugins junto com a IDE.
+
+---
+
+## 3.0.3
+
+**Árvore de arquivos neutra e serviços sob pedido dos plugins.** Chega pela atualização automática.
+
+- **Árvore neutra:** sem plugin, os projetos aparecem direto na aba Arquivos, sem grupos; os agrupamentos por área vêm dos plugins.
+- **Serviços só quando precisam:** os serviços de apoio de um produto só sobem quando o plugin dele pede, e não mais a cada Play.
+- **Pacote de plugins 3.0.3:** atualize o pacote de plugins junto com a IDE.
+
+---
+
 ## 3.0.2
 
 **Abertura mais leve, coloração incremental, atualização de plugins, painel de memória e Notas com arquivos.** Chega pela atualização automática.
