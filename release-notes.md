@@ -13,6 +13,14 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.3.1
+
+**Loja privada de plugins.** Chega pela atualização automática.
+
+- **Loja privada com token:** uma loja de plugins pode ficar num repositório privado do GitHub, Nexus, Artifactory, GitLab ou servidor com login. Em **Gerenciar plugins > Loja da equipe**, o botão 🔑 guarda um token só de leitura, cifrado e só no computador de cada pessoa, e a IDE envia esse token apenas para o endereço da loja. Os plugins de exemplo saíram do site e passam a ser distribuídos assim.
+
+---
+
 ## 3.3.0
 
 **A IDE explica os erros do console, sobe o Docker antes da aplicação e mostra a saúde do projeto.** Chega pela atualização automática no Windows, no Mac e no Linux.
