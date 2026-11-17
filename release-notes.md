@@ -13,6 +13,18 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.4.3
+
+**Sincronização segura, Silo Browser e terminais com botão direito.** Chega pela atualização automática.
+
+- **Sincronização mais segura:** uma máquina nova não apaga mais as configurações da outra, e a lista de projetos não chega vazia. Projetos e abas abertas da outra máquina são somados quando a pasta ou o arquivo existe nela, sem fechar nada. Os plugins instalados vão junto. A IDE só pede para reiniciar quando chega uma configuração nova.
+- **Silo Browser:** o navegador da IDE ganhou nome, botão no topo, sessão lembrada entre aberturas, abas fixadas, ícone dos sites, indicador de carregamento, aba anônima, Ctrl+Shift+T para reabrir, câmera e microfone, e a memória dele no rodapé. Em Abrir no navegador, ele aparece na lista.
+- **Terminais e console:** botão direito com copiar, colar, salvar a saída, limpar, interromper e tamanho da fonte.
+- **Mais espaço na tela:** abas, botões de voltar e avançar e bordas dos blocos menores.
+- **Correções:** cedilha no endereço do navegador, campo de login sem cursor, rolagem do mouse em algumas páginas e as ferramentas do desenvolvedor que travavam no Windows.
+
+---
+
 ## 3.4.2
 
 **O navegador agora fica dentro da IDE.** Chega pela atualização automática.
