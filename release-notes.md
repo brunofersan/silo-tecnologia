@@ -13,6 +13,15 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.3.2
+
+**Plugins sem erro de arquivo em uso.** Chega pela atualização automática.
+
+- **Plugin em uso trocado ao reiniciar:** no Windows, instalar ou atualizar um plugin que está aberto na IDE não dá mais o erro "arquivo em uso". O plugin novo fica guardado e entra no lugar na próxima abertura.
+- **Reiniciar agora:** depois de instalar ou atualizar plugins, a IDE pergunta se quer reiniciar. Reiniciar salva o trabalho aberto e abre a IDE de novo sozinha.
+
+---
+
 ## 3.3.1
 
 **Loja privada de plugins.** Chega pela atualização automática.
