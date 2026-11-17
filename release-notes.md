@@ -13,6 +13,21 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.2.0
+
+**Plugins sem programar, ambiente que se corrige sozinho e Loja oficial.** Chega pela atualização automática.
+
+- **Plugins sem programar:** um plugin pode ser só um arquivo `plugin.json`. Ele agrupa os projetos na árvore, confere e corrige o ambiente, grava a conexão do banco nos arquivos de configuração e passa propriedades para as aplicações.
+- **Verificar ambiente com correção automática:** cada item mostra qual plugin fez a verificação, e o botão Corrigir automaticamente resolve de uma vez o que não precisa de escolha.
+- **Tomcat 10 (Jakarta EE) opcional:** instale pela Ajuda. A IDE avisa quando um projeto precisa dele.
+- **Servidores de linguagem:** Python, Go, Rust, C/C++, C#, PHP, Ruby, Lua, Shell e Dart ganham autocompletar, erros, dicas e ir para a definição quando o servidor da linguagem está instalado.
+- **Subir em ordem:** cada aplicação pode esperar outras e ter um endereço de saúde que diz quando ela está pronta.
+- **Arquivo da equipe:** um `.siloide/team.json` no repositório prepara a máquina de quem chega, com loja, plugins, JDKs, repositórios e configurações.
+- **Sugestão de plugins:** a IDE olha os projetos e sugere os plugins que conhecem cada um.
+- **Loja oficial e plugins assinados:** a Loja oficial da Silo traz plugins de exemplo assinados. Cada empresa pode criar a própria chave, assinar os seus plugins e aceitar só plugins assinados.
+
+---
+
 ## 3.1.0
 
 **Aplicações WAR no Tomcat da IDE, sem plugin.** Chega pela atualização automática.

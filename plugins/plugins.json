@@ -1,0 +1,120 @@
+{
+  "publisher": "Silo Tecnologia",
+  "publicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAnrm4p1QZ/N0wPePfSmvts/Q98b1meG0uktq+ajN+dHC9cei2LBjUUoHuvv0xcfE1ZC43mbUcvqIpSL24h57qetHIEcDTfy7dWQyrlQ/3ZcH/qM/RLxSaqEJAfUAATNoixPv8VXZgYU/3CP2mP2/mwoCxAIrek6Wx8GYIJnjmylfqphLcZSaSKyZAEFGZndy6atmENpgSaTWGj9MYMX0Fq/5SEMnD3zVfWhziFu4YEo69ZVC+/KJOPSfR+EV3cwVJjUFQ7DX+D1tCAV6aJSykLlpDaRu7oJR+LAXaoWADoRjmZHgsomhqB/4/NffUA7FwtmnvOxXifSKyFNWEawJncDuxhODVSdTO5+tcrybPylyk8xoSD84fEUntHettud3XveyIWorTi+6Hq2OC6HnOvygREAhTJ2BN/5PWINqXS8J9gzAfjcqiTH7CpGQiJrCTQqF/wCligjFTAvKvFTBxpTRXsyCsn0WGIy/K9Fr7jCGqA6vORjj7JsQ7+3EblZQLAgMBAAE=",
+  "requireSigned": false,
+  "plugins": [
+    {
+      "id": "spring-e-front",
+      "name": {
+        "pt": "Spring Boot e front-end (sem programar)",
+        "es": "Spring Boot y front-end (sin programar)",
+        "en": "Spring Boot and front-end (no code)"
+      },
+      "version": "1.0.0",
+      "url": "https://brunofersan.github.io/silo-tecnologia/plugins/spring-e-front.jar",
+      "sha256": "ff972560f4d1995f71d60a7a891e02e1dda9fbdfeb565fc54e72a9e0a1239e6c",
+      "minIde": "3.2.0",
+      "permissions": [
+        "files"
+      ],
+      "description": {
+        "pt": "Exemplo de plugin feito só com o plugin.json: agrupa APIs e front-ends na árvore, confere Node e a porta 8080, preenche o banco ativo no application.properties das APIs e sugere-se sozinho quando encontra projetos Spring Boot.",
+        "es": "Ejemplo de plugin hecho solo con el plugin.json: agrupa APIs y front-ends en el árbol, revisa Node y el puerto 8080, completa la base activa en el application.properties de las APIs y se sugiere solo cuando encuentra proyectos Spring Boot.",
+        "en": "Example plugin made only with plugin.json: groups APIs and front-ends in the tree, checks Node and port 8080, fills the active database in the APIs' application.properties and suggests itself when it finds Spring Boot projects."
+      },
+      "detect": {
+        "files": [
+          "pom.xml"
+        ],
+        "contains": {
+          "pom.xml": "spring-boot"
+        }
+      }
+    },
+    {
+      "id": "comandos-da-equipe",
+      "name": {
+        "pt": "Comandos da equipe",
+        "es": "Comandos del equipo",
+        "en": "Team commands"
+      },
+      "version": "1.0.0",
+      "url": "https://brunofersan.github.io/silo-tecnologia/plugins/comandos-da-equipe.jar",
+      "sha256": "08e4edbe4f1b81d69632ec547c9d8cc85279f8566bbb577abef53f974697a067",
+      "minIde": "2.6.0",
+      "permissions": [
+        "editor",
+        "files",
+        "git",
+        "database",
+        "commands",
+        "clipboard"
+      ],
+      "description": {
+        "pt": "Atalho para comandos prontos das tarefas repetidas da equipe: Git, Maven, consultas SQL, textos e caminhos. A lista fica num arquivo de texto que pode ser compartilhado.",
+        "es": "Atajo para comandos listos de las tareas repetidas del equipo: Git, Maven, consultas SQL, textos y rutas. La lista está en un archivo de texto que se puede compartir.",
+        "en": "Shortcut to ready-made commands for the team's repeated tasks: Git, Maven, SQL queries, text and paths. The list lives in a text file that can be shared."
+      }
+    },
+    {
+      "id": "copiar-sql-formatado",
+      "name": {
+        "pt": "Copiar SQL formatado",
+        "es": "Copiar SQL formateado",
+        "en": "Copy formatted SQL"
+      },
+      "version": "1.0.0",
+      "url": "https://brunofersan.github.io/silo-tecnologia/plugins/copiar-sql-formatado.jar",
+      "sha256": "8236968b474356a81a3a58c48eb4e5575ce6bd1577281da7c2c6cfa54a16f84a",
+      "minIde": "2.6.0",
+      "permissions": [
+        "editor",
+        "clipboard"
+      ],
+      "description": {
+        "pt": "Formata o SQL selecionado e copia, puro ou como String Java pronta para colar no código.",
+        "es": "Formatea el SQL seleccionado y lo copia, tal cual o como String Java lista para pegar en el código.",
+        "en": "Formats the selected SQL and copies it, plain or as a Java String ready to paste in code."
+      }
+    },
+    {
+      "id": "painel-todo",
+      "name": {
+        "pt": "Painel de pendências (TODO)",
+        "es": "Panel de pendientes (TODO)",
+        "en": "TODO panel"
+      },
+      "version": "1.0.0",
+      "url": "https://brunofersan.github.io/silo-tecnologia/plugins/painel-todo.jar",
+      "sha256": "05f677d6a2a0b643a860e501276267e72e6a902d8f426adf6e661aa87d23ccd3",
+      "minIde": "2.6.0",
+      "permissions": [
+        "files",
+        "editor"
+      ],
+      "description": {
+        "pt": "Lista os TODO, FIXME e XXX do projeto atual num painel; clique duas vezes para abrir a linha.",
+        "es": "Lista los TODO, FIXME y XXX del proyecto actual en un panel; doble clic para abrir la línea.",
+        "en": "Lists the TODO, FIXME and XXX of the current project in a panel; double-click to open the line."
+      }
+    },
+    {
+      "id": "verificar-commit",
+      "name": {
+        "pt": "Verificação extra de commit",
+        "es": "Verificación extra de commit",
+        "en": "Extra commit check"
+      },
+      "version": "1.0.0",
+      "url": "https://brunofersan.github.io/silo-tecnologia/plugins/verificar-commit.jar",
+      "sha256": "7127c0b3b28cd6cc221221e9a1cde9aa6ed1b090b0845606647d66cfe251119d",
+      "minIde": "2.6.0",
+      "permissions": [],
+      "description": {
+        "pt": "Antes do commit, avisa sobre System.out, printStackTrace, senha escrita no código e arquivo grande demais.",
+        "es": "Antes del commit, avisa de System.out, printStackTrace, contraseña escrita en el código y archivo demasiado grande.",
+        "en": "Before a commit, warns about System.out, printStackTrace, passwords written in code and files that are too big."
+      }
+    }
+  ]
+}
