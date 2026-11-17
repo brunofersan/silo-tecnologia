@@ -13,6 +13,16 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.4.4
+
+**Preenchimento de formulários no Silo Browser.** Chega pela atualização automática.
+
+- **Preenchimento de formulários:** o Silo Browser lembra o que você digitou nos campos (e-mail, usuário, busca) e sugere ao clicar no campo. Senhas e cartões nunca são guardados, e dá para apagar tudo no menu ⋮.
+- **Botão direito nas abas do navegador:** o menu (Fixar aba, Duplicar, Fechar...) voltou a abrir. Fixar aba também está no menu ⋮.
+- **Memória:** a janela Memória da IDE mostra quanto o Silo Browser está usando.
+
+---
+
 ## 3.4.3
 
 **Sincronização segura, Silo Browser e terminais com botão direito.** Chega pela atualização automática.
