@@ -1,6 +1,6 @@
 {
   "publisher": "Silo Tecnologia",
-  "publicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAnrm4p1QZ/N0wPePfSmvts/Q98b1meG0uktq+ajN+dHC9cei2LBjUUoHuvv0xcfE1ZC43mbUcvqIpSL24h57qetHIEcDTfy7dWQyrlQ/3ZcH/qM/RLxSaqEJAfUAATNoixPv8VXZgYU/3CP2mP2/mwoCxAIrek6Wx8GYIJnjmylfqphLcZSaSKyZAEFGZndy6atmENpgSaTWGj9MYMX0Fq/5SEMnD3zVfWhziFu4YEo69ZVC+/KJOPSfR+EV3cwVJjUFQ7DX+D1tCAV6aJSykLlpDaRu7oJR+LAXaoWADoRjmZHgsomhqB/4/NffUA7FwtmnvOxXifSKyFNWEawJncDuxhODVSdTO5+tcrybPylyk8xoSD84fEUntHettud3XveyIWorTi+6Hq2OC6HnOvygREAhTJ2BN/5PWINqXS8J9gzAfjcqiTH7CpGQiJrCTQqF/wCligjFTAvKvFTBxpTRXsyCsn0WGIy/K9Fr7jCGqA6vORjj7JsQ7+3EblZQLAgMBAAE=",
+  "publicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA1eXXH99KVRu9hkGB2Q16DQ3YO2zd/lVJgo/V8Vbh1Cu33PAna+WMtGKMIfJUPjHklibCW6AwCCPwcknpUrMpzlwNWYSysJKJEzot803V1YAgjcT1X4gGV6UIcbwaMcfk7lM/Fw3a9TbqqSwLk4ntgtdEEZVwtl+jsNHWrVrJ1Ihq1nnhsoB388YWbJVxJgfq0IZICEyxHVoEIq/PR0q0URLlmqBfE/JZeEczlc5iJv0A+6AEmSS6gOlHQ4tDAo0yfVDJRtEIp66yw4dIBcK+NI8eHRVhCvzfm+i3MgVOpFmCHxtd1ldZOA0naUKoh0XYC4UrHhCsY8wInbL7i5WJ1qMZpGaQsAFV+dgWHh/q5de2zQIwB1tZVtiv1kfDsy3qG+NWkMgMxqy0hQ5cA2iA9gRkgM5Qap9uM5KyPRHOdRaFfmnX6CpggGNOmRwPNd2ye2/c+U8kKM9+tX6AkAviY9YXC5ouPBp/ZJRvD8PaCUwJ8it05V2/hLvp2omuBVNzAgMBAAE=",
   "requireSigned": false,
   "plugins": [
     {
@@ -12,7 +12,7 @@
       },
       "version": "1.0.0",
       "url": "https://brunofersan.github.io/silo-tecnologia/plugins/spring-e-front.jar",
-      "sha256": "ff972560f4d1995f71d60a7a891e02e1dda9fbdfeb565fc54e72a9e0a1239e6c",
+      "sha256": "fb6ba5a1ee75f9fec3b10bc5e54fbc170dc8258f5360e1b59ace12345efa20d8",
       "minIde": "3.2.0",
       "permissions": [
         "files"
@@ -40,7 +40,7 @@
       },
       "version": "1.0.0",
       "url": "https://brunofersan.github.io/silo-tecnologia/plugins/comandos-da-equipe.jar",
-      "sha256": "08e4edbe4f1b81d69632ec547c9d8cc85279f8566bbb577abef53f974697a067",
+      "sha256": "629274db6b9e30953cf948474aae1db264e8b5a5897ebf11ffcf2ece061be0a7",
       "minIde": "2.6.0",
       "permissions": [
         "editor",
@@ -65,7 +65,7 @@
       },
       "version": "1.0.0",
       "url": "https://brunofersan.github.io/silo-tecnologia/plugins/copiar-sql-formatado.jar",
-      "sha256": "8236968b474356a81a3a58c48eb4e5575ce6bd1577281da7c2c6cfa54a16f84a",
+      "sha256": "7dbe7f9962aa215c88eaeab48b81f7b90c4d5298e88383fb95017e3d0bd5b10a",
       "minIde": "2.6.0",
       "permissions": [
         "editor",
@@ -86,7 +86,7 @@
       },
       "version": "1.0.0",
       "url": "https://brunofersan.github.io/silo-tecnologia/plugins/painel-todo.jar",
-      "sha256": "05f677d6a2a0b643a860e501276267e72e6a902d8f426adf6e661aa87d23ccd3",
+      "sha256": "53f618f6e1bcfe2d15a91f743816bb5aa7b74918eae4c35aa3d8082f3c880db5",
       "minIde": "2.6.0",
       "permissions": [
         "files",
@@ -107,7 +107,7 @@
       },
       "version": "1.0.0",
       "url": "https://brunofersan.github.io/silo-tecnologia/plugins/verificar-commit.jar",
-      "sha256": "7127c0b3b28cd6cc221221e9a1cde9aa6ed1b090b0845606647d66cfe251119d",
+      "sha256": "b6ffd5e971ca8aaddee5bf7b4378e80e6de194fae982d78caade728a83cf14fa",
       "minIde": "2.6.0",
       "permissions": [],
       "description": {
