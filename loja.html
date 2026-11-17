@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loja de plugins | Silo IDE</title>
+  <meta name="description" content="Loja oficial de plugins do Silo IDE: plugins de exemplo assinados, prontos para instalar.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=13">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#ffffff; --bg-alt:#f4f7fb; --ink:#0f172a; --muted:#5b6b82; --line:#e2e8f0; --teal:#14918f; --grad:linear-gradient(135deg,#14918f 0%,#2563eb 100%); color-scheme:light; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0b1220; --bg-alt:#0f1a2e; --ink:#e6edf7; --muted:#93a3bb; --line:#1f2c44; --teal:#2fb8b5; color-scheme:dark; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing:antialiased; }
+    a { color:var(--teal); }
+    .wrap { width:min(960px, 100% - 32px); margin-inline:auto; }
+    .topbar { position:sticky; top:0; z-index:10; background:color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter:saturate(160%) blur(10px); border-bottom:1px solid var(--line); }
+    .topbar-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; height:64px; }
+    .brand { display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink); font-size:1.05rem; }
+    .brand img { width:36px; height:36px; }
+    .brand strong { font-weight:800; }
+    .back { color:var(--muted); text-decoration:none; font-weight:500; font-size:.95rem; }
+    .back:hover { color:var(--ink); }
+    header.page { background:var(--bg-alt); border-bottom:1px solid var(--line); padding:48px 0 32px; }
+    .eyebrow { margin:0 0 8px; font-size:.8rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    h1 { font-size:clamp(1.8rem, 4vw, 2.5rem); line-height:1.15; margin:0 0 12px; letter-spacing:-.01em; }
+    .meta { color:var(--muted); margin:0; }
+    .lang-note { font-size:.85rem; font-style:italic; }
+    main { padding:24px 0 64px; }
+    h2 { font-size:1.15rem; margin:36px 0 8px; padding-top:20px; border-top:1px solid var(--line); }
+    main p, main li { color:var(--ink); }
+    p { margin:0 0 .8em; }
+    ul { padding-left:1.3em; margin:0 0 1em; }
+    li { margin:.25em 0; }
+    .num { color:var(--muted); font-variant-numeric:tabular-nums; margin-right:4px; }
+    .note { background:var(--bg-alt); border:1px solid var(--line); border-radius:12px; padding:14px 18px; color:var(--muted); }
+    footer { border-top:1px solid var(--line); padding:24px 0; color:var(--muted); font-size:.9rem; }
+  
+    .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:16px; margin:24px 0; }
+    .card { border:1px solid var(--line); border-radius:14px; padding:18px; background:var(--bg); display:flex; flex-direction:column; gap:8px; }
+    .card h3 { margin:0; font-size:1.05rem; }
+    .card p { color:var(--muted); margin:0; font-size:.95rem; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
+    .tag { font-size:.75rem; border:1px solid var(--line); border-radius:999px; padding:2px 8px; color:var(--muted); }
+    .tag.ok { border-color:var(--teal); color:var(--teal); }
+    .card .btn { margin-top:auto; align-self:flex-start; display:inline-block; padding:8px 14px; border-radius:10px; background:var(--grad); color:#fff; text-decoration:none; font-weight:600; font-size:.9rem; }
+    .langs { display:flex; gap:8px; }
+    .langs button { background:none; border:1px solid var(--line); border-radius:8px; color:var(--muted); padding:4px 8px; cursor:pointer; font:inherit; font-size:.8rem; }
+    .langs button[aria-pressed=true] { color:var(--ink); border-color:var(--teal); }
+    code { font-family:"JetBrains Mono", ui-monospace, monospace; font-size:.85em; background:var(--bg-alt); border:1px solid var(--line); border-radius:6px; padding:1px 6px; word-break:break-all; }
+    ol li { margin:.4em 0; }
+    @media (max-width:560px) { .langs .back { display:none; } .brand span { display:none; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html" aria-label="Silo Tecnologia">
+        <img src="assets/marca.png?v=13" alt="" width="36" height="36">
+        <span><strong>Silo</strong> Tecnologia</span>
+      </a>
+      <div class="langs">
+        <button type="button" data-lang="pt">PT</button>
+        <button type="button" data-lang="es">ES</button>
+        <button type="button" data-lang="en">EN</button>
+        <a class="back" href="index.html#plugins" data-t="back">Voltar ao site</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="page">
+    <div class="wrap">
+      <p class="eyebrow">Silo IDE</p>
+      <h1 data-t="title">Loja oficial de plugins</h1>
+      <p class="meta" data-t="lead">Plugins de exemplo que a IDE já entende, todos assinados pela Silo Tecnologia. Use como estão ou como modelo para os plugins da sua empresa.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid" id="plugins" aria-live="polite"><p class="note" data-t="loading">Carregando os plugins...</p></div>
+
+    <h2 data-t="howT">Como instalar</h2>
+    <ol>
+      <li data-t="how1">No Silo IDE 3.2.0 ou mais novo, abra Plugins &gt; Gerenciar plugins &gt; Loja da equipe.</li>
+      <li data-t="how2">Na lista de lojas, escolha ★ Loja oficial da Silo e aceite confiar na chave da Silo Tecnologia.</li>
+      <li data-t="how3">Selecione o plugin e clique em Instalar / atualizar.</li>
+    </ol>
+    <p data-t="manual">Também dá para baixar o arquivo .jar aqui e instalar em Plugins &gt; Gerenciar plugins &gt; Adicionar &gt; Instalar de arquivo.</p>
+    <p><span data-t="catalog">Endereço do catálogo, para colar em outra IDE ou loja:</span> <code>https://brunofersan.github.io/silo-tecnologia/plugins/plugins.json</code></p>
+
+    <h2 data-t="ownT">Sua empresa pode ter a própria loja</h2>
+    <p data-t="own">Uma pasta compartilhada ou um arquivo plugins.json num endereço https já é uma loja. Crie a chave da empresa e assine os plugins em Plugins &gt; Gerenciar plugins &gt; Segurança. Um plugin pode ser só um arquivo plugin.json, sem programar: veja o exemplo Spring Boot e front-end e o tópico Plugins sem programar na ajuda da IDE.</p>
+  </main>
+
+  <footer>
+    <div class="wrap">© Silo Tecnologia</div>
+  </footer>
+
+  <script>
+  (function () {
+    var T = {
+      pt: { back: "Voltar ao site", title: "Loja oficial de plugins", lead: "Plugins de exemplo que a IDE já entende, todos assinados pela Silo Tecnologia. Use como estão ou como modelo para os plugins da sua empresa.", loading: "Carregando os plugins...", fail: "Não foi possível carregar a loja agora. Tente de novo em instantes.", howT: "Como instalar", how1: "No Silo IDE 3.2.0 ou mais novo, abra Plugins > Gerenciar plugins > Loja da equipe.", how2: "Na lista de lojas, escolha ★ Loja oficial da Silo e aceite confiar na chave da Silo Tecnologia.", how3: "Selecione o plugin e clique em Instalar / atualizar.", manual: "Também dá para baixar o arquivo .jar aqui e instalar em Plugins > Gerenciar plugins > Adicionar > Instalar de arquivo.", catalog: "Endereço do catálogo, para colar em outra IDE ou loja:", ownT: "Sua empresa pode ter a própria loja", own: "Uma pasta compartilhada ou um arquivo plugins.json num endereço https já é uma loja. Crie a chave da empresa e assine os plugins em Plugins > Gerenciar plugins > Segurança. Um plugin pode ser só um arquivo plugin.json, sem programar: veja o exemplo Spring Boot e front-end e o tópico Plugins sem programar na ajuda da IDE.", version: "versão", needs: "IDE", signed: "assinado", nocode: "sem programar", download: "Baixar .jar", perms: "Permissões" },
+      es: { back: "Volver al sitio", title: "Tienda oficial de plugins", lead: "Plugins de ejemplo que el IDE ya entiende, todos firmados por Silo Tecnologia. Úselos tal cual o como modelo para los plugins de su empresa.", loading: "Cargando los plugins...", fail: "No se pudo cargar la tienda ahora. Inténtelo de nuevo en unos instantes.", howT: "Cómo instalar", how1: "En Silo IDE 3.2.0 o más nuevo, abra Plugins > Administrar plugins > Tienda del equipo.", how2: "En la lista de tiendas, elija ★ Tienda oficial de Silo y acepte confiar en la clave de Silo Tecnologia.", how3: "Seleccione el plugin y haga clic en Instalar / actualizar.", manual: "También puede descargar el archivo .jar aquí e instalarlo en Plugins > Administrar plugins > Agregar > Instalar desde archivo.", catalog: "Dirección del catálogo, para pegar en otro IDE o tienda:", ownT: "Su empresa puede tener su propia tienda", own: "Una carpeta compartida o un archivo plugins.json en una dirección https ya es una tienda. Cree la clave de la empresa y firme los plugins en Plugins > Administrar plugins > Seguridad. Un plugin puede ser solo un archivo plugin.json, sin programar: vea el ejemplo Spring Boot y front-end y el tema Plugins sin programar en la ayuda del IDE.", version: "versión", needs: "IDE", signed: "firmado", nocode: "sin programar", download: "Descargar .jar", perms: "Permisos" },
+      en: { back: "Back to the site", title: "Official plugin store", lead: "Example plugins the IDE already understands, all signed by Silo Tecnologia. Use them as they are or as a model for your company's plugins.", loading: "Loading the plugins...", fail: "The store could not be loaded right now. Please try again shortly.", howT: "How to install", how1: "In Silo IDE 3.2.0 or newer, open Plugins > Manage plugins > Team store.", how2: "In the store list, choose ★ Official Silo store and accept trusting the Silo Tecnologia key.", how3: "Select the plugin and click Install / update.", manual: "You can also download the .jar file here and install it in Plugins > Manage plugins > Add > Install from file.", catalog: "Catalog address, to paste in another IDE or store:", ownT: "Your company can have its own store", own: "A shared folder or a plugins.json file at an https address is already a store. Create the company key and sign the plugins in Plugins > Manage plugins > Security. A plugin can be just a plugin.json file, with no code: see the Spring Boot and front-end example and the Plugins without code topic in the IDE help.", version: "version", needs: "IDE", signed: "signed", nocode: "no code", download: "Download .jar", perms: "Permissions" }
+    };
+    var lang = "pt", data = null;
+    try { lang = localStorage.getItem("silo-lang") || ""; } catch (e) {}
+    if (!T[lang]) { var n = (navigator.language || "pt").slice(0, 2).toLowerCase(); lang = T[n] ? n : "pt"; }
+    function text(v) { if (!v) return ""; if (typeof v === "string") return v; return v[lang] || v.pt || v.en || ""; }
+    function el(tag, cls, txt) { var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+    function render() {
+      var t = T[lang];
+      document.documentElement.lang = lang === "pt" ? "pt-BR" : lang;
+      document.title = t.title + " | Silo IDE";
+      document.querySelectorAll("[data-t]").forEach(function (n) { n.textContent = t[n.getAttribute("data-t")]; });
+      document.querySelectorAll(".langs button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
+      var box = document.getElementById("plugins");
+      if (data === null) return;
+      box.textContent = "";
+      if (!data) { box.appendChild(el("p", "note", t.fail)); return; }
+      data.plugins.forEach(function (p) {
+        var c = el("article", "card");
+        c.appendChild(el("h3", null, text(p.name)));
+        c.appendChild(el("p", null, text(p.description)));
+        var tags = el("div", "tags");
+        tags.appendChild(el("span", "tag", t.version + " " + p.version));
+        if (p.minIde) tags.appendChild(el("span", "tag", t.needs + " " + p.minIde + "+"));
+        tags.appendChild(el("span", "tag ok", "✔ " + t.signed));
+        if (p.detect) tags.appendChild(el("span", "tag ok", t.nocode));
+        c.appendChild(tags);
+        if (p.permissions && p.permissions.length) c.appendChild(el("p", null, t.perms + ": " + p.permissions.join(", ")));
+        var a = el("a", "btn", t.download); a.href = p.url; a.setAttribute("download", ""); c.appendChild(a);
+        box.appendChild(c);
+      });
+    }
+    document.querySelectorAll(".langs button").forEach(function (b) {
+      b.addEventListener("click", function () { lang = b.getAttribute("data-lang"); try { localStorage.setItem("silo-lang", lang); } catch (e) {} render(); });
+    });
+    render();
+    fetch("plugins/plugins.json?v=3.2.0-2").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) { data = j; render(); }).catch(function () { data = false; render(); });
+  })();
+  </script>
+</body>
+</html>

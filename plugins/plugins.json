@@ -63,9 +63,9 @@
         "es": "Copiar SQL formateado",
         "en": "Copy formatted SQL"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "url": "https://brunofersan.github.io/silo-tecnologia/plugins/copiar-sql-formatado.jar",
-      "sha256": "7dbe7f9962aa215c88eaeab48b81f7b90c4d5298e88383fb95017e3d0bd5b10a",
+      "sha256": "76c7ac0f7b8240894c6302e1ce4763e0c09b57b8ce80b8c14e52d910d3280103",
       "minIde": "2.6.0",
       "permissions": [
         "editor",
@@ -84,9 +84,9 @@
         "es": "Panel de pendientes (TODO)",
         "en": "TODO panel"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "url": "https://brunofersan.github.io/silo-tecnologia/plugins/painel-todo.jar",
-      "sha256": "53f618f6e1bcfe2d15a91f743816bb5aa7b74918eae4c35aa3d8082f3c880db5",
+      "sha256": "0945d831feab81219c760982ebdb7555fb07e131cecaea34651eed6840ad5d08",
       "minIde": "2.6.0",
       "permissions": [
         "files",
