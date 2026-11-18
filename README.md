@@ -12,6 +12,8 @@ Site estático do Silo IDE (HTML, CSS e JS puros), publicado pelo GitHub Pages.
 
 Os botões de download levam direto ao arquivo no Google Drive: em `config.js`, `installerId` e `portableId` de `VERSIONS[0]` são os IDs dos arquivos (compartilhados com "qualquer pessoa com o link"). Vazio = botão desativado com "em breve". `MAC.fileId` (.dmg) e `LINUX.fileId` (.tar.gz) fazem o mesmo para os botões "Baixar para Mac" e "Baixar para Linux"; `available: false` esconde o botão.
 
+`COUNTER_URL` é a URL do app da Web do contador de visitas e cliques (`contador.js`, que grava numa planilha sua pelo Apps Script). Vazio = desligado. Os passos estão em `apps-script/contador/LEIAME.md`.
+
 `FORM_ACCESS_KEY` é a chave do Web3Forms do formulário de suporte (as mensagens chegam no e-mail cadastrado lá, que não aparece no site).
 
 ## Publicação
