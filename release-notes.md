@@ -13,6 +13,16 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 3.4.6
+
+**Silo Browser em tela inteira.** Chega pela atualização automática.
+
+- **Tela inteira no Silo Browser:** F11 com o foco no navegador, ou Tela inteira no menu ⋮ e no botão direito da aba. As abas e o endereço continuam à mão. Vídeos e sites que pedem tela inteira ocupam a tela toda, e Esc sai.
+- **Sincronização:** a IDE não pede mais para reiniciar dizendo que chegaram 0 arquivos.
+- **Plugins:** ao desligar um plugin, o que ele punha no editor sai na hora; por exemplo, a sub-aba Designer das telas some e volta quando o plugin é ligado de novo.
+
+---
+
 ## 3.4.5
 
 **Sincronização entre máquinas corrigida.** Chega pela atualização automática.
