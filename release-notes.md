@@ -13,6 +13,21 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 4.0.1
+
+**Senha mestra, janela flutuante e correções no Silo Browser.** Chega pela atualização automática.
+
+- **Senha mestra para as senhas salvas do Silo Browser:** em **Menu da página > Senhas salvas… > Senha mestra…**. A janela Senhas salvas, onde se veem (**Mostrar senha**) e copiam as senhas, pede a senha mestra toda vez que abre; o preenchimento nos sites continua automático.
+- **Janela flutuante (PiP):** ao trocar de aba durante uma reunião (câmera ou microfone ligados) ou um vídeo, a página continua numa janelinha por cima das outras; clique para voltar à aba. Liga e desliga no menu da página.
+- **Silo Browser:** Ctrl+roda do mouse volta a dar zoom na página, o Enter volta a pular linha ao escrever um e-mail no Gmail, e a roda do mouse rola as mensagens do Chat dentro do Gmail (antes rolava a lista de conversas).
+- **Abas do navegador:** as abas fixadas não somem mais, e Ctrl+Shift+T reabre as abas fechadas também depois de reabrir a IDE. **Restaurar backup** traz de volta as abas que estavam abertas.
+- **Tela inteira pedida pela página** (vídeos) volta a funcionar.
+- **Uma janela só, com aviso:** ao abrir o Silo IDE quando ele já está aberto, aparece um aviso e a janela aberta vem para a frente.
+- **Bloco de Log recolhível:** não se fecha mais ao escolher o terminal (PowerShell, Git Bash...) com o mouse.
+- **Plugin Login CAS e Editor:** o provedor de login e a URL do CAS ficam em **Arquivo > Configurações > Aplicações** e só vão para os arquivos de configuração com o plugin ligado. A URL do CAS não se perde mais ao trocar de banco.
+
+---
+
 ## 4.0.0
 
 **Visual novo, no estilo do Safari.** Chega pela atualização automática.
