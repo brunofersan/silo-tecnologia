@@ -13,6 +13,20 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 4.0.0
+
+**Visual novo, no estilo do Safari.** Chega pela atualização automática.
+
+- **Visual no estilo do Safari:** abas mais finas e arredondadas em toda a IDE, e o ✕ de fechar só aparece ao passar o mouse sobre a aba.
+- **Silo Browser:** recarregar (e parar, enquanto carrega) no fim do campo de endereço, e o menu da página no começo dele. Voltar e avançar, no navegador e no editor, juntos numa cápsula ‹ ›.
+- **Botões finos e redondos**, como o Tomcat parado, para sobrar mais espaço.
+- **Mais espaço para o editor e o navegador:** abas mais perto do voltar e avançar, e sem a faixa vazia embaixo do Silo Browser.
+- **Notas** abrem dentro da janela, sem cobrir a barra de título e o rodapé.
+- **Ícones coloridos** também no Windows.
+- **Menus com nomes no lugar dos comandos:** Compilar e instalar do zero, Instalar rápido (sem testes), Rodar os testes... O comando continua no Log.
+
+---
+
 ## 3.4.6
 
 **Silo Browser em tela inteira.** Chega pela atualização automática.
