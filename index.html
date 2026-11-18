@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4.0.0">
+  <link rel="stylesheet" href="styles.css?v=4.0.0b">
 </head>
 <body>
   <header class="topbar">
@@ -69,39 +69,14 @@
           <p class="update-note update-note-hero js-update-note" hidden><span data-i18n="up.a">A versão atual é a</span> <strong class="js-latest">3.0.0</strong><span data-i18n="up.b">. O instalador para</span> <span class="js-behind">Windows</span> <span data-i18n="up.b2">ainda é o da</span> <span class="js-behind-version">3.0.0</span><span data-i18n="up.c">, mas depois de instalado o Silo IDE se atualiza sozinho para a</span> <span class="js-latest">3.0.0</span><span data-i18n="up.d">, sem precisar baixar de novo.</span></p>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="window">
-            <div class="window-bar"><i></i><i></i><i></i><span>Silo IDE</span></div>
-            <div class="window-body">
-              <aside class="side">
-                <b>PROJETOS</b>
-                <p class="on">▾ loja-api</p>
-                <p>&nbsp;&nbsp;▸ src/main/java</p>
-                <p>&nbsp;&nbsp;▸ src/main/resources</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;pom.xml</p>
-                <p>▸ painel-web</p>
-                <b>BANCO</b>
-                <p>▸ produção (leitura)</p>
-                <p>▸ homologação</p>
-              </aside>
-              <div class="code">
-                <div class="tabs"><span class="on">PedidoService.java</span><span>pedidos.sql</span><span>POST /pedidos</span></div>
-<pre><span class="k">@Service</span>
-<span class="k">public class</span> <span class="t">PedidoService</span> {
-
-  <span class="k">private final</span> <span class="t">PedidoRepository</span> repo;
-
-  <span class="k">public</span> <span class="t">Pedido</span> <span class="f">criar</span>(<span class="t">NovoPedido</span> dto) {
-    <span class="t">Pedido</span> p = <span class="t">Pedido</span>.<span class="f">de</span>(dto);
-    <span class="k">return</span> repo.<span class="f">save</span>(p);
-  }
-}</pre>
-                <div class="status"><span class="ok">●</span> Tomcat 9 · <span>8080</span> <em>Compilado ao salvar · 0 problemas</em></div>
-              </div>
-            </div>
-          </div>
-          <div class="float-card mem"><small data-i18n="hero.mem">Memória</small><strong data-i18n="hero.memv">Baixo consumo</strong><div class="bar"><span></span></div></div>
-          <div class="float-card api"><small>POST /pedidos</small><strong class="ok">201 Created</strong><em>38 ms</em></div>
+        <div class="hero-visual">
+          <figure class="shot">
+            <img src="assets/prints/ide-4-0-browser.webp?v=4.0.0" width="1600" height="1000" alt="Silo IDE 4.0 com o Silo Browser aberto numa aba do editor, o terminal embaixo e o visual novo" data-i18n-alt="hero.shot">
+          </figure>
+          <div class="float-card api" aria-hidden="true"><small>POST /pedidos</small><strong class="ok">201 Created</strong><em>38 ms</em></div>
+          <div class="float-card db" aria-hidden="true"><small data-i18n="hero.db">Banco de dados</small><strong>SELECT · 12 ms</strong></div>
+          <div class="float-card web" aria-hidden="true"><small>Silo Browser</small><strong data-i18n="hero.webv">Navegador na aba</strong></div>
+          <div class="float-card mem" aria-hidden="true"><small data-i18n="hero.mem">Memória</small><strong data-i18n="hero.memv">Baixo consumo</strong><div class="bar"><span></span></div></div>
         </div>
       </div>
     </section>
@@ -127,6 +102,27 @@
         <h3 data-i18n="p4.t">Aplicações embarcadas</h3>
         <p data-i18n="p4.d">Suba suas aplicações em Tomcat e WildFly embarcados, ou com Docker Compose, com deploy, logs e depuração na mesma janela.</p>
       </article>
+    </section>
+
+    <section id="visual" class="section wrap">
+      <div class="two-col visual-col">
+        <div>
+          <p class="kicker" data-i18n="vis.k">Novo na 4.0</p>
+          <h2 data-i18n="vis.t">Um visual novo, mais leve e arredondado</h2>
+          <p class="muted" data-i18n="vis.d">A 4.0 redesenhou a IDE inteira para sobrar mais espaço para o código e para o navegador, com o mesmo cuidado com memória e velocidade.</p>
+          <ul class="checks">
+            <li data-i18n="vis.l1">Abas finas e arredondadas, com o X de fechar só ao passar o mouse.</li>
+            <li data-i18n="vis.l2">Silo Browser com recarregar e menu da página dentro do campo de endereço.</li>
+            <li data-i18n="vis.l3">Voltar e avançar numa cápsula, no editor e no navegador.</li>
+            <li data-i18n="vis.l4">Botões finos e redondos e mais espaço útil na tela.</li>
+            <li data-i18n="vis.l5">Ícones coloridos no Windows, no Mac e no Linux.</li>
+            <li data-i18n="vis.l6">Menus com nomes claros, como Compilar e instalar do zero, no lugar dos comandos.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="assets/prints/ide-4-0-editor.webp?v=4.0.0" width="1600" height="1000" loading="lazy" alt="Editor do Silo IDE 4.0 com abas arredondadas, a árvore de arquivos e o minimapa" data-i18n-alt="vis.shot">
+        </figure>
+      </div>
     </section>
 
     <section class="perf">
@@ -371,7 +367,7 @@
 
 
   <script src="config.js?v=4.0.0"></script>
-  <script src="i18n.js?v=4.0.0"></script>
-  <script src="main.js?v=4.0.0"></script>
+  <script src="i18n.js?v=4.0.0b"></script>
+  <script src="main.js?v=4.0.0b"></script>
 </body>
 </html>

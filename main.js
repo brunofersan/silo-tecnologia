@@ -6,6 +6,9 @@
   var nodes = document.querySelectorAll("[data-i18n]");
   var original = [];
   nodes.forEach(function (n) { original.push(n.textContent); });
+  var altNodes = document.querySelectorAll("[data-i18n-alt]");
+  var originalAlt = [];
+  altNodes.forEach(function (n) { originalAlt.push(n.getAttribute("alt")); });
 
   function setText(selector, value) {
     document.querySelectorAll(selector).forEach(function (n) { n.textContent = value; });
@@ -271,6 +274,10 @@
     nodes.forEach(function (n, i) {
       var key = n.getAttribute("data-i18n");
       n.textContent = d && d[key] ? d[key] : original[i];
+    });
+    altNodes.forEach(function (n, i) {
+      var key = n.getAttribute("data-i18n-alt");
+      n.setAttribute("alt", d && d[key] ? d[key] : originalAlt[i]);
     });
     document.documentElement.lang = htmlLang[lang] || "pt-BR";
     document.querySelectorAll(".lang button").forEach(function (b) {
