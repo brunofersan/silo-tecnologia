@@ -55,5 +55,9 @@ window.SILO_CONFIG = {
   // Chave de acesso do Web3Forms (https://web3forms.com). O formulário de
   // suporte envia para o e-mail cadastrado lá, sem mostrar o e-mail no site.
   // Vazio = formulário desativado com aviso "em breve".
-  FORM_ACCESS_KEY: "fac82c97-df12-438f-8bdb-498e6c03acbd"
+  FORM_ACCESS_KEY: "fac82c97-df12-438f-8bdb-498e6c03acbd",
+  // Contador de visitas e cliques: URL do app da Web do Apps Script
+  // (apps-script/contador, termina em /exec). Grava numa planilha do dono,
+  // sem cookies e sem serviço de terceiros. Vazio = contador desligado.
+  COUNTER_URL: ""
 };
