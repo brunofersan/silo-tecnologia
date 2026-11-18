@@ -13,7 +13,7 @@ window.SILO_CONFIG = {
   // Versão mais nova do Silo IDE, entregue pela atualização automática.
   // Quando for maior que a do instalador (VERSIONS[0]), o site avisa que o
   // instalador é de versão anterior e que a IDE se atualiza sozinha.
-  LATEST: "3.4.6",
+  LATEST: "4.0.0",
   // Instalador do macOS (Apple Silicon, .dmg) e pacote do Linux x64 (.tar.gz).
   //   fileId    ID do arquivo no Google Drive, como installerId abaixo
   //   available false = botão escondido; com available true e fileId vazio o botão aparece como "em breve"
