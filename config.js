@@ -59,5 +59,5 @@ window.SILO_CONFIG = {
   // Contador de visitas e cliques: URL do app da Web do Apps Script
   // (apps-script/contador, termina em /exec). Grava numa planilha do dono,
   // sem cookies e sem serviço de terceiros. Vazio = contador desligado.
-  COUNTER_URL: ""
+  COUNTER_URL: "https://script.google.com/macros/s/AKfycbyQJoUdHeZClNlvr15l95fdBZWwHWxeAiPx4Lfo2IVGdvubhIBAsuqfnWXKosTJ9JuJlQ/exec"
 };
