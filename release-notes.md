@@ -13,6 +13,36 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 4.0.1
+
+**Novidades da 4.0.1.**
+
+- **Senha mestra para as senhas salvas do Silo Browser:** em **Menu da página > Senhas salvas… > Senha mestra…**. A janela Senhas salvas, onde se veem (**Mostrar senha**) e copiam as senhas, pede a senha mestra toda vez que abre; o preenchimento nos sites continua automático.
+- **Janela flutuante (PiP):** ao trocar de aba durante uma reunião (câmera ou microfone ligados) ou um vídeo, a página continua numa janelinha por cima das outras; clique para voltar à aba. Liga e desliga no menu da página.
+- **Uma janela só, com aviso:** ao abrir o Silo IDE quando ele já está aberto, aparece um aviso e a janela aberta vem para a frente.
+- **Bloco de Log recolhível:** não se fecha mais ao escolher o terminal (PowerShell, Git Bash...) com o mouse.
+- **Tela inteira pedida pela página** (vídeos) volta a funcionar.
+- **Silo Browser:** Ctrl+roda do mouse volta a dar zoom na página (antes mudava a fonte do editor), o Enter volta a pular linha ao escrever um e-mail no Gmail, e a roda do mouse rola as mensagens do Chat dentro do Gmail (antes rolava a lista de conversas).
+- **Abas do navegador:** as abas fixadas não somem mais ao abrir um link com o navegador fechado ou ao fechar a aba do navegador; Ctrl+Shift+T reabre as abas fechadas também depois de reabrir a IDE, e com o cursor no endereço.
+- **Restaurar backup** traz de volta as abas que estavam abertas no navegador.
+- **Plugins de login:** o provedor de login e o endereço do servidor de login ficam em **Arquivo > Configurações > Aplicações** e só vão para os arquivos de configuração com o plugin ligado. O endereço não se perde mais ao trocar de banco.
+
+---
+
+## 4.0.0
+
+**Novidades da 4.0.0.**
+
+- **Visual no estilo do Safari:** abas mais finas e arredondadas em toda a IDE, e o ✕ de fechar só aparece ao passar o mouse sobre a aba.
+- **Silo Browser:** recarregar (e parar, enquanto carrega) no fim do campo de endereço, e o menu da página no começo dele. Voltar e avançar, no navegador e no editor, juntos numa cápsula ‹ ›.
+- **Botões finos e redondos**, como o Tomcat parado, para sobrar mais espaço.
+- **Mais espaço para o editor e o navegador:** abas mais perto do voltar e avançar, e sem a faixa vazia embaixo do Silo Browser.
+- **Notas** abrem dentro da janela, sem cobrir a barra de título e o rodapé.
+- **Ícones coloridos** também no Windows.
+- **Menus com nomes no lugar dos comandos:** Compilar e instalar do zero, Instalar rápido (sem testes), Rodar os testes... O comando continua no Log.
+
+---
+
 ## 3.0.0
 
 **Só a IDE no instalador, com plugins à parte e download livre.**
@@ -26,7 +56,7 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
-Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0, a 2.5.1, a 2.5.2, a 2.5.3, a 2.5.4, a 2.6.0 e a 2.6.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
+Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**. A 1.2.2, a 1.2.3, a 1.2.4, a 1.2.5, a 1.3.0, a 1.3.1, a 1.3.2, a 1.3.3, a 1.3.4, a 1.3.5, a 2.0.1, a 2.0.2, a 2.0.3, a 2.1.0, a 2.1.1, a 2.2.0, a 2.2.1, a 2.2.2, a 2.3.0, a 2.4.0, a 2.5.0, a 2.5.1, a 2.5.2, a 2.5.3, a 2.5.4, a 2.6.0, a 2.6.1, a 3.0.1, a 3.0.2, a 3.0.3, a 3.0.4, a 3.1.0, a 3.2.0, a 3.3.0, a 3.3.1, a 3.3.2, a 3.3.3, a 3.4.0, a 3.4.1, a 3.4.2, a 3.4.3, a 3.4.4, a 3.4.5, a 3.4.6, a 4.0.0 e a 4.0.1 chegaram só pela atualização automática, para quem já tinha o Silo IDE instalado.
 
 **Para macOS (chip Apple, macOS 11 ou mais novo):** instalador `.dmg` da 3.0.0, na página inicial em **Baixar para Mac**. As versões seguintes chegam sozinhas pela atualização automática.
 
