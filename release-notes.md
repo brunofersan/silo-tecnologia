@@ -13,6 +13,14 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 4.0.2
+
+**Correção nas Ferramentas do desenvolvedor do Silo Browser.** Chega pela atualização automática.
+
+- **Ferramentas do desenvolvedor (F12):** a janela do DevTools não fica mais "Não respondendo" e aceita clique, digitação e rolagem. Ela também passa a usar o ícone do Silo IDE.
+
+---
+
 ## 4.0.1
 
 **Senha mestra, janela flutuante e correções no Silo Browser.** Chega pela atualização automática.
