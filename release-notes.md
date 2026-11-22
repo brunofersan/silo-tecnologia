@@ -1,12 +1,12 @@
 # Silo IDE: notas de versão
 
-**Versões disponíveis para download:** 4.0.2 no Windows 10 e 11 (64 bits); 3.0.0 no macOS 11 ou mais novo (chip Apple) e no Linux x64
+**Versões disponíveis para download:** 4.0.2 no Windows 10 e 11 (64 bits); 4.1.0 no macOS 11 ou mais novo (chip Apple); 3.0.0 no Linux x64
 
 | Arquivo | Uso |
 |---|---|
 | `SiloIDE-4.0.2-setup.exe` | Instalador do Windows (não precisa de administrador) |
 | `SiloIDE-4.0.2-portable.zip` | Versão portátil do Windows: descompacte e rode `SiloIDE.bat` |
-| `SiloIDE-3.0.0-macos-arm64.dmg` | macOS: abra e arraste o Silo IDE para Aplicativos; na primeira vez, clique com o botão direito e escolha Abrir |
+| `SiloIDE-4.1.0-macos-arm64.dmg` | macOS: abra e arraste o Silo IDE para Aplicativos; na primeira vez, clique com o botão direito e escolha Abrir |
 | `SiloIDE-3.0.0-linux-x64.tar.gz` | Linux com GTK 3: extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro |
 
 O download é direto, na página inicial. Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em **Ajuda > Procurar atualizações**.
