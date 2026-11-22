@@ -18,9 +18,9 @@ window.SILO_CONFIG = {
   //   fileId    ID do arquivo no Google Drive, como installerId abaixo
   //   available false = botão escondido; com available true e fileId vazio o botão aparece como "em breve"
   MAC: {
-    version: "3.0.0",
-    date: "2026-11-14",
-    size: "140 MB",
+    version: "4.1.0",
+    date: "2026-11-22",
+    size: "141 MB",
     fileId: "1UIrhygx2V5TH72HFejuoZjO3BhenUXYb",
     available: true
   },
