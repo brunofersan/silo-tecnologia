@@ -13,6 +13,25 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 4.1.0
+
+**Produtividade no editor, revisão sem pull request e homologação no Docker.** Chega pela atualização automática; o instalador do Windows no site continua o da 4.0.2.
+
+- **Testes na margem:** cada método de teste ganha um ▶ na margem do editor; um clique roda só aquele teste e o ícone fica verde ou vermelho com o resultado.
+- **Linha do tempo do arquivo:** arraste para ver o arquivo como estava em cada commit, com as linhas que mudaram em destaque.
+- **Buscar em tudo:** aperte Shift duas vezes para procurar arquivos, classes, ações, configurações e tabelas num lugar só.
+- **TODO e FIXME do projeto** também no menu Código, com filtro por autor.
+- **Saúde das dependências:** o botão Atualizar no pom.xml troca a versão da dependência (a que corrige a vulnerabilidade vem primeiro).
+- **Profiler ao vivo:** memória e CPU da aplicação em tempo real e os 10 métodos mais lentos.
+- **Abrir projeto de uma URL:** cole o endereço do GitHub, GitLab ou Bitbucket, até de uma branch, e a IDE clona, monta e sobe num clique.
+- **Modo apresentação:** o editor ocupa a janela, o cursor fica bem destacado e um círculo segue o mouse.
+- **Revisão interna sem pull request:** mande suas alterações num arquivo para um colega comentar linha a linha.
+- **Compartilhar a sessão:** exporte os arquivos abertos e os breakpoints para um colega abrir do mesmo jeito.
+- **Minhas métricas:** tempo por ticket e arquivos mais editados, guardados só na sua máquina.
+- **Plugins novos no pacote de plugins:** gerador de tela de cadastro a partir de uma tabela, conferência dos padrões da equipe antes do commit, homologação no Docker (banco e versão da branch num clique) e assistente de migração de versão (lista o que quebra ao trocar a versão de uma dependência).
+
+---
+
 ## 4.0.2
 
 **Correção nas Ferramentas do desenvolvedor do Silo Browser.** Chega pela atualização automática, e o instalador do Windows no site já é o da 4.0.2.
