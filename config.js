@@ -21,7 +21,7 @@ window.SILO_CONFIG = {
     version: "4.1.0",
     date: "2026-11-22",
     size: "141 MB",
-    fileId: "1UIrhygx2V5TH72HFejuoZjO3BhenUXYb",
+    fileId: "1LdvOXnUiSB_4vVxAv5Dkt7iJ_dk8WD11",
     available: true
   },
   LINUX: {
