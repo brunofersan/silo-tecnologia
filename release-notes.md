@@ -13,6 +13,21 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 4.2.0
+
+**Abas que você arruma do seu jeito e editor mais leve.** Chega pela atualização automática; o instalador do Windows no site continua o da 4.0.2.
+
+- **Todas as abas são móveis:** as abas dos arquivos no editor também mudam de ordem arrastando, e a ordem volta igual ao reabrir.
+- **Clique direito numa aba de painel** (Log, Console, Debug, Busca, Arquivos, Banco...): mover para outro bloco, ocultar a aba ou restaurar o layout padrão.
+- **Abas de plugins** também podem ser arrastadas e voltam no lugar onde você deixou.
+- A ordem das abas das **Configurações** e das sub-abas do **Debug** também muda arrastando e fica salva.
+- **Restaurar layout padrão** agora volta tudo: blocos, abas, ordem, abas ocultas, painéis recolhíveis e abas com ícones.
+- **Digitação mais leve em arquivos grandes:** o editor não copia mais o arquivo inteiro a cada tecla. Num arquivo de 12 mil linhas, a memória descartada ao digitar caiu cerca de 40% e as coletas de lixo, de 29 para 8.
+- A barra de caminho do editor é calculada fora da tela, e a aba Estrutura só se atualiza quando está à vista.
+- O dicionário do corretor ortográfico (cerca de 20 MB) sai da memória quando a IDE fica parada e volta sozinho quando precisa.
+
+---
+
 ## 4.1.0
 
 **Produtividade no editor, revisão sem pull request e homologação no Docker.** Chega pela atualização automática; o instalador do Windows no site continua o da 4.0.2.
