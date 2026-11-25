@@ -13,6 +13,13 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 4.2.3
+
+**O Silo Browser volta no lugar e dá para copiar a mensagem do commit.** Chega pela atualização automática; o instalador do Windows no site continua o da 4.0.2.
+
+- **Silo Browser no lugar em que você deixou:** se a aba dele foi puxada para ser a primeira do editor, ela continua a primeira quando a IDE abre de novo, em vez de ir para o fim.
+- **Copiar a mensagem do commit:** no histórico do arquivo e no grafo do Git, o botão direito copia a mensagem completa (título e corpo), além do hash.
+
 ## 4.2.2
 
 **A árvore de arquivos lembra o que estava aberto.** Chega pela atualização automática; o instalador do Windows no site continua o da 4.0.2.
