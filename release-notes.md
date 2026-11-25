@@ -1,11 +1,11 @@
 # Silo IDE: notas de versão
 
-**Versões disponíveis para download:** 4.0.2 no Windows 10 e 11 (64 bits); 4.1.0 no macOS 11 ou mais novo (chip Apple); 3.0.0 no Linux x64
+**Versões disponíveis para download:** 4.2.3 no Windows 10 e 11 (64 bits); 4.1.0 no macOS 11 ou mais novo (chip Apple); 3.0.0 no Linux x64
 
 | Arquivo | Uso |
 |---|---|
-| `SiloIDE-4.0.2-setup.exe` | Instalador do Windows (não precisa de administrador) |
-| `SiloIDE-4.0.2-portable.zip` | Versão portátil do Windows: descompacte e rode `SiloIDE.bat` |
+| `SiloIDE-4.2.3-setup.exe` | Instalador do Windows (não precisa de administrador) |
+| `SiloIDE-4.2.3-portable.zip` | Versão portátil do Windows: descompacte e rode `SiloIDE.bat` |
 | `SiloIDE-4.1.0-macos-arm64.dmg` | macOS: abra e arraste o Silo IDE para Aplicativos; na primeira vez, clique com o botão direito e escolha Abrir |
 | `SiloIDE-3.0.0-linux-x64.tar.gz` | Linux com GTK 3: extraia com `tar xzf` e rode `./SiloIDE/silo-ide.sh`; o Java já vai dentro |
 
@@ -15,7 +15,7 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ## 4.2.3
 
-**O Silo Browser volta no lugar e dá para copiar a mensagem do commit.** Chega pela atualização automática; o instalador do Windows no site continua o da 4.0.2.
+**O Silo Browser volta no lugar e dá para copiar a mensagem do commit.** Chega pela atualização automática, e o instalador do Windows no site já é o da 4.2.3.
 
 - **Silo Browser no lugar em que você deixou:** se a aba dele foi puxada para ser a primeira do editor, ela continua a primeira quando a IDE abre de novo, em vez de ir para o fim.
 - **Copiar a mensagem do commit:** no histórico do arquivo e no grafo do Git, o botão direito copia a mensagem completa (título e corpo), além do hash.

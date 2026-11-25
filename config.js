@@ -42,12 +42,12 @@ window.SILO_CONFIG = {
   },
   VERSIONS: [
     {
-      version: "4.0.2",
-      date: "2026-11-19",
+      version: "4.2.3",
+      date: "2026-11-25",
       installerSize: "220 MB",
       portableSize: "231 MB",
-      installerId: "1807sVHMEqRBgV9JbwnQCFhzG6YlumMxo",
-      portableId: "1jtCAvWqyxobP8zP7lBuQaoa51R2Ja0P2",
+      installerId: "1u79Eb0kEq6qxM5WrSD-9vnlZNa1KI17u",
+      portableId: "1zbNs8Sw299VD8ofciDN4E4Q4NGHQRFEG",
       installer: true,
       portable: true
     }
