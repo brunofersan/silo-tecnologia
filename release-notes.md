@@ -13,6 +13,22 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 4.2.2
+
+**A árvore de arquivos lembra o que estava aberto.** Chega pela atualização automática; o instalador do Windows no site continua o da 4.0.2.
+
+- **Árvore de arquivos como você deixou:** pastas, projetos e repositórios abertos ou fechados voltam do mesmo jeito na próxima abertura, em vez de abrir sempre expandida.
+
+## 4.2.1
+
+**Abas e painéis que ficam onde você deixou.** Chega pela atualização automática; o instalador do Windows no site continua o da 4.0.2.
+
+- **A posição das abas fica salva de verdade:** as abas de plugins (como Task Outline) voltavam ao lugar padrão a cada abertura, porque chegam depois da IDE abrir. Agora voltam onde você deixou, mesmo quando o plugin é recarregado.
+- **O layout é de cada máquina:** com a sincronização ligada, a posição de blocos, abas e painéis não vem mais de outro computador.
+- **Blocos com ícones laterais:** arraste um ícone para mudar a ordem ou para outro bloco; o clique direito no ícone tem Mover para, Ocultar e Restaurar layout padrão.
+- **Alça ⠿:** trocar um bloco de lugar funciona com a alça toda, não só em cima dos pontinhos.
+- **📌 Fixar Notas, Arquivos e Log:** o painel aberto ao passar o mouse fica aberto enquanto você trabalha nele, o resto da janela se ajusta ao lado e ele volta fixado na próxima abertura.
+
 ## 4.2.0
 
 **Abas que você arruma do seu jeito e editor mais leve.** Chega pela atualização automática; o instalador do Windows no site continua o da 4.0.2.
