@@ -37,12 +37,13 @@
     .filter(function (p) { return p[1] && p[2] && newer(newest, p[2]); });
   function renderBehind() {
     if (!behind.length) return;
-    var names = behind.map(function (p) { return p[0]; });
-    var and = (dict[currentLang] || {})["up.and"] || " e ";
-    var text = names.length > 1 ? names.slice(0, -1).join(", ") + and + names[names.length - 1] : names[0];
-    var oldest = behind.reduce(function (a, p) { return newer(a, p[2]) ? p[2] : a; }, behind[0][2]);
-    setText(".js-behind", text);
-    setText(".js-behind-version", oldest);
+    var words = dict[currentLang] || {};
+    var and = words["up.and"] || " e ";
+    var still = words["up.b2"] || "ainda é o da";
+    var last = behind[behind.length - 1];
+    var before = behind.slice(0, -1).map(function (p) { return p[0] + " " + still + " " + p[2]; });
+    setText(".js-behind", before.length ? before.join(", ") + and + last[0] : last[0]);
+    setText(".js-behind-version", last[2]);
   }
   renderBehind();
   if (behind.length) document.querySelectorAll(".js-update-note").forEach(function (n) { n.hidden = false; });
