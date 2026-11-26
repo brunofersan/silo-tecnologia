@@ -18,17 +18,17 @@ window.SILO_CONFIG = {
   //   fileId    ID do arquivo no Google Drive, como installerId abaixo
   //   available false = botão escondido; com available true e fileId vazio o botão aparece como "em breve"
   MAC: {
-    version: "4.1.0",
-    date: "2026-11-22",
+    version: "4.2.3",
+    date: "2026-11-25",
     size: "141 MB",
-    fileId: "1LdvOXnUiSB_4vVxAv5Dkt7iJ_dk8WD11",
+    fileId: "1-X2O3Owz6cU18HaKqcGjpgt-X1bNeukj",
     available: true
   },
   LINUX: {
-    version: "3.0.0",
-    date: "2026-11-14",
-    size: "144 MB",
-    fileId: "1ixTecB-or7W-r2dHJAjJmnS7EiJb8Kl9",
+    version: "4.2.3",
+    date: "2026-11-25",
+    size: "145 MB",
+    fileId: "1PKTvk0VP1XS_IDA6xaLCkebnVb7tm88c",
     available: true
   },
   // Doações. Tudo opcional: a seção "Apoie" só aparece se houver chave Pix ou algum link.
