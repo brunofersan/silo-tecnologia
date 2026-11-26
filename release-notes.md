@@ -13,6 +13,13 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 5.0.0
+
+**Os controles do Tomcat foram para a barra de cima.** Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.
+
+- **Banco, Perfis, Iniciar, ▶ e ■ no topo:** ficam ao lado do status do Tomcat, junto com os atalhos de abrir no navegador e no simulador de celular. A área de trabalho ganhou o espaço da barra que ficava embaixo.
+- **Janela mínima mais larga:** de 980 para 1100 pixels; em janelas estreitas o rótulo "Idioma:" some para os controles caberem.
+
 ## 4.2.3
 
 **O Silo Browser volta no lugar e dá para copiar a mensagem do commit.** Chega pela atualização automática, e o instalador do Windows no site já é o da 4.2.3.
