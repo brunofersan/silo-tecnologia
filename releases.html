@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5.0.0">
+  <link rel="stylesheet" href="styles.css?v=5.0.2">
 </head>
 <body>
   <header class="topbar">
@@ -81,11 +81,33 @@
 </table>
 <p>O download é direto, na página inicial. Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>.</p>
 <hr />
+<h2 id="v5-0-2">5.0.2</h2>
+<p><strong>O status do Tomcat desceu para o canto de baixo.</strong> Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.</p>
+<ul>
+<li><strong>Status do Tomcat embaixo:</strong> o status (Tomcat parado, iniciando ou rodando) e a barra de progresso da subida ficam no canto de baixo, à esquerda do idioma. A barra de cima fica só com o banco, os Perfis, o Iniciar/Debug/Publicar, o ▶ e o ■.</li>
+</ul>
+<h2 id="v5-0-1">5.0.1</h2>
+<p><strong>Aplicar, navegador e simulador de volta embaixo.</strong> Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.</p>
+<ul>
+<li><strong>Canto de baixo, à direita:</strong> Aplicar configuração em todos, Abrir no navegador e Abrir o Tomcat local no simulador de celular voltaram para baixo, e o idioma foi para o lado deles.</li>
+<li><strong>Arquivo fechado não volta:</strong> um arquivo fechado no editor não abre de novo quando o Silo IDE é reiniciado. Antes, se ele era o arquivo em foco ao fechar, a IDE reabria esse arquivo ao iniciar.</li>
+</ul>
 <h2 id="v5-0-0">5.0.0</h2>
 <p><strong>Os controles do Tomcat foram para a barra de cima.</strong> Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.</p>
 <ul>
 <li><strong>Banco, Perfis, Iniciar, ▶ e ■ no topo:</strong> ficam ao lado do status do Tomcat, junto com os atalhos de abrir no navegador e no simulador de celular. A área de trabalho ganhou o espaço da barra que ficava embaixo.</li>
 <li><strong>Janela mínima mais larga:</strong> de 980 para 1100 pixels; em janelas estreitas o rótulo "Idioma:" some para os controles caberem.</li>
+</ul>
+<h2 id="v4-2-5">4.2.5</h2>
+<p><strong>Formulários que abrem outra janela chegam com os dados.</strong> Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.</p>
+<ul>
+<li><strong>Formulários que abrem outra janela:</strong> quando a página envia um formulário para uma janela nova (como o logon automático dos portais de autoatendimento), a aba nova recebe os dados do formulário. Antes ela abria o endereço sem os dados e o sistema dava erro de logon automático.</li>
+</ul>
+<h2 id="v4-2-4">4.2.4</h2>
+<p><strong>Links que abrem outra janela no Silo Browser funcionam como no Chrome.</strong> Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.</p>
+<ul>
+<li><strong>Página de origem:</strong> a aba nova recebe a página de onde você veio (cabeçalho <code>Referer</code>), como no Chrome. Portais que conferem isso davam erro 403 e agora abrem.</li>
+<li><strong>Aba privada:</strong> um link que abre outra janela a partir de uma aba privada abre em outra aba privada, com o mesmo login, em vez de cair numa aba normal sem sessão.</li>
 </ul>
 <h2 id="v4-2-3">4.2.3</h2>
 <p><strong>O Silo Browser volta no lugar e dá para copiar a mensagem do commit.</strong> Chega pela atualização automática, e o instalador do Windows no site já é o da 4.2.3.</p>
@@ -695,9 +717,9 @@
     </div>
   </footer>
 
-  <script src="config.js?v=5.0.0"></script>
-  <script src="i18n.js?v=5.0.0"></script>
-  <script src="main.js?v=5.0.0"></script>
+  <script src="config.js?v=5.0.2"></script>
+  <script src="i18n.js?v=5.0.2"></script>
+  <script src="main.js?v=5.0.2"></script>
   <script src="contador.js?v=1"></script>
 </body>
 </html>

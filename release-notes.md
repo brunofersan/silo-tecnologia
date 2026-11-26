@@ -13,12 +13,38 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 5.0.2
+
+**O status do Tomcat desceu para o canto de baixo.** Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.
+
+- **Status do Tomcat embaixo:** o status (Tomcat parado, iniciando ou rodando) e a barra de progresso da subida ficam no canto de baixo, à esquerda do idioma. A barra de cima fica só com o banco, os Perfis, o Iniciar/Debug/Publicar, o ▶ e o ■.
+
+## 5.0.1
+
+**Aplicar, navegador e simulador de volta embaixo.** Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.
+
+- **Canto de baixo, à direita:** Aplicar configuração em todos, Abrir no navegador e Abrir o Tomcat local no simulador de celular voltaram para baixo, e o idioma foi para o lado deles.
+- **Arquivo fechado não volta:** um arquivo fechado no editor não abre de novo quando o Silo IDE é reiniciado. Antes, se ele era o arquivo em foco ao fechar, a IDE reabria esse arquivo ao iniciar.
+
 ## 5.0.0
 
 **Os controles do Tomcat foram para a barra de cima.** Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.
 
 - **Banco, Perfis, Iniciar, ▶ e ■ no topo:** ficam ao lado do status do Tomcat, junto com os atalhos de abrir no navegador e no simulador de celular. A área de trabalho ganhou o espaço da barra que ficava embaixo.
 - **Janela mínima mais larga:** de 980 para 1100 pixels; em janelas estreitas o rótulo "Idioma:" some para os controles caberem.
+
+## 4.2.5
+
+**Formulários que abrem outra janela chegam com os dados.** Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.
+
+- **Formulários que abrem outra janela:** quando a página envia um formulário para uma janela nova (como o logon automático dos portais de autoatendimento), a aba nova recebe os dados do formulário. Antes ela abria o endereço sem os dados e o sistema dava erro de logon automático.
+
+## 4.2.4
+
+**Links que abrem outra janela no Silo Browser funcionam como no Chrome.** Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.
+
+- **Página de origem:** a aba nova recebe a página de onde você veio (cabeçalho `Referer`), como no Chrome. Portais que conferem isso davam erro 403 e agora abrem.
+- **Aba privada:** um link que abre outra janela a partir de uma aba privada abre em outra aba privada, com o mesmo login, em vez de cair numa aba normal sem sessão.
 
 ## 4.2.3
 
