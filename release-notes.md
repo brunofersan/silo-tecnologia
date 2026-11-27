@@ -13,6 +13,17 @@ O download é direto, na página inicial. Quem já tem o Silo IDE instalado rece
 
 ---
 
+## 5.1.0
+
+**Projetos movidos e apagados, seleção que fica e tela de abertura nova.** Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.
+
+- **Projeto desmarcado fica desmarcado:** desmarcar um projeto e reiniciar o Silo IDE não o marca de novo. Antes, a IDE remarcava ao abrir os projetos que estavam publicados no Tomcat.
+- **Pasta dos projetos mudou:** se a pasta de um projeto foi movida, o Silo IDE procura o projeto nos repositórios configurados e atualiza o caminho sozinho, sem precisar cadastrar de novo.
+- **Projeto apagado:** se o projeto não existe mais, ele fica desmarcado e não sobe, e o log avisa para removê-lo ou apontar a nova pasta. Um projeto cadastrado duas vezes com o mesmo caminho sai da lista.
+- **Ícones das abas:** os ícones das abas de commit e do terminal voltaram a aparecer.
+- **Tela de abertura:** novo texto, com tudo o que a IDE reúne: editor para várias linguagens, Git, Jira, cliente de banco de dados, servidores, testes de API a partir do Swagger e plugins que aprendem as convenções dos projetos da sua empresa.
+- **Plugins 5.1.0:** o pacote de plugins de produto foi recompilado para o Silo IDE 5.1.0.
+
 ## 5.0.2
 
 **O status do Tomcat desceu para o canto de baixo.** Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.

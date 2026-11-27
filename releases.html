@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5.0.2">
+  <link rel="stylesheet" href="styles.css?v=5.1.0">
 </head>
 <body>
   <header class="topbar">
@@ -81,6 +81,16 @@
 </table>
 <p>O download é direto, na página inicial. Quem já tem o Silo IDE instalado recebe as versões novas sozinho, ao abrir o programa ou em <strong>Ajuda &gt; Procurar atualizações</strong>.</p>
 <hr />
+<h2 id="v5-1-0">5.1.0</h2>
+<p><strong>Projetos movidos e apagados, seleção que fica e tela de abertura nova.</strong> Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.</p>
+<ul>
+<li><strong>Projeto desmarcado fica desmarcado:</strong> desmarcar um projeto e reiniciar o Silo IDE não o marca de novo. Antes, a IDE remarcava ao abrir os projetos que estavam publicados no Tomcat.</li>
+<li><strong>Pasta dos projetos mudou:</strong> se a pasta de um projeto foi movida, o Silo IDE procura o projeto nos repositórios configurados e atualiza o caminho sozinho, sem precisar cadastrar de novo.</li>
+<li><strong>Projeto apagado:</strong> se o projeto não existe mais, ele fica desmarcado e não sobe, e o log avisa para removê-lo ou apontar a nova pasta. Um projeto cadastrado duas vezes com o mesmo caminho sai da lista.</li>
+<li><strong>Ícones das abas:</strong> os ícones das abas de commit e do terminal voltaram a aparecer.</li>
+<li><strong>Tela de abertura:</strong> novo texto, com tudo o que a IDE reúne: editor para várias linguagens, Git, Jira, cliente de banco de dados, servidores, testes de API a partir do Swagger e plugins que aprendem as convenções dos projetos da sua empresa.</li>
+<li><strong>Plugins 5.1.0:</strong> o pacote de plugins de produto foi recompilado para o Silo IDE 5.1.0.</li>
+</ul>
 <h2 id="v5-0-2">5.0.2</h2>
 <p><strong>O status do Tomcat desceu para o canto de baixo.</strong> Chega pela atualização automática; os instaladores no site continuam os da 4.2.3.</p>
 <ul>
@@ -717,9 +727,9 @@
     </div>
   </footer>
 
-  <script src="config.js?v=5.0.2"></script>
-  <script src="i18n.js?v=5.0.2"></script>
-  <script src="main.js?v=5.0.2"></script>
+  <script src="config.js?v=5.1.0"></script>
+  <script src="i18n.js?v=5.1.0"></script>
+  <script src="main.js?v=5.1.0"></script>
   <script src="contador.js?v=1"></script>
 </body>
 </html>
